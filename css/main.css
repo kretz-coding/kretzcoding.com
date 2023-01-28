@@ -1,0 +1,107 @@
+:root {
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+
+    /** Fonts**/
+    --display-large: 400, 3.5625rem, 4rem;
+    --display-medium: 400, 2.8125rem, 3.25rem;
+    --display-small: 400, 2.25rem, 2.75rem;
+
+    --headline-large: 400, 2rem, 2.5rem;
+    --headline-medium: 400, 1.75rem, 2.25rem;
+    --headline-small: 400, 1.5rem, 2rem;
+
+    --title-large: 400, 1.375rem, 1.75rem;
+    --title-medium: 500, 1rem, 1.5rem;
+    --title-small: 500, 0.875rem, 1.25rem;
+
+    --label-large: 500, 0.875rem, 1.25rem;
+    --label-medium: 500, 0.75rem, 1rem;
+    --label-small: 500, 0.6875rem, 1rem;
+}
+    
+*.light_theme{
+    --on_primary: #FFFFFF;
+    --primary: #00687C;
+    --primary_container: #B0ECFF;
+    --on_primary_container: #001F27;
+
+    --secondary: #365CA8;
+    --on_secondary: #FFFFFF;
+    --secondary_container: #D9E2FF;
+    --on_secondary_container: #001944;
+
+    --error: #BA1A1A;
+    --on_error: #FFFFFF;
+    --error_container: #FFDAD6;
+    --on_error_container: #410002;
+
+    --surface: #FBFCFE;
+    --on_surface: #191C1D;
+    --surface_varient: #DBE4E8;
+    --on_surface_varient: #40484B;
+
+    --background: #FBFCFE;
+    --on_background: #191C1D;
+
+    --outline: #70787C;
+}
+
+*.dark_theme {
+    --primary: #58D6F7;
+    --on_primary: #003641;
+    --primary_container: #004E5E;
+    --on_primary_container: #D9D9D9;
+
+    --secondary: #AFC6FF;
+    --on_secondary: #002D6D;
+    --secondary_container: #17438F;
+    --on_secondary_container: #D9E2FF;
+
+    --error: #FFB4AB;
+    --on_error: #690005;
+    --error_container: #93000A;
+    --on_error_container: #FFDAD6;
+
+    --surface: #191C1D;
+    --on_surface: #E1E3E4;
+    --surface_varient: #40484B;
+    --on_surface_varient: #BFC8CB;
+
+    --background: #191C1D;
+    --on_background: #E1E3E4;
+
+    --outline: #BFC8CB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.top_app_bar{
+    align-items: center;
+    background-color: var(--surface);
+    color: var(--on_surface);
+    display: grid;
+    grid-template-columns: 1.5rem 1fr 1.5rem;
+    font: var(--title-large);
+    height: 2rem;
+    padding: 1rem;
+    width: 100vw;
+}
+
+.top_app_bar .nav_icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: var(--on_surface);
+}
+
+.top_app_bar .headline {
+    text-align: center;
+    width: 100%;
+}
