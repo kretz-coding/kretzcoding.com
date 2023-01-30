@@ -1,23 +1,54 @@
 :root {
-    font-family: "Quicksand", sans-serif;
-    font-size: 16px;
+    /** Fonts **/
+    --display-large-font_size: 3.5625rem;
+    --display-large-font_weight: 400;
+    --display-large-line_height: 4rem;
+    --display-medium-font_size: 2.8125rem;
+    --display-medium-font_weight: 400;
+    --display-medium-line_height: 3.25rem;
+    --display-small-font_size: 2.25rem;
+    --display-small-font_weight: 400;
+    --display-small-line_height: 2.75rem;
 
-    /** Fonts**/
-    --display-large: 400, 3.5625rem, 4rem;
-    --display-medium: 400, 2.8125rem, 3.25rem;
-    --display-small: 400, 2.25rem, 2.75rem;
+    --headline-large-font_size: 2rem;
+    --headline-large-font_weight: 400;
+    --headline-large-line_height: 2.5rem;
+    --headline-medium-font_size: 1.75rem;
+    --headline-medium-font_weight: 400;
+    --headline-medium-line_height: 2.25rem;
+    --headline-small-font_size: 1.5rem;
+    --headline-small-font_weight: 400;
+    --headline-small-line_height: 2rem;
 
-    --headline-large: 400, 2rem, 2.5rem;
-    --headline-medium: 400, 1.75rem, 2.25rem;
-    --headline-small: 400, 1.5rem, 2rem;
+    --title-large-font_size: 1.375rem;
+    --title-large-font_weight: 400;
+    --title-large-line_height: 1.75rem;
+    --title-medium-font_size: 1rem;
+    --title-medium-font_weight: 500;
+    --title-medium-line_height: 1.5rem;
+    --title-small-font_size: 0.875rem;
+    --title-small-font_weight: 500;
+    --title-small-line_height: 1.25rem;
 
-    --title-large: 400, 1.375rem, 1.75rem;
-    --title-medium: 500, 1rem, 1.5rem;
-    --title-small: 500, 0.875rem, 1.25rem;
+    --label-large-font_size: 0.875rem;
+    --label-large-font_weight: 500;
+    --label-large-line_height: 1.25rem;
+    --label-medium-font_size: 0.75rem;
+    --label-medium-font_weight: 500;
+    --label-medium-line_height: 1rem;
+    --label-small-font_size: 0.6875rem;
+    --label-small-font_weight: 500;
+    --label-small-line_height: 1rem;
 
-    --label-large: 500, 0.875rem, 1.25rem;
-    --label-medium: 500, 0.75rem, 1rem;
-    --label-small: 500, 0.6875rem, 1rem;
+    --body-large-font_size: 1rem;
+    --body-large-font_weight: 400;
+    --body-large-line_height: 1.5rem;
+    --body-medium-font_size: 0.875rem;
+    --body-medium-font_weight: 400;
+    --body-medium-line_height: 1.25rem;
+    --body-small-font_size: 0.75rem;
+    --body-small-font_weight: 400;
+    --body-small-line_height: 1rem;
 }
     
 *.light_theme{
@@ -79,29 +110,82 @@
     padding: 0;
 }
 
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
 .hidden {
     display: none;
 }
 
-.top_app_bar{
+a {
+    color: var(--secondary);
+}
+
+nav {
     align-items: center;
     background-color: var(--surface);
     color: var(--on_surface);
     display: grid;
-    grid-template-columns: 1.5rem 1fr 1.5rem;
+    grid-template-columns: auto 1fr;
     font: var(--title-large);
-    height: 2rem;
+    min-height: 2rem;
     padding: 1rem;
-    width: 100vw;
 }
 
-.top_app_bar .nav_icon {
+nav .nav_icon {
     height: 1.5rem;
     width: 1.5rem;
     fill: var(--on_surface);
 }
 
-.top_app_bar .headline {
+nav .headline {
+    font-size: var(--title-large-font_size);
+    font-weight: var(--title-large-font_weight);
+    line-height: var(--title-large-line_height);
     text-align: center;
-    width: 100%;
+}
+
+main {
+    padding: 1rem;
+    font-size: var(--body-large-font_size);
+    font-weight: var(--body-large-font_weight);
+    line-height: var(--body-large-line_height);
+}
+
+footer {
+    background-color: var(--surface);
+    color: var(--on_surface);
+    display: grid;
+    font-size: var(--body-medium-font_size);
+    font-weight: var(--body-medium-font_weight);
+    line-height: var(--body-medium-line_height);
+    padding: 1rem;
+}
+
+footer h6 {
+    font-size: var(--body-medium-font_size);
+    font-weight: 700;
+    line-height: var(--body-medium-line_height);
+}
+
+footer .two-colums {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+footer .copyright {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+footer .social-media-icon {
+    fill: var(--on_surface);
+    margin: 0 1rem;
+}
+
+footer .social-media-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
