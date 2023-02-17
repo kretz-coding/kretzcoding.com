@@ -243,6 +243,40 @@ nav .logo-link {
  }
 
 
+@media (min-width: 40rem){
+    nav .list {
+        align-self: center;
+        grid-template-rows: none;
+        grid-template-columns: 1.25fr repeat(4, auto) 1fr auto; /* 1.25fr is to make up for the space taken by the button in the last element */
+        gap: 1.5rem;
+        position: static;
+        height: auto;
+        width: auto;
+        padding: 0;
+        transform: translateY(0%);
+    }
+
+    nav .link {
+        font-size: var(--body-large-font_size);
+        line-height: 3rem;
+    }
+
+    nav .list :nth-child(1){
+        grid-column-start: 2;
+    }
+
+    nav .button.cta {
+        justify-self: right;
+        margin: 0;
+        grid-column-start: -1;
+        width: 7.5rem;
+    }
+
+    nav .toggle-button {
+        display: none;
+    }
+}
+
 /* End Navbar */
 
 
