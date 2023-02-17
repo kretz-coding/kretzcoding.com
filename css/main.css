@@ -184,8 +184,7 @@ nav .toggle-button {
     width: 3rem;
 }
 
-nav .toggle-button:hover,
-nav .toggle-button:focus {
+nav .toggle-button:hover {
     background-color: rgba(255, 255, 255, 10%);
 }
 
@@ -291,8 +290,9 @@ a {
 }
 
 main {
+    display: grid;
+    gap: 1rem;
     margin-top: 4rem;
-    padding: 1rem;
     font-size: var(--body-large-font_size);
     font-weight: var(--body-large-font_weight);
     line-height: var(--body-large-line_height);
@@ -303,22 +303,17 @@ footer {
     background-color: var(--surface);
     color: var(--on_surface);
     display: grid;
+    gap: 1rem;
     font-size: var(--body-medium-font_size);
     font-weight: var(--body-medium-font_weight);
     line-height: var(--body-medium-line_height);
-    padding: 1rem;
+    padding: 1.5rem 2rem 1rem;
 }
 
 footer h6 {
     font-size: var(--body-medium-font_size);
     font-weight: 700;
     line-height: var(--body-medium-line_height);
-}
-
-footer .two-colums {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
 }
 
 footer .copyright {
@@ -337,7 +332,12 @@ footer .social-media-icon:hover {
 
 footer .social-media-links {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto auto 1fr;
+    gap: 0.25rem;
+}
+
+footer .social-media-links :nth-child(1) {
+    grid-column-start: 2;
 }
 /* End Footer */
 
