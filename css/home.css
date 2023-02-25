@@ -1,0 +1,106 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    padding: 2rem;
+    background: no-repeat url(../images/Wavy-Background.svg);
+    background-position: 45vw -6vh;
+    gap: 2rem;
+}
+
+.hero div {
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+    align-content: center;
+}
+
+.hero .left {
+    justify-self: center;
+    max-width: 33.75rem;
+}
+
+.hero h1 {
+    font-size: clamp(1rem, 6vw, 4rem);
+    font-weight: 400;
+    line-height: clamp(1rem, 6vw, 4rem);
+}
+
+.hero p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: 400;
+}
+
+.hero .button {
+    justify-self: start;
+}
+
+.hero .animation {
+    max-height: 65vh;
+}
+
+
+/*********/
+/* About */
+/*********/
+main .container{
+    display: grid;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    color: var(--on_surface);
+}
+
+main .about {
+    background-color: var(--surface_varient);
+}
+
+main .about .container {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    background-color: var(--surface)
+}
+
+.benefits .container {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    background-color: var(--surface_varient);
+    padding-bottom: 8rem;
+}
+.benefits {
+    background-color: hsl(192, 53%, 90%);
+}
+
+main .services {
+    background-color: hsl(192, 53%, 90%);
+}
+
+main .services h2 {
+    color: hsl(192, 53%, 10%);
+}
+
+.card.filled {
+    display: grid;
+    color: hsl(192, 53%, 10%);
+    background-color: hsl(192, 53%, 95%);
+    border-radius: 1rem;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+#create_package {
+    background-color: var(--primary);
+    grid-template-areas: 
+            "title chip"
+            "p     p"
+            "cta cta";
+}
+
+#create_package p:not(.chip) {
+    grid-area: p;
+}
+
+.chip {
+    grid-area: chip;
+    justify-self: end;
+}
+
+
+/* End About */
