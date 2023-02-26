@@ -9,6 +9,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    margin-top: 3rem;
     width: var(--nav-width);
     gap: 2rem;
 }
@@ -16,13 +17,16 @@ header {
 .hero div {
     display: grid;
     gap: 2rem;
-    justify-items: center;
     align-content: center;
 }
 
 .hero .left {
-    justify-self: center;
+    justify-items: start;
     max-width: 33.75rem;
+}
+
+.hero .right {
+    justify-items: end;
 }
 
 .hero h1 {
@@ -41,9 +45,56 @@ header {
 }
 
 .hero .animation {
+    box-shadow: var(--elevation-1);
+    border-radius: 1rem;
     max-height: 65vh;
 }
 
+/************/
+/* Solution */
+/************/
+.solution {
+    display: grid;
+    justify-content: center;
+    background-color: var(--blue-50);
+}
+
+.issues {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.bubble {
+    aspect-ratio: 1;
+    background-color: var(--blue-600);
+    border-radius: 50%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: var(--elevation-1);
+    transition: all 250ms;
+    width: 80%;
+}
+
+.bubble:hover,
+.bubble:focus {
+    background-color: var(--blue-700);
+    box-shadow: var(--elevation-3);
+    transition: all 250ms;
+    cursor: pointer;
+}
+
+.bubble.selected{
+    background-color: var(--blue-1100);
+    color: var(--blue-200);
+}
+/* End Solution */
 
 /*********/
 /* About */
@@ -53,6 +104,7 @@ main .container{
     gap: 2rem;
     padding: 4rem 2rem;
     color: var(--on_surface);
+    border-radius: 1rem;
 }
 
 main .about {
@@ -106,6 +158,4 @@ main .services h2 {
     grid-area: chip;
     justify-self: end;
 }
-
-
 /* End About */
