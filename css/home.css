@@ -1,10 +1,15 @@
-.hero {
+header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-content: center;
-    padding: 2rem;
     background: no-repeat url(../images/Wavy-Background.svg);
     background-position: 45vw -6vh;
+}
+
+.hero {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: var(--nav-width);
     gap: 2rem;
 }
 
