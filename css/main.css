@@ -118,6 +118,7 @@
     --gray-800: #ebebeb;
     --gray-900: #ffffff;
 
+    --blue-50: #041c3b;
     --blue-100: #003877;
     --blue-200: #00418a;
     --blue-300: #004da3;
@@ -397,7 +398,6 @@ body {
 
 main {
     display: grid;
-    margin-top: 4rem;
     font-size: var(--body-large-font_size);
     font-weight: var(--body-large-font_weight);
     line-height: var(--body-large-line_height);
