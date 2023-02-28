@@ -196,6 +196,12 @@
     text-decoration: none;
     height: 2.5rem;
     width: fit-content;
+    transition: all 250ms;
+}
+
+.button:hover,
+.button:focus {
+    cursor: pointer;
 }
 
 .button:has(svg){
@@ -211,10 +217,18 @@
 .button.filled {
     background-color: var(--blue-static);
     color: var(--gray-900);
+    transition: all 250ms;
 }
 
 .button.filled:has(svg) svg {
     fill: var(--gray-900);
+}
+
+.button.filled:hover,
+.button.filled:focus {
+    box-shadow: var(--elevation-1);
+    background-color: var(--blue-600);
+    transition: all 250ms;
 }
 
 .button.outlined {
@@ -274,10 +288,12 @@ nav .toggle-button {
     top: 0.5rem;
     right: 0.25rem;
     width: 3rem;
+    transition: all 250ms;
 }
 
 nav .toggle-button:hover {
     background-color: rgba(255, 255, 255, 10%);
+    transition: all 250ms;
 }
 
 nav .logo {
@@ -323,10 +339,12 @@ nav .logo-link {
     line-height: 3rem;
     text-decoration: none;
     height: 100%;
+    transition: all 250ms;
  }
 
  nav .link:hover,
  nav .link:focus{
+    transition: all 250ms;
     color: var(--on_surface_varient);
  }
 
@@ -339,6 +357,7 @@ nav .logo-link {
     font-weight: var(--label-large-font_weight);
     justify-self: left;
     margin: 0.25em -1.5em;
+    transition: all 250ms;
  }
 
 
