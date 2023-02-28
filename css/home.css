@@ -45,7 +45,7 @@ header {
 }
 
 .hero .animation {
-    box-shadow: var(--elevation-1);
+    box-shadow: var(--elevation-2);
     border-radius: 1rem;
     max-height: 65vh;
 }
@@ -65,34 +65,54 @@ header {
     align-items: center;
     justify-items: center;
     list-style-type: none;
-    gap: 2rem;
+    row-gap: 1rem;
 }
+
+.bubble:nth-child(even) {
+    position: relative;
+    transform: translateY(50%);
+    animation: even-hover 15s infinite;
+}
+
+.bubble:nth-child(odd) {
+    animation: odd-hover 15s infinite;
+}
+
 
 .bubble {
     aspect-ratio: 1;
-    background-color: var(--blue-600);
+    background-color: var(--blue-1000);
+    color: var(--blue-100);
     border-radius: 50%;
     display: grid;
     align-content: center;
     justify-content: center;
     text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
     padding: 1rem;
     box-shadow: var(--elevation-1);
     transition: all 250ms;
-    width: 80%;
+    width: 65%;
 }
 
 .bubble:hover,
 .bubble:focus {
-    background-color: var(--blue-700);
-    box-shadow: var(--elevation-3);
+    background-color: var(--blue-900);
+    box-shadow: var(--elevation-1);
     transition: all 250ms;
     cursor: pointer;
 }
 
 .bubble.selected{
-    background-color: var(--blue-1100);
-    color: var(--blue-200);
+    transition: all 250ms;
+    background-color: var(--blue-800);
+    color: var(--blue-50);
+}
+
+.solution .cta {
+    margin-top: 7rem;
+    justify-self: center;
 }
 /* End Solution */
 
@@ -158,8 +178,36 @@ main .services h2 {
     grid-area: chip;
     justify-self: end;
 }
-<<<<<<< HEAD
 /* End About */
-=======
-/* End About */
->>>>>>> 4bd7d2618aa9a0732394b12640ec95a7de173a91
+
+
+/**************/
+/* Animations */
+/**************/
+@keyframes odd-hover {
+    0% {
+        transform: translateY(-2.5%);
+    }
+
+    50% {
+        transform: translateY(2.5%);
+    }
+
+    100% {
+        transform: translateY(-2.5%);
+    }
+}
+
+@keyframes even-hover {
+    0% {
+        transform: translateY(57.5%);
+    }
+
+    50% {
+        transform: translateY(52.5%);
+    }
+
+    100% {
+        transform: translateY(57.5%);
+    }
+}
