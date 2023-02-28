@@ -9,7 +9,10 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+<<<<<<< HEAD
     margin-top: 3rem;
+=======
+>>>>>>> 45528318349c19f2b05c2f918540219479802489
     width: var(--nav-width);
     gap: 2rem;
 }
@@ -158,4 +161,10 @@ main .services h2 {
     grid-area: chip;
     justify-self: end;
 }
+<<<<<<< HEAD
 /* End About */
+=======
+
+
+/* End About */
+>>>>>>> 45528318349c19f2b05c2f918540219479802489
