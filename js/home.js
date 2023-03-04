@@ -10,8 +10,9 @@ for (var i = 0; i < bubbles.length; i++) {
 
 function test() {
     let selectedIssues = document.getElementsByClassName("bubble selected");
-    
-    for (let i = 0; i < selectedIssues.length; i++) {
-        console.log (selectedIssues[i].innerText);
+    for (i = 0; i< selectedIssues.length; i++) {
+        sessionStorage.setItem("Number of issues selected", selectedIssues.length);
+        sessionStorage.setItem("User selected issue " + i.toString(), selectedIssues[i]);
     }
+    
 }
