@@ -200,7 +200,7 @@
 }
 
 .button:hover,
-.button:focus {
+.button:focus-visible {
     cursor: pointer;
 }
 
@@ -225,7 +225,7 @@
 }
 
 .button.filled:hover,
-.button.filled:focus {
+.button.filled:focus-visible {
     box-shadow: var(--elevation-1);
     background-color: var(--blue-600);
     transition: all 250ms;
@@ -238,6 +238,14 @@
 
 .button.outlined:has(svg) svg {
     fill: var(--blue-900);
+}
+
+.button.outlined:hover,
+.button.outlined:focus-visible {
+    box-shadow: var(--elevation-1);
+    background-color: var(--blue-900);
+    color: var(--blue-100);
+    transition: all 250ms;
 }
 /* End Buttons */
 
@@ -262,7 +270,8 @@ header {
 /* Navbar */
 /**********/
 nav {
-    background-color: var(--gray-100);
+    --nav_background-color: var(--gray-50);
+    background-color: var(--nav_background-color);
     display: grid;
     grid-template-columns: auto 1fr auto;
     height: var(--nav-height);
@@ -305,7 +314,7 @@ nav .logo-link {
     height: 3rem;
 }
  nav .list {
-    background-color: var(--gray-100);
+    background-color: var(--nav_background-color);
     list-style-type: none;
     display: grid;
     grid-template-rows: repeat(5, auto) 1fr;
@@ -333,7 +342,7 @@ nav .logo-link {
 
  nav .link {
     display: block;
-    color: var(--gray-600);
+    color: var(--gray-700);
     font-size: var(--title-large-font_size);
     font-weight: var(--label-large-font_weight);
     line-height: 3rem;
@@ -343,13 +352,13 @@ nav .logo-link {
  }
 
  nav .link:hover,
- nav .link:focus{
+ nav .link:focus-visible {
     transition: all 250ms;
     color: var(--on_surface_varient);
  }
 
  nav .link.active {
-    color: var(--gray-700);;
+    color: var(--gray-800);;
  }
 
  nav .button.cta {
@@ -438,8 +447,7 @@ h3 {
 /* Footer */
 /**********/
 footer {
-    background-color: var(--background);
-    color: var(--on_surface);
+    background-color: var(--gray-50);
     display: grid;
     justify-content: center;
     gap: 1.5rem;
@@ -478,11 +486,12 @@ footer .list {
 }
 
 footer .link {
+    color: var(--blue-700);
     text-decoration: none;
 }
 
 footer .link:hover,
-footer .link:focus {
+footer .link:focus-visible {
     text-decoration: underline;
 }
 
@@ -508,11 +517,11 @@ footer .contact .item {
 }
 
 footer .icon {
-    fill: var(--on_surface);
+    fill: var(--gray-700);
 }
 
 footer .icon.social-media:hover {
-    fill: #ffffff;
+    fill: var(--gray-900);
 }
 
 footer .social-media-links {

@@ -50,6 +50,13 @@ header {
     max-height: 65vh;
 }
 
+main .container{
+    display: grid;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    color: var(--gray-800);
+    border-radius: 1rem;
+}
 
 /************/
 /* Solution */
@@ -112,7 +119,7 @@ header {
 }
 
 .bubble:hover,
-.bubble:focus {
+.bubble:focus-visible {
     background-color: var(--blue-900);
     box-shadow: var(--elevation-1);
     transition: all 250ms;
@@ -132,69 +139,21 @@ header {
 /* End Solution */
 
 
-/*********/
-/* About */
-/*********/
-main .container{
-    display: grid;
-    gap: 2rem;
-    padding: 4rem 2rem;
-    color: var(--on_surface);
-    border-radius: 1rem;
-}
-
-main .about {
-    background-color: var(--surface_varient);
-}
-
-main .about .container {
-    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-    background-color: var(--surface)
-}
-
-.benefits .container {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-    background-color: var(--surface_varient);
-    padding-bottom: 8rem;
-}
+/************/
+/* Benifits */
+/************/
 .benefits {
-    background-color: hsl(192, 53%, 90%);
+    background-color: var(--gray-100);
 }
+/* End Benifits */
 
+/************/
+/* Services */
+/************/
 main .services {
-    background-color: hsl(192, 53%, 90%);
+    background-color: var(--blue-50);
 }
-
-main .services h2 {
-    color: hsl(192, 53%, 10%);
-}
-
-.card.filled {
-    display: grid;
-    color: hsl(192, 53%, 10%);
-    background-color: hsl(192, 53%, 95%);
-    border-radius: 1rem;
-    gap: 1rem;
-    padding: 1.5rem;
-}
-
-#create_package {
-    background-color: var(--primary);
-    grid-template-areas: 
-            "title chip"
-            "p     p"
-            "cta cta";
-}
-
-#create_package p:not(.chip) {
-    grid-area: p;
-}
-
-.chip {
-    grid-area: chip;
-    justify-self: end;
-}
-/* End About */
+/* End Services */
 
 
 /**************/
