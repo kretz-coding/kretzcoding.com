@@ -55,7 +55,6 @@ main .container{
     gap: 2rem;
     padding: 4rem 2rem;
     color: var(--gray-800);
-    border-radius: 1rem;
 }
 
 /************/
@@ -143,16 +142,27 @@ main .container{
 /* Benifits */
 /************/
 .benefits {
-    background-color: var(--gray-100);
+    background-color: var(--blue-50);
 }
 /* End Benifits */
 
 /************/
 /* Services */
 /************/
-main .services {
-    background-color: var(--blue-50);
+.services .container{
+    background-color: var(--gray-100);
+    row-gap: 0.5rem;
 }
+
+.services .card {
+    row-gap: 1rem;
+}
+
+#create_package {
+    background: url("../images/light_crown.svg") 0 1rem no-repeat var(--blue-50);
+}
+
+
 /* End Services */
 
 

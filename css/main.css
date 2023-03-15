@@ -155,7 +155,8 @@
 
     --shadow: #000000;
 }
-    
+/* End Global Variables */
+
 
 * {
     margin: 0;
@@ -167,7 +168,7 @@
 	border: 0 !important;
 	clip: rect(1px, 1px, 1px, 1px) !important;
 	-webkit-clip-path: inset(50%) !important;
-		clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;
 	height: 1px !important;
 	margin: -1px !important;
 	overflow: hidden !important;
@@ -249,16 +250,19 @@
 }
 /* End Buttons */
 
-.chip {
-    align-self: center;;
-    border: 1px solid;
-    font-size: var(--label-medium-font_size);
-    font-weight: var(--label-medium-font_weight);
-    line-height: 2rem;
-    border-radius: 0.25rem;
-    padding: 0 1rem;
+.card {
+    border-radius: 1rem;
+    display: grid;
+    padding: 1rem;
 }
-/* End Global Variables */
+
+.card .button {
+    justify-self: end;
+}
+
+.card.filled {
+    background-color: var(--blue-50);
+}
 
 header {
     --nav-height: 4rem;
