@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e5da2203.css",
+    "main.js": "/static/js/main.2bc39de3.js",
+    "static/js/787.4dcb8558.chunk.js": "/static/js/787.4dcb8558.chunk.js",
+    "static/media/Kretz-Coding-Logo-Dark.svg": "/static/media/Kretz-Coding-Logo-Dark.0049cd838c141425acd8f77515646aba.svg",
+    "index.html": "/index.html",
+    "main.e5da2203.css.map": "/static/css/main.e5da2203.css.map",
+    "main.2bc39de3.js.map": "/static/js/main.2bc39de3.js.map",
+    "787.4dcb8558.chunk.js.map": "/static/js/787.4dcb8558.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5da2203.css",
+    "static/js/main.2bc39de3.js"
+  ]
+}
