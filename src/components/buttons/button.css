@@ -1,0 +1,65 @@
+.button {
+    border-radius: 1.25rem;
+    display: grid;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto;
+    font-size: var(--label-large-font_size);
+    font-weight: var(--label-large-font_weight);
+    line-height: var(--label-large-line_height);
+    padding: 0 1.5rem;
+    text-decoration: none;
+    height: 2.5rem;
+    width: fit-content;
+    transition: all 250ms;
+}
+
+.button:hover,
+.button:focus-visible {
+    cursor: pointer;
+}
+
+.button:has(svg){
+    grid-template-columns: auto 1fr;
+    padding-left: 1rem;
+    gap: 0.5rem;
+}
+
+.button:has(svg) svg {
+    height: 1.5rem;
+}
+
+.button.filled {
+    background-color: var(--blue-static);
+    color: var(--gray-900);
+    transition: all 250ms;
+}
+
+.button.filled:has(svg) svg {
+    fill: var(--gray-900);
+}
+
+.button.filled:hover,
+.button.filled:focus-visible {
+    box-shadow: var(--elevation-1);
+    background-color: var(--blue-600);
+    transition: all 250ms;
+}
+
+.button.outlined {
+    border: 1px solid var(--blue-900);
+    color: var(--blue-900);
+}
+
+.button.outlined:has(svg) svg {
+    fill: var(--blue-900);
+}
+
+.button.outlined:hover,
+.button.outlined:focus-visible {
+    box-shadow: var(--elevation-1);
+    background-color: var(--blue-900);
+    color: var(--blue-100);
+    transition: all 250ms;
+}
