@@ -1,0 +1,147 @@
+nav {
+    --nav_background-color: var(--gray-50);
+    background-color: var(--nav_background-color);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    height: var(--nav-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0rem 1rem;
+    width: calc(100vw - 2rem);
+    box-shadow: var(--elevation-2);
+    z-index: 2;
+}
+
+nav .toggle-button {
+    aspect-ratio: 1;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    fill: var(--gray-700);
+    position: absolute;
+    top: 0.5rem;
+    right: 0.25rem;
+    width: 3rem;
+    transition: all 250ms;
+}
+
+nav .toggle-button:hover {
+    background-color: rgba(255, 255, 255, 10%);
+    transition: all 250ms;
+}
+
+nav .logo {
+    height: 100%;
+    padding: 0.5rem 0;
+}
+
+nav .logo-link {
+    height: 3rem;
+}
+ nav .list {
+    background-color: var(--nav_background-color);
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: repeat(5, auto) 1fr;
+    gap: 0.25rem;
+    position: relative;
+    top: 3.5rem;
+    left: -5.5rem;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem 3rem;
+    transform: translateY(-100%);
+    z-index: -1;
+ }
+
+ nav .list[data-visible="true"] {
+    transition: transform 500ms ease-out;
+    transition-delay: 150ms;
+    transform: translateY(0%);
+ }
+
+ nav .list[data-visible="false"] {
+    transition: transform 500ms ease-out;
+    transform: translateY(-100%);
+ }
+
+ nav .link {
+    display: block;
+    color: var(--gray-700);
+    font-size: var(--title-large-font_size);
+    font-weight: var(--label-large-font_weight);
+    line-height: 3rem;
+    text-decoration: none;
+    height: 100%;
+    transition: all 250ms;
+ }
+
+ nav .link:hover,
+ nav .link:focus-visible {
+    transition: all 250ms;
+    color: var(--on_surface_varient);
+ }
+
+ nav .link.active {
+    color: var(--gray-800);;
+ }
+
+ nav .button.cta {
+    font-size: var(--title-medium-font_size);
+    font-weight: var(--label-large-font_weight);
+    justify-self: left;
+    margin: 0.25em -1.5em;
+    transition: all 250ms;
+ }
+
+ ul {
+    margin-block: 0;
+ }
+
+ @media (min-width: 49.5rem) {
+    nav {
+        --nav-width: 75vw;
+        --nav-height: 4rem;
+        top: 1rem;
+        border-radius: var(--nav-height);
+        padding-left: 2rem;
+        width: var(--nav-width);
+        left: calc(((100vw - var(--nav-width)) / 2) - 2.5rem);
+    }
+
+    nav .list {
+        align-self: center;
+        grid-template-rows: none;
+        grid-template-columns: 1.25fr repeat(4, auto) 1fr auto; /* 1.25fr is to make up for the space taken by the button in the last element */
+        gap: 1.5rem;
+        position: static;
+        height: var(--nav-height);
+        border-radius: var(--nav-height);
+        width: auto;
+        padding: 0;
+        transform: translateY(0%);
+    }
+
+    nav .link {
+        font-size: var(--body-large-font_size);
+        line-height: var(--nav-height);
+    }
+
+    nav .list :first-child{
+        grid-column-start: 2;
+    }
+
+    nav .button.cta {
+        justify-self: right;
+        margin: 0;
+        grid-column-start: -1;
+    }
+
+    nav .toggle-button {
+        display: none;
+    }
+}
