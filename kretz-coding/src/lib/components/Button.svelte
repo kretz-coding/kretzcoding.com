@@ -17,6 +17,7 @@
         border-radius: 1.25rem;
         font-weight: 500;
         width: fit-content;
+        display: grid;
     }
 
     a.filled {
