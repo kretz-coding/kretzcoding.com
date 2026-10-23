@@ -23,9 +23,9 @@
             <div class="services">
                 <h3>Services</h3>
                 <a href="/">Web development</a>
-                <a href="/services">Software development</a>
-                <a href="/projects">Social media marketing</a>
                 <a href="/about">Web hosting & maintenance</a>
+                <a href="/projects">Social media marketing</a>
+                <a href="/services">Software development</a>
             </div>
             <div class="contact">
                 <h3>Contact</h3>
