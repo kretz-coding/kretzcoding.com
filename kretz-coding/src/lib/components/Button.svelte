@@ -1,14 +1,14 @@
 <script lang="ts">
-    let { 
-        label = 'Button', 
-        type = 'filled', 
-        href = '', 
-        color = '#3b82f6',
-        ...restProps 
+    let {
+        label = "Button",
+        type = "filled",
+        href = "",
+        color = "#3b82f6",
+        ...restProps
     } = $props();
 </script>
 
-<a href={href} class="{type} {color}">{label}</a>
+<a {href} class="{type} {color}">{label}</a>
 
 <style>
     a {
