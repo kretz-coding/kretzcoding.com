@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="100%" height="100%">
+    <defs>
+        <style>
+        .bg-grid {
+            fill: none;
+            stroke: #323232;
+            stroke-width: 1;
+            opacity: 0.15;
+        }
+        
+        /* Main Canvas Container Animation */
+        .canvas {
+            fill: #1a1a1a;
+            stroke: #323232;
+            stroke-width: 2;
+            rx: 16px;
+            transform-origin: 500px 325px;
+            animation: canvasResize 12s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+        }
+
+        /* Device Bar / Browser Header */
+        .browser-bar {
+            fill: #252525;
+            animation: barResize 12s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+        }
+
+        /* Wireframe Elements Base */
+        .wf-element {
+            rx: 6px;
+            animation-duration: 12s;
+            animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+            animation-iteration-count: infinite;
+        }
+
+        /* Colors and Styles */
+        .accent { fill: #1379F3; }
+        .accent-soft { fill: #1379F3; opacity: 0.3; }
+        .light { fill: #FFFFFF; }
+        .light-soft { fill: #FFFFFF; opacity: 0.15; }
+        .dark-soft { fill: #323232; }
+
+        /* Keyframe Animations */
+        
+        /* 1. Canvas Width and Position */
+        @keyframes canvasResize {
+            0%, 25% { /* Mobile */
+            width: 320px;
+            height: 520px;
+            x: 340px;
+            y: 65px;
+            }
+            33%, 58% { /* Tablet */
+            width: 580px;
+            height: 480px;
+            x: 210px;
+            y: 85px;
+            }
+            66%, 91% { /* Desktop */
+            width: 860px;
+            height: 480px;
+            x: 70px;
+            y: 85px;
+            }
+            100% { /* Loop to Mobile */
+            width: 320px;
+            height: 520px;
+            x: 340px;
+            y: 65px;
+            }
+        }
+
+        @keyframes barResize {
+            0%, 25% { width: 320px; x: 340px; y: 65px; }
+            33%, 58% { width: 580px; x: 210px; y: 85px; }
+            66%, 91% { width: 860px; x: 70px; y: 85px; }
+            100% { width: 320px; x: 340px; y: 65px; }
+        }
+
+        /* Browser Dots Fade */
+        .browser-dot {
+            animation: dotMove 12s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+        }
+        @keyframes dotMove {
+            0%, 25% { transform: translate(340px, 65px); }
+            33%, 58% { transform: translate(210px, 85px); }
+            66%, 91% { transform: translate(70px, 85px); }
+            100% { transform: translate(340px, 65px); }
+        }
+
+        /* Element 1: Header / Logo */
+        .el-logo {
+            animation-name: animLogo;
+        }
+        @keyframes animLogo {
+            0%, 25% { x: 360px; y: 115px; width: 40px; height: 20px; }
+            33%, 58% { x: 230px; y: 135px; width: 50px; height: 20px; }
+            66%, 91% { x: 90px; y: 135px; width: 60px; height: 24px; }
+            100% { x: 360px; y: 115px; width: 40px; height: 20px; }
+        }
+
+        /* Element 2: Nav Links / Hamburger */
+        .el-nav {
+            animation-name: animNav;
+        }
+        @keyframes animNav {
+            0%, 25% { x: 610px; y: 120px; width: 30px; height: 10px; } /* Hamburger style */
+            33%, 58% { x: 620px; y: 140px; width: 150px; height: 10px; } /* Horizontal links */
+            66%, 91% { x: 710px; y: 142px; width: 200px; height: 10px; }
+            100% { x: 610px; y: 120px; width: 30px; height: 10px; }
+        }
+
+        /* Element 3: Hero Banner */
+        .el-hero {
+            animation-name: animHero;
+        }
+        @keyframes animHero {
+            0%, 25% { x: 360px; y: 150px; width: 280px; height: 120px; } /* Full width mobile */
+            33%, 58% { x: 230px; y: 175px; width: 540px; height: 140px; } /* Full width tablet */
+            66%, 91% { x: 90px; y: 180px; width: 400px; height: 210px; }  /* Col 1-2 Desktop (Span 2) */
+            100% { x: 360px; y: 150px; width: 280px; height: 120px; }
+        }
+
+        /* Element 4: Hero CTA / Sub-card */
+        .el-hero-sub {
+            animation-name: animHeroSub;
+        }
+        @keyframes animHeroSub {
+            0%, 25% { x: 360px; y: 280px; width: 280px; height: 50px; }
+            33%, 58% { x: 230px; y: 325px; width: 260px; height: 100px; } /* Left col in tablet */
+            66%, 91% { x: 510px; y: 180px; width: 400px; height: 100px; } /* Col 3-4 Desktop (Span 2) */
+            100% { x: 360px; y: 280px; width: 280px; height: 50px; }
+        }
+
+        /* Element 5: Feature Card 1 */
+        .el-card1 {
+            animation-name: animCard1;
+        }
+        @keyframes animCard1 {
+            0%, 25% { x: 360px; y: 340px; width: 280px; height: 60px; }
+            33%, 58% { x: 510px; y: 325px; width: 260px; height: 100px; } /* Right col in tablet */
+            66%, 91% { x: 510px; y: 290px; width: 190px; height: 100px; } /* Col 3 Desktop */
+            100% { x: 360px; y: 340px; width: 280px; height: 60px; }
+        }
+
+        /* Element 6: Feature Card 2 */
+        .el-card2 {
+            animation-name: animCard2;
+        }
+        @keyframes animCard2 {
+            0%, 25% { x: 360px; y: 410px; width: 280px; height: 60px; }
+            33%, 58% { x: 230px; y: 435px; width: 260px; height: 100px; } /* Col 1 tablet lower */
+            66%, 91% { x: 720px; y: 290px; width: 190px; height: 100px; } /* Col 4 Desktop */
+            100% { x: 360px; y: 410px; width: 280px; height: 60px; }
+        }
+
+        /* Element 7: Feature Card 3 / Wide Footer Banner */
+        .el-card3 {
+            animation-name: animCard3;
+        }
+        @keyframes animCard3 {
+            0%, 25% { x: 360px; y: 480px; width: 280px; height: 80px; }
+            33%, 58% { x: 510px; y: 435px; width: 260px; height: 100px; } /* Col 2 tablet lower */
+            66%, 91% { x: 90px; y: 410px; width: 820px; height: 130px; }  /* Full 4-Column Span Desktop */
+            100% { x: 360px; y: 480px; width: 280px; height: 80px; }
+        }
+
+        /* Responsive Text Line Animations inside Hero */
+        .el-line1 { animation-name: animLine1; }
+        @keyframes animLine1 {
+            0%, 25% { x: 380px; y: 175px; width: 140px; }
+            33%, 58% { x: 260px; y: 205px; width: 220px; }
+            66%, 91% { x: 120px; y: 215px; width: 200px; }
+            100% { x: 380px; y: 175px; width: 140px; }
+        }
+
+        .el-line2 { animation-name: animLine2; }
+        @keyframes animLine2 {
+            0%, 25% { x: 380px; y: 195px; width: 90px; }
+            33%, 58% { x: 260px; y: 230px; width: 150px; }
+            66%, 91% { x: 120px; y: 245px; width: 140px; }
+            100% { x: 380px; y: 195px; width: 90px; }
+        }
+        </style>
+    </defs>
+
+    <!-- Main Website Container / Device Shell -->
+    <rect class="canvas" />
+
+    <!-- Browser Header Bar -->
+    <rect class="browser-bar" height="30" rx="16" />
+    <!-- Window Control Dots -->
+    <g class="browser-dot">
+        <circle cx="15" cy="15" r="4" fill="#FF5F56" opacity="0.8" />
+        <circle cx="27" cy="15" r="4" fill="#FFBD2E" opacity="0.8" />
+        <circle cx="39" cy="15" r="4" fill="#27C93F" opacity="0.8" />
+    </g>
+
+    <!-- WIREFRAME WEBSITE ELEMENTS -->
+
+    <!-- 1. Header / Brand Logo -->
+    <rect class="wf-element el-logo accent" />
+
+    <!-- 2. Navigation Elements -->
+    <rect class="wf-element el-nav light-soft" />
+
+    <!-- 3. Hero Section Block (Main Accent) -->
+    <rect class="wf-element el-hero accent-soft" />
+    
+    <!-- Hero Content Lines -->
+    <rect class="wf-element el-line1 light" height="10" rx="3" />
+    <rect class="wf-element el-line2 light-soft" height="8" rx="3" />
+
+    <!-- 4. Hero Secondary Block / CTA -->
+    <rect class="wf-element el-hero-sub dark-soft" stroke="#323232" stroke-width="1" />
+
+    <!-- 5. Content Card 1 -->
+    <rect class="wf-element el-card1 accent" opacity="0.8" />
+
+    <!-- 6. Content Card 2 -->
+    <rect class="wf-element el-card2 light-soft" />
+
+    <!-- 7. Content Card 3 / Footer Section (Spans 4 columns on desktop) -->
+    <rect class="wf-element el-card3 dark-soft" stroke="#1379F3" stroke-width="1.5" />
+
+</svg>
