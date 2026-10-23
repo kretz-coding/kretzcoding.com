@@ -1,0 +1,13 @@
+:root {
+    --kc-gray: #323232;
+    --kc-blue: #1379F3;
+    --kc-white: #FFFFFF;
+    --kc-light-blue: #E8F6FF;
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
