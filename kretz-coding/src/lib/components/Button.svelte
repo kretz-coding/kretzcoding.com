@@ -3,30 +3,40 @@
         label = "Button",
         type = "filled",
         href = "",
-        color = "#3b82f6",
+        color = "",
+        icon = "",
+        alt= "",
         ...restProps
     } = $props();
 </script>
 
-<a {href} class="{type} {color}">{label}</a>
+<a {href} class="button {type} {color}">{label} {#if icon != ""}<img src={icon} alt={alt}>{/if}</a>
 
 <style>
-    a {
-        text-decoration: none;
+    a.button {
         padding: 0.5rem 1rem;
         border-radius: 1.25rem;
         font-weight: 500;
         width: fit-content;
         display: grid;
+        grid-auto-flow: column;
+    }
+
+    a.underlined {
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
     }
 
     a.filled {
+        text-decoration: none;
         background-color: var(--background-color);
         color: var(--text-color);
     }
 
     a.outlined {
-        border: 1px solid var(--background-color);
+        text-decoration: none;
+        border: 2px solid var(--background-color);
         color: var(--background-color);
     }
 
