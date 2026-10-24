@@ -48,6 +48,7 @@
         top: 0;
         z-index: 1000;
         container-type: inline-size;
+        border-bottom: 2px solid hsla(0, 0%, 0%, .5);
     }
 
     nav {
