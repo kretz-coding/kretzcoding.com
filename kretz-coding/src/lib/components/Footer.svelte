@@ -3,7 +3,7 @@
         <div class="left">
             <img
                 class="logo"
-                src="/src/lib/assets/logo.svg"
+                src="/logo.svg"
                 alt="Kretz Coding logo"
             />
             <h3>Kretz Coding</h3>
@@ -31,21 +31,21 @@
                 <h3>Contact</h3>
                 <div class="location">
                     <img
-                        src="/src/lib/assets/location-icon.svg"
+                        src="/location-icon.svg"
                         alt="Location icon"
                     />
                     <p>Warner Robins, GA</p>
                 </div>
                 <div class="phone">
                     <img
-                        src="/src/lib/assets/phone-icon.svg"
+                        src="/phone-icon.svg"
                         alt="Phone icon"
                     />
                     <a href="tel:(123) 456-7890">(123) 456-7890</a>
                 </div>
                 <div class="email">
                     <img
-                        src="/src/lib/assets/email-icon.svg"
+                        src="/email-icon.svg"
                         alt="Email icon"
                     />
                     <a href="mailto:info@kretzcoding.com"
@@ -59,7 +59,7 @@
                         rel="noopener noreferrer"
                     >
                         <img
-                            src="/src/lib/assets/facebook-icon.svg"
+                            src="/facebook-icon.svg"
                             alt="Facebook icon"
                             class="social-media-icon"
                         />
@@ -71,7 +71,7 @@
                     >
                         <img
                             class="social-media-icon"
-                            src="/src/lib/assets/github-icon.svg"
+                            src="/github-icon.svg"
                             alt="GitHub icon"
                         />
                     </a>
@@ -82,7 +82,7 @@
                     >
                         <img
                             class="social-media-icon linkedin-icon"
-                            src="/src/lib/assets/linkedin-icon.svg"
+                            src="/linkedin-icon.svg"
                             alt="LinkedIn icon"
                         />
                     </a>

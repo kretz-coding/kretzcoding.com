@@ -22,7 +22,7 @@
             <div class="right">
                 <img
                     class="animation"
-                    src="/src/lib/assets/animation.svg"
+                    src="/animation.svg"
                     alt="Animation of a responsive web design wireframe"
                 />
             </div>
@@ -32,29 +32,29 @@
         <div class="carousel-track">
             <div class="carousel-group">
                 <img
-                    src="/src/lib/assets/cannon-marketing.svg"
+                    src="/cannon-marketing.svg"
                     alt="Cannon Marketing logo"
                 />
-                <img src="/src/lib/assets/k9-korral.svg" alt="K9 Korral logo" />
+                <img src="/k9-korral.svg" alt="K9 Korral logo" />
                 <img
-                    src="/src/lib/assets/setapart-tax.svg"
+                    src="/setapart-tax.svg"
                     alt="Setapart Tax logo"
                 />
                 <img
-                    src="/src/lib/assets/ohio-belting.svg"
+                    src="/ohio-belting.svg"
                     alt="Ohio Belting & Transmission logo"
                 />
                 <img
-                    src="/src/lib/assets/wilmo-pickems.svg"
+                    src="/wilmo-pickems.svg"
                     alt="Wilmo Pick 'Ems logo"
                 />
             </div>
             <div class="carousel-group" aria-hidden="true">
-                <img src="/src/lib/assets/cannon-marketing.svg" alt="" />
-                <img src="/src/lib/assets/k9-korral.svg" alt="" />
-                <img src="/src/lib/assets/setapart-tax.svg" alt="" />
-                <img src="/src/lib/assets/ohio-belting.svg" alt="" />
-                <img src="/src/lib/assets/wilmo-pickems.svg" alt="" />
+                <img src="/cannon-marketing.svg" alt="" />
+                <img src="/k9-korral.svg" alt="" />
+                <img src="/setapart-tax.svg" alt="" />
+                <img src="/ohio-belting.svg" alt="" />
+                <img src="/wilmo-pickems.svg" alt="" />
             </div>
         </div>
     </section>
@@ -65,7 +65,7 @@
                 <ServiceCard
                     phase="1"
                     ,
-                    icon="/src/lib/assets/web-icon.svg"
+                    icon="/web-icon.svg"
                     title="Web design"
                     subtitle="BUILD - Your digital foundation"
                     body="We build a sleek, mobile-optimized website tailored to reflect your brand identity and capture audience intreset immediately."
@@ -74,7 +74,7 @@
                 <ServiceCard
                     phase="2"
                     ,
-                    icon="/src/lib/assets/memory-icon.svg"
+                    icon="/memory-icon.svg"
                     title="Hosting & maintenance"
                     subtitle="PROTECT - Speed & Security"
                     body="We keep your infrastructure safe, fast, and always accessible with enterprise-grade hosting, active monitoring, and routine maintenance."
@@ -83,7 +83,7 @@
                 <ServiceCard
                     phase="3"
                     ,
-                    icon="/src/lib/assets/analytics-icon.svg"
+                    icon="/analytics-icon.svg"
                     title="Traffic analysis"
                     subtitle="MEASURE — Data & Optimization"
                     body="We monitor site traffic, analyze visitor pathways, and uncover key metrics to continuously refine user experience and increase leads."
@@ -92,7 +92,7 @@
                 <ServiceCard
                     phase="4"
                     ,
-                    icon="/src/lib/assets/reviews-icon.svg"
+                    icon="/reviews-icon.svg"
                     title="Social Media Marketing"
                     subtitle="GROW — Audience Acquisition"
                     body="We craft strategic social campaigns to attract new prospects, build online presence, and consistently direct targeted traffic back to your site."
@@ -210,7 +210,7 @@
             }
 
             .right {
-                background-image: url("/src/lib/assets/wavy-background.svg");
+                background-image: url("/wavy-background.svg");
                 height: 100%;
                 align-content: center;
             }

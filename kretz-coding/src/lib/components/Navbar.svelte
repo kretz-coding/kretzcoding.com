@@ -13,7 +13,7 @@
         <a href="/">
             <img
                 class="logo"
-                src="/src/lib/assets/logo.svg"
+                src="/logo.svg"
                 alt="Kretz Coding logo"
             />
         </a>
@@ -21,7 +21,7 @@
         <button class="menu-icon-container" onclick={toggleMenu}>
             <img
                 class="menu-icon"
-                src="/src/lib/assets/menu-icon.svg"
+                src="/menu-icon.svg"
                 alt="Menu"
             />
         </button>
