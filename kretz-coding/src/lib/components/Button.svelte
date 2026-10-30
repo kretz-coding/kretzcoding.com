@@ -1,16 +1,36 @@
 <script lang="ts">
+    interface Props {
+        href: string;
+        icon?: {position: "left" | "right" ; src: string} | null
+        isDisabled?: boolean;
+        label: string;
+        size: "s" | "m" | "l" | "xl";
+        style: "fill" | "outline";
+        variant: "primary" | "secondary" | "accent" | "negative";
+    }
+
     let {
-        label = "Button",
-        type = "filled",
-        href = "",
-        color = "",
-        icon = "",
-        alt= "",
-        ...restProps
-    } = $props();
+        href ="#",
+        isDisabled = false,
+        label="Button",
+        size = "m",
+        style="fill",
+        variant = "primary",
+        icon = null
+
+    }: Props = $props();
+
 </script>
 
-<a {href} class="button {type} {color}">{label} {#if icon != ""}<img src={icon} alt={alt}>{/if}</a>
+<a {href} class="button {style} {variant} {size}" class:disabled={isDisabled}>
+    {#if icon != null && icon.position == "left"}
+        <img src={icon.src} alt=""/>
+    {/if}
+    {label}
+    {#if icon != null && icon.position == "right"}
+        <img src={icon.src} alt=""/>
+    {/if}
+</a>
 
 <style>
     a.button {
@@ -20,33 +40,43 @@
         width: fit-content;
         display: grid;
         grid-auto-flow: column;
-    }
-
-    a.underlined {
-        color: var(--text-color);
-        margin: 0;
-        padding: 0;
-    }
-
-    a.filled {
         text-decoration: none;
+        justify-items: center;
+        align-items: center;
+    }
+
+    img {
+        align-self: center;
+        padding-block-end: -.5rem;
+    }
+
+    a.fill {
         background-color: var(--background-color);
         color: var(--text-color);
     }
 
-    a.outlined {
-        text-decoration: none;
+    a.outline {
         border: 2px solid var(--background-color);
         color: var(--background-color);
     }
 
     a.primary {
-        --background-color: var(--kc-blue);
-        --text-color: var(--kc-white);
+        --background-color: var(--primary);
+        --text-color: var(--on-primary);
     }
 
     a.secondary {
-        --background-color: var(--kc-light-blue);
-        --text-color: var(--kc-blue);
+        --background-color: var(--secondary);
+        --text-color: var(--on-secondary);
+    }
+
+    a.accent {
+        --background-color: var(--accent);
+        --text-color: var(--on-accent);
+    }
+
+    a.negative {
+        --background-color: var(--negative);
+        --text-color: var(--on-negative);
     }
 </style>
