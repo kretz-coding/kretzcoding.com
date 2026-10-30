@@ -1,6 +1,6 @@
 <div class="footer-container">
     <footer>
-        <div class="left">
+        <div class="cta">
             <img
                 class="logo"
                 src="/logo.svg"
@@ -12,7 +12,7 @@
                 grow your business.
             </p>
         </div>
-        <div class="right">
+        <div class="animation">
             <div class="browse">
                 <h3>Browse</h3>
                 <a href="/">Home</a>
@@ -114,12 +114,12 @@
         gap: 2rem;
     }
 
-    .left {
+    .cta {
         display: grid;
         justify-items: center;
     }
 
-    .right {
+    .animation {
         display: grid;
         justify-items: center;
         gap: 1.5rem;
@@ -194,7 +194,7 @@
             padding-inline: 4rem;
         }
 
-        .left {
+        .cta {
             justify-items: start;
             align-content: center;
 
@@ -203,7 +203,7 @@
             }
         }
 
-        .right {
+        .animation {
             grid-template-columns: repeat(3, 1fr);
             justify-content: right;
         }
