@@ -26,7 +26,7 @@
         href={button_href}
         type="underlined"
         color="primary"
-        icon="/src/lib/assets/chevron-right.svg"
+        icon="/chevron-right.svg"
     />
 </div>
 
