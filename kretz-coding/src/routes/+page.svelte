@@ -70,7 +70,7 @@
         <section class="clients">
             <h2>Trusted by local businesses like yours</h2>
             <div class="testimonials">
-                <div class="testimonial">
+                <div id="k9-korral" class="testimonial">
                     <p class="quote">"Short, specific quote about the result or the experience of working with you.”</p>
                     <div class="company-info">
                         <div class="person-info">
@@ -100,6 +100,47 @@
                         <img class="logo" src="/wilmo-pickems.svg" alt="Wilmo's Pick 'Ems logo" />
                     </div>
                 </div>
+            </div>
+        </section>
+    </div>
+    <div class="about-container">
+        <section class="about">
+            <div class="info">
+                <img class="profile-picture" src="/kevin.jpeg" alt="Kevin">
+                <h2>Web design, plus the nerdy stuff.</h2>
+                <h3>I'm Kevin, a solo web designer since 2014 with a background in IT.</h3>
+            </div>
+            <div class="tools+skills">
+                <div class="tools">
+                    <h4>I build with</h4>
+                    <ul class="tools">
+                        <li class="tag">WordPress</li>
+                        <li class="tag">Shopify</li>
+                        <li class="tag">Svelte</li>
+                        <li class="tag">HTML / CSS</li>
+                        <li class="tag">React</li>
+                        <li class="tag">JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <h4>I also handle</h4>
+                    <ul class="skills">
+                        <li class="tag">Domains</li>
+                        <li class="tag">Hosting</li>
+                        <li class="tag">DNS</li>
+                        <li class="tag">Email</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="buttons">
+                <Button
+                        label="Start a project"
+                        href="/contact"
+                        style="fill"
+                        variant="accent"
+                        size="m"
+                />
+                <a class="learn-more" href="/about">More about me <img src="/chevron-right.svg"></a>
             </div>
         </section>
     </div>
@@ -212,7 +253,7 @@
                 max-width: 10rem;
                 max-height: 5rem;
                 justify-self: end;
-                align-self: center;
+                align-self: end;
             }
 
             .testimonials {
@@ -247,5 +288,127 @@
             }
         }
 
+        @container clients (min-width: 768px) {
+            .clients {
+                padding: 4rem ;
+            }
+
+            .testimonials {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @container clients (min-width: 1200px) {
+            #k9-korral {
+                grid-row: span 2;
+            }
+        }
+    }
+
+    .about-container{
+        container: about / inline-size;
+
+        .about {
+            background-color: var(--primary-container);
+            display: grid;
+        }
+
+        .info {
+            display: grid;
+        }
+
+        .profile-picture{
+            max-width: 10rem;
+            border-radius: 100%;
+            justify-self: center;
+            box-shadow: var(--emphasized);
+        }
+
+        h2 {
+            margin-block: 2rem 1rem;
+        }
+        h3 {
+            font-weight: 400;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            justify-self: center;
+            margin-block: 2rem 1rem;
+        }
+
+        ul {
+            list-style: none;
+            display: grid;
+        }
+
+        ul.tools {
+            grid-template-columns: repeat(3, auto);
+            width: fit-content;
+            justify-self: center;
+            gap: 1rem;
+        }
+        ul.skills {
+            grid-template-columns: repeat(4, auto);
+            width: fit-content;
+            justify-self: center;
+            gap: 1rem;
+        }
+
+        .tag {
+            background-color: var(--primary);
+            color: var(--on-primary);
+            width: fit-content;
+            border-radius: 0.5rem;
+            padding: 0.25rem 0.75rem;
+            font-weight: 500;
+            align-content: center;
+            justify-content: center;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .buttons {
+            padding-block-start: 5rem;
+            display: grid;
+            grid-auto-flow: column;
+            justify-self: center;
+            gap: 1rem;
+        }
+
+        .learn-more {
+            display: grid;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-items: center;
+            width: fit-content;
+            color: var(--on-surface);
+            font-weight: 500;
+        }
+
+        @container about (min-width: 768px) {
+            .about {
+                padding: 4rem ;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+
+            .about > * {
+                padding-inline: 2rem;
+                align-self: center;
+            }
+
+            .info {
+                border-right: 1px solid var(--outline-variant);
+                padding-inline: 1rem;
+                text-align: center;
+                width: 100%;
+            }
+
+            .buttons {
+                align-items: center;
+                padding: 0;
+            }
+        }
     }
 </style>
