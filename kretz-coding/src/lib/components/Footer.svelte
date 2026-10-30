@@ -157,7 +157,7 @@
     }
 
     a {
-        color: --var(--kc-white);
+        color: var(--kc-white);
     }
 
     .social-media {
