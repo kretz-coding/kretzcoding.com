@@ -47,12 +47,17 @@
 
     img {
         align-self: center;
-        padding-block-end: -.5rem;
+        margin-inline-end: -.5rem;
     }
 
     a.fill {
         background-color: var(--background-color);
         color: var(--text-color);
+        box-shadow: var(--emphasized);
+    }
+
+    a.fill:hover {
+        box-shadow: var(--emphasized-hover);
     }
 
     a.outline {
