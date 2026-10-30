@@ -6,22 +6,23 @@
 <main>
     <div class="hero-container">
         <section class="hero">
-            <div class="left">
+            <div class="cta">
                 <h1>Your website. <br /> Always evolving.</h1>
                 <p>
                     Ensuring your website keeps up with the changing needs of your
                     business.
                 </p>
-                <Button
-                    label="Upgrade now"
-                    href="/contact"
-                    style="fill"
-                    variant="accent"
-                    isDisabled={false}
-                    size="m"
-                />
+                <div class="button-container">
+                    <Button
+                            label="Upgrade now"
+                            href="/contact"
+                            style="fill"
+                            variant="accent"
+                            size="m"
+                    />
+                </div>
             </div>
-            <div class="right">
+            <div class="animation">
                 <img
                     class="animation"
                     src="/animation.svg"
@@ -63,6 +64,44 @@
                 />
             </div>
         </section>
+
+    </div>
+    <div class="clients-container">
+        <section class="clients">
+            <h2>Trusted by local businesses like yours</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="quote">"Short, specific quote about the result or the experience of working with you.”</p>
+                    <div class="company-info">
+                        <div class="person-info">
+                            <p class="name">Mark Shambor</p>
+                            <p class="position">Owner, K9 Korral</p>
+                        </div>
+                        <img class="logo" src="/k9-korral.svg" alt="K9 Korral logo" />
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="quote">"Short, specific quote about the result or the experience of working with you.”</p>
+                    <div class="company-info">
+                        <div class="person-info">
+                            <p class="name">Ben Cannon</p>
+                            <p class="position">Owner, Cannon Marketing</p>
+                        </div>
+                        <img class="logo" src="/cannon-marketing.svg" alt="Cannon Marketing logo" />
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="quote">"Short, specific quote about the result or the experience of working with you.”</p>
+                    <div class="company-info">
+                        <div class="person-info">
+                            <p class="name">Joe Wilmoth</p>
+                            <p class="position">Owner, Wilmo's Pick 'Ems</p>
+                        </div>
+                        <img class="logo" src="/wilmo-pickems.svg" alt="Wilmo's Pick 'Ems logo" />
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </main>
 
@@ -79,23 +118,20 @@
             display: grid;
             justify-content: center;
             gap: 2rem;
-            background-color: #1d1d1d;
+            background-color: var(--surface-container-low);
             color: var(--kc-light-blue);
+            padding: 4rem 2rem;
 
             p {
-                max-width: 40ch;
-                padding-block-end: 1rem;
+                padding-block: 2rem;
             }
 
-            h1 {
-                font-size: 3rem;
-                font-weight: 700;
-                line-height: 1.2;
-            }
+            .cta {
+                display: grid;
 
-            .left {
-                padding: 3rem;
-                justify-items: center;
+                .button-container {
+                    justify-self: center;
+                }
             }
         }
 
@@ -105,28 +141,35 @@
                 justify-content: center;
                 align-items: center;
                 gap: 4rem;
-                padding-inline-start: 4rem;
+                padding: 0 0 0 4rem;
 
-                .left {
+                .cta {
                     justify-self: start;
+                    padding: 3rem;
+
+                    .button-container {
+                        justify-self: start;
+                    }
                 }
 
-                .right {
+                .animation {
                     background-image: url("/wavy-background.svg");
                     height: 100%;
                     align-content: center;
+
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
     }
 
-
-
     .services-container {
         container: services / inline-size;
 
         .services {
-            background-color: #1d1d1d;
+            background-color: var(--primary-container);
             color: var(--kc-light-blue);
             display: grid;
             padding: 4rem 2rem;
@@ -137,11 +180,15 @@
             gap: 2rem;
         }
 
-        h2 {
-            font-size: 2.5rem;
+        p {
+            margin-block: 1rem 3rem;
         }
 
         @container services (min-width: 768px) {
+            .services {
+                padding: 4rem ;
+            }
+
             .card-container {
                 grid-template-columns: 1fr 1fr;
             }
@@ -149,8 +196,56 @@
 
         @container services (min-width: 1200px) {
             .card-container {
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(3, 1fr);
             }
         }
+    }
+
+    .clients-container {
+        container: clients / inline-size;
+
+        .clients {
+            display: grid;
+            gap: 3rem;
+
+            img {
+                max-width: 10rem;
+                max-height: 5rem;
+                justify-self: end;
+                align-self: center;
+            }
+
+            .testimonials {
+                display: grid;
+                gap: 2rem;
+            }
+
+            .testimonial {
+                display: grid;
+                padding: 2rem;
+                border-radius: 3rem;
+                gap: 1rem;
+                border-radius: 1.5rem;
+                background-color: var(--surface-bright);
+            }
+            .quote {
+                margin-block-end: 1rem;
+                font-size: 1.5rem;
+            }
+
+            .company-info {
+                display: grid;
+                grid-auto-flow: column;
+            }
+
+            .person-info {
+                align-self: end;
+            }
+
+            .name {
+                font-weight: 700;
+            }
+        }
+
     }
 </style>
