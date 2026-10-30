@@ -35,8 +35,9 @@
             <Button
                 href="/contact"
                 label="Contact us"
-                type="filled"
-                color="primary"
+                style="fill"
+                variant="primary"
+                size="m"
             />
         </div>
     </nav>
@@ -52,7 +53,7 @@
     }
 
     nav {
-        background-color: var(--kc-gray);
+        background-color: var(--surface);
         display: grid;
         grid-template-columns: 1fr auto;
         align-items: center;
@@ -61,7 +62,7 @@
 
     a {
         text-decoration: none;
-        color: var(--kc-white);
+        color: var(--on-surface);
     }
 
     .logo {

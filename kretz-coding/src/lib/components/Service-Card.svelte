@@ -8,7 +8,6 @@
         subtitle="",
         body="",
         button_href="",
-        ...restProps
     } = $props();
 </script>
 <div class="card">
@@ -22,11 +21,14 @@
         <p class="body">{body}</p>
     </div>
     <Button
-        label="Learn more"
-        href={button_href}
-        type="underlined"
-        color="primary"
-        icon="/chevron-right.svg"
+            variant="secondary"
+            href={button_href}
+            label="Learn more"
+            style="fill"
+            isDisabled={false}
+            size="m"
+            icon={{position: "right", src: "/chevron-right.svg"}}
+
     />
 </div>
 
