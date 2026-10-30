@@ -1,13 +1,72 @@
 :root {
-    --kc-gray: hsl(0, 0%, 20%);
-    --kc-blue: hsl(213, 90%, 51%); /* #1277f3 */
-    --kc-white: hsl(0, 0%, 100%);
-    --kc-light-blue: hsl(203, 100%, 95%);
+    --blue-10: oklch(34.97% 0.2011 258.33);
+    --blue-20: oklch(43.47% 0.2011 258.33);
+    --blue-30: oklch(48.61% 0.2011 258.33);
+    --blue-40: oklch(53.99% 0.2011 258.33);
+    --blue-50: oklch(64.73% 0.2011 258.33);
+    --blue-60: oklch(70.24% 0.2011 258.33);
+    --blue-70: oklch(76.02% 0.2011 258.33);
+    --blue-80: oklch(81.70% 0.2011 258.33);
+    --blue-90: oklch(91.98% 0.2011 258.33);
+    --blue-100: oklch(96.54% 0.2011 258.33);
 
-    font-family: 'Quicksand', sans-serif;
+    --gray-0: oklch(0% 0 0);
+    --gray-10: oklch(23.08% 0 0);
+    --gray-20: oklch(26.86% 0 0);
+    --gray-30: oklch(31.71% 0 0);
+    --gray-40: oklch(36.77% 0 0);
+    --gray-50: oklch(44.59% 0 0);
+    --gray-60: oklch(54.52% 0 0);
+    --gray-70: oklch(65.34% 0 0);
+    --gray-80: oklch(76.36% 0 0);
+    --gray-90: oklch(86.07% 0 0);
+    --gray-100: oklch(100% 0 0);
+
+    --primary: var(--gray-90);
+    --on-primary: var(--gray-0);
+    --secondary: var(--gray-20);
+    --on-secondary: var(--gray-90);
+    --accent: var(--blue-40);
+    --on-accent: var(--blue-100);
+    --negative: oklch(50.6% 0.1927 27.7);
+    --on-negative: var(--gray-100);
+
+    --primary-container: var(--gray-20);
+    --on-primary-container: var(--gray-90);
+    --secondary-container: var(--gray-10);
+    --on-secondary-container: var(--gray-90);
+    --tertiary-container: var(--gray-20);
+    --on-tertiary-container: var(--gray-20);
+    --quiet-container: oklch(0% 0 0) / 0%;
+    --on-quiet-container: var(--gray-20);
+    --negative-container: oklch(99% 0.17 27.379);
+    --on-negative-container: oklch(41.7% 0.17 27.379);
+
+    --surface-dim: var(--gray-10);
+    --surface: var(--gray-20);
+    --surface-bright: var(--gray-30);
+    --surface-varaiant: oklch(39.6% 0.015 275.725);
+
+    --on-surface: oklch(91.5% 0.009 286.212);
+    --on-surface-variant: oklch(82.9% 0.014 281.517);
+
+    --surface-container-lowest: oklch(16.4% 0.011 268.006);
+    --surface-container-low: oklch(22.4% 0.012 277.931);
+    --surface-container: oklch(24.1% 0.012 278.01);
+    --surface-container-high: oklch(28.5% 0.01 268.336);
+    --surface-container-highest: oklch(32.6% 0.011 278.26);
+
+    --outline: oklch(65.5% 0.013 280.953);
+    --outline-variant: oklch(39.6% 0.015 275.725);
+
+
+    margin: 0;
+    padding: 0;
+
+    font-family: Quicksand, sans-serif;
 }
 
 body {
-    padding: 0;
-    margin: 0;
+    background-color: var(--surface);
+    color: var(--on-surface);
 }
