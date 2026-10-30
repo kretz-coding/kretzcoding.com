@@ -117,6 +117,7 @@
     .cta {
         display: grid;
         justify-items: center;
+        gap: 1rem;
     }
 
     .animation {
