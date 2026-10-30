@@ -49,7 +49,7 @@
         top: 0;
         z-index: 1000;
         container-type: inline-size;
-        border-bottom: 2px solid hsla(0, 0%, 0%, .5);
+        border-bottom: 2px solid hsla(0, 0%, 0%, .25);
     }
 
     nav {
@@ -88,9 +88,9 @@
         justify-items: center;
         justify-self: center;
         grid-column: span 2;
-        gap: 1rem;
+        gap: 2rem;
         width: 100%;
-        margin-block-end: 1rem;
+        margin-block-end: 2rem;
     }
 
     .nav-menu.active {
