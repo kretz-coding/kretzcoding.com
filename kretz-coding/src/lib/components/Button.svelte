@@ -43,6 +43,7 @@
         text-decoration: none;
         justify-items: center;
         align-items: center;
+        height: fit-content;
     }
 
     img {
