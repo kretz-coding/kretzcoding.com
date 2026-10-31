@@ -34,7 +34,7 @@
         <div class="nav-menu" class:active={isMenuOpen}>
             <Button
                 href="/contact"
-                label="Contact us"
+                label="Get in touch"
                 style="fill"
                 variant="primary"
                 size="m"
