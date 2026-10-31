@@ -22,8 +22,8 @@
     --gray-90: oklch(86.07% 0 0);
     --gray-100: oklch(100% 0 0);
 
-    --primary: var(--gray-90);
-    --on-primary: var(--gray-0);
+    --primary: var(--gray-100);
+    --on-primary: var(--blue-10);
     --secondary: var(--gray-20);
     --on-secondary: var(--gray-90);
     --accent: var(--blue-40);
