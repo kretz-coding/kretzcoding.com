@@ -1,0 +1,281 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" role="img" aria-labelledby="t d">
+<title id="t">Website hosting and maintenance dashboard</title>
+<desc id="d">An animated site health dashboard shows uptime, a daily cloud backup completing, and software updates being checked off, beside a stack of servers connected to the cloud.</desc>
+<defs>
+<filter id="shadow" x="-60%" y="-60%" width="220%" height="240%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#323232" flood-opacity="0.18"/></filter>
+</defs>
+<style>
+@keyframes pop22{0%,18.333%{opacity:0;transform:scale(.85)}24.167%,100%{opacity:1;transform:none}}
+.pop22{animation:pop22 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop6{0%,5.0%{opacity:0;transform:scale(.85)}10.833%,100%{opacity:1;transform:none}}
+.pop6{animation:pop6 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop68{0%,56.667%{opacity:0;transform:scale(.85)}62.5%,100%{opacity:1;transform:none}}
+.pop68{animation:pop68 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop73{0%,60.833%{opacity:0;transform:scale(.85)}66.667%,100%{opacity:1;transform:none}}
+.pop73{animation:pop73 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop78{0%,65.0%{opacity:0;transform:scale(.85)}70.833%,100%{opacity:1;transform:none}}
+.pop78{animation:pop78 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop86{0%,71.667%{opacity:0;transform:scale(.85)}77.5%,100%{opacity:1;transform:none}}
+.pop86{animation:pop86 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes slide12{0%,10.0%{opacity:0;transform:translateX(40px)}15.833%,100%{opacity:1;transform:none}}
+.slide12{animation:slide12 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes slide15{0%,12.5%{opacity:0;transform:translateX(40px)}18.333%,100%{opacity:1;transform:none}}
+.slide15{animation:slide15 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes slide18{0%,15.0%{opacity:0;transform:translateX(40px)}20.833%,100%{opacity:1;transform:none}}
+.slide18{animation:slide18 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up10{0%,8.333%{opacity:0;transform:translateY(14px)}14.167%,100%{opacity:1;transform:none}}
+.up10{animation:up10 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up12{0%,10.0%{opacity:0;transform:translateY(14px)}15.833%,100%{opacity:1;transform:none}}
+.up12{animation:up12 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up24{0%,20.0%{opacity:0;transform:translateY(14px)}25.833%,100%{opacity:1;transform:none}}
+.up24{animation:up24 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up40{0%,33.333%{opacity:0;transform:translateY(14px)}39.167%,100%{opacity:1;transform:none}}
+.up40{animation:up40 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up60{0%,50.0%{opacity:0;transform:translateY(14px)}55.833%,100%{opacity:1;transform:none}}
+.up60{animation:up60 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up63{0%,52.5%{opacity:0;transform:translateY(14px)}58.333%,100%{opacity:1;transform:none}}
+.up63{animation:up63 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes bar0{0%,10.833%{opacity:0;transform:scaleY(.2)}12.917%,100%{opacity:1;transform:none}}
+.bar0{animation:bar0 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar1{0%,11.167%{opacity:0;transform:scaleY(.2)}13.25%,100%{opacity:1;transform:none}}
+.bar1{animation:bar1 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar2{0%,11.5%{opacity:0;transform:scaleY(.2)}13.583%,100%{opacity:1;transform:none}}
+.bar2{animation:bar2 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar3{0%,11.833%{opacity:0;transform:scaleY(.2)}13.917%,100%{opacity:1;transform:none}}
+.bar3{animation:bar3 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar4{0%,12.167%{opacity:0;transform:scaleY(.2)}14.25%,100%{opacity:1;transform:none}}
+.bar4{animation:bar4 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar5{0%,12.5%{opacity:0;transform:scaleY(.2)}14.583%,100%{opacity:1;transform:none}}
+.bar5{animation:bar5 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar6{0%,12.833%{opacity:0;transform:scaleY(.2)}14.917%,100%{opacity:1;transform:none}}
+.bar6{animation:bar6 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar7{0%,13.167%{opacity:0;transform:scaleY(.2)}15.25%,100%{opacity:1;transform:none}}
+.bar7{animation:bar7 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar8{0%,13.5%{opacity:0;transform:scaleY(.2)}15.583%,100%{opacity:1;transform:none}}
+.bar8{animation:bar8 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar9{0%,13.833%{opacity:0;transform:scaleY(.2)}15.917%,100%{opacity:1;transform:none}}
+.bar9{animation:bar9 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar10{0%,14.167%{opacity:0;transform:scaleY(.2)}16.25%,100%{opacity:1;transform:none}}
+.bar10{animation:bar10 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar11{0%,14.5%{opacity:0;transform:scaleY(.2)}16.583%,100%{opacity:1;transform:none}}
+.bar11{animation:bar11 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar12{0%,14.833%{opacity:0;transform:scaleY(.2)}16.917%,100%{opacity:1;transform:none}}
+.bar12{animation:bar12 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar13{0%,15.167%{opacity:0;transform:scaleY(.2)}17.25%,100%{opacity:1;transform:none}}
+.bar13{animation:bar13 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar14{0%,15.5%{opacity:0;transform:scaleY(.2)}17.583%,100%{opacity:1;transform:none}}
+.bar14{animation:bar14 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar15{0%,15.833%{opacity:0;transform:scaleY(.2)}17.917%,100%{opacity:1;transform:none}}
+.bar15{animation:bar15 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar16{0%,16.167%{opacity:0;transform:scaleY(.2)}18.25%,100%{opacity:1;transform:none}}
+.bar16{animation:bar16 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar17{0%,16.5%{opacity:0;transform:scaleY(.2)}18.583%,100%{opacity:1;transform:none}}
+.bar17{animation:bar17 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar18{0%,16.833%{opacity:0;transform:scaleY(.2)}18.917%,100%{opacity:1;transform:none}}
+.bar18{animation:bar18 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar19{0%,17.167%{opacity:0;transform:scaleY(.2)}19.25%,100%{opacity:1;transform:none}}
+.bar19{animation:bar19 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar20{0%,17.5%{opacity:0;transform:scaleY(.2)}19.583%,100%{opacity:1;transform:none}}
+.bar20{animation:bar20 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar21{0%,17.833%{opacity:0;transform:scaleY(.2)}19.917%,100%{opacity:1;transform:none}}
+.bar21{animation:bar21 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar22{0%,18.167%{opacity:0;transform:scaleY(.2)}20.25%,100%{opacity:1;transform:none}}
+.bar22{animation:bar22 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar23{0%,18.5%{opacity:0;transform:scaleY(.2)}20.583%,100%{opacity:1;transform:none}}
+.bar23{animation:bar23 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar24{0%,18.833%{opacity:0;transform:scaleY(.2)}20.917%,100%{opacity:1;transform:none}}
+.bar24{animation:bar24 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar25{0%,19.167%{opacity:0;transform:scaleY(.2)}21.25%,100%{opacity:1;transform:none}}
+.bar25{animation:bar25 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar26{0%,19.5%{opacity:0;transform:scaleY(.2)}21.583%,100%{opacity:1;transform:none}}
+.bar26{animation:bar26 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar27{0%,19.833%{opacity:0;transform:scaleY(.2)}21.917%,100%{opacity:1;transform:none}}
+.bar27{animation:bar27 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar28{0%,20.167%{opacity:0;transform:scaleY(.2)}22.25%,100%{opacity:1;transform:none}}
+.bar28{animation:bar28 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar29{0%,20.5%{opacity:0;transform:scaleY(.2)}22.583%,100%{opacity:1;transform:none}}
+.bar29{animation:bar29 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar30{0%,20.833%{opacity:0;transform:scaleY(.2)}22.917%,100%{opacity:1;transform:none}}
+.bar30{animation:bar30 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar31{0%,21.167%{opacity:0;transform:scaleY(.2)}23.25%,100%{opacity:1;transform:none}}
+.bar31{animation:bar31 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar32{0%,21.5%{opacity:0;transform:scaleY(.2)}23.583%,100%{opacity:1;transform:none}}
+.bar32{animation:bar32 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar33{0%,21.833%{opacity:0;transform:scaleY(.2)}23.917%,100%{opacity:1;transform:none}}
+.bar33{animation:bar33 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar34{0%,22.167%{opacity:0;transform:scaleY(.2)}24.25%,100%{opacity:1;transform:none}}
+.bar34{animation:bar34 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar35{0%,22.5%{opacity:0;transform:scaleY(.2)}24.583%,100%{opacity:1;transform:none}}
+.bar35{animation:bar35 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar36{0%,22.833%{opacity:0;transform:scaleY(.2)}24.917%,100%{opacity:1;transform:none}}
+.bar36{animation:bar36 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar37{0%,23.167%{opacity:0;transform:scaleY(.2)}25.25%,100%{opacity:1;transform:none}}
+.bar37{animation:bar37 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar38{0%,23.5%{opacity:0;transform:scaleY(.2)}25.583%,100%{opacity:1;transform:none}}
+.bar38{animation:bar38 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes bar39{0%,23.833%{opacity:0;transform:scaleY(.2)}25.917%,100%{opacity:1;transform:none}}
+.bar39{animation:bar39 12.0s ease-out infinite both;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes master{0%{opacity:0}4.167%{opacity:1}94.167%{opacity:1}100%{opacity:0}}
+.master{animation:master 12s ease-in-out infinite both}
+@keyframes line{0%,24.167%{stroke-dashoffset:1}33.333%,100%{stroke-dashoffset:0}}
+.line{stroke-dasharray:1;animation:line 12s ease-in-out infinite both}
+@keyframes area{0%,31.667%{opacity:0}35.833%,100%{opacity:1}}
+.area{animation:area 12s linear infinite both}
+@keyframes bkbar{0%,35.0%{transform:scaleX(0)}50.0%,100%{transform:scaleX(1)}}
+.bkbar{animation:bkbar 12s linear infinite both;transform-box:fill-box;transform-origin:0% 50%}
+@keyframes bk1{0%,49.167%{opacity:1}51.25%,100%{opacity:0}}
+.bk1{opacity:0;animation:bk1 12s linear infinite both}
+@keyframes lab1{0%,31.667%{opacity:1}33.333%,100%{opacity:0}}
+@keyframes lab2{0%,32.5%{opacity:0}34.167%,51.667%{opacity:1}53.333%,100%{opacity:0}}
+@keyframes lab3{0%,52.5%{opacity:0}54.167%,70.833%{opacity:1}72.5%,100%{opacity:0}}
+@keyframes lab4{0%,71.667%{opacity:0}73.333%,100%{opacity:1}}
+.lab1,.lab2,.lab3{opacity:0}
+.lab1{animation:lab1 12s linear infinite both}.lab2{animation:lab2 12s linear infinite both}.lab3{animation:lab3 12s linear infinite both}.lab4{animation:lab4 12s linear infinite both}
+@keyframes pulse{0%{opacity:.6;transform:scale(1)}100%{opacity:0;transform:scale(3.2)}}
+.pulse{animation:pulse 2s ease-out infinite;transform-box:fill-box;transform-origin:50% 50%}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.blink{animation:blink 1.5s ease-in-out infinite}
+@keyframes uparr{0%{opacity:0;transform:translateY(8px)}30%,70%{opacity:1}100%{opacity:0;transform:translateY(-8px)}}
+.uparr{animation:uparr 1.5s ease-in-out infinite}
+@keyframes march{to{stroke-dashoffset:-18}}
+.march{animation:march 1s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+.rot{animation:rot 6s linear infinite;transform-box:fill-box;transform-origin:50% 50%}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.float{animation:float 4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.lab4{opacity:1}.pulse{opacity:0}.bk1{opacity:0}}
+</style>
+
+<g class="master">
+  <circle cx="320" cy="238" r="205" fill="#0367E0" opacity="0.07"/>
+  <circle cx="320" cy="238" r="150" fill="#0367E0" opacity="0.06"/>
+
+  <g class="float" style="animation-delay:-1s"><path d="M16 196v18M7 205h18" stroke="#0367E0" stroke-width="3" stroke-linecap="round" opacity="0.55"/></g>
+  <g class="float" style="animation-delay:-2.4s"><path d="M618 84v14M611 91h14" stroke="#323232" stroke-width="3" stroke-linecap="round" opacity="0.3"/></g>
+  <g class="float" style="animation-delay:-0.6s"><path d="M612 388v12M606 394h12" stroke="#0367E0" stroke-width="3" stroke-linecap="round" opacity="0.4"/></g>
+
+  <!-- stage label -->
+  <rect x="40" y="36" width="136" height="22" rx="11" fill="#E6F0FC"/>
+  <text class="lab1" x="56" y="51" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0367E0">Monitoring</text>
+  <text class="lab2" x="56" y="51" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0367E0">Backing up</text>
+  <text class="lab3" x="56" y="51" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0367E0">Updating</text>
+  <text class="lab4" x="56" y="51" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0367E0">All systems go</text>
+
+  <!-- dashboard window -->
+  <g class="pop6">
+    <rect x="40" y="70" width="400" height="290" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+    <rect x="40" y="70" width="400" height="290" rx="16" fill="none" stroke="#323232" stroke-opacity="0.14" stroke-width="1.5"/>
+    <path d="M40 104h400" stroke="#323232" stroke-opacity="0.1" stroke-width="1.5"/>
+    <circle cx="62" cy="87" r="4.5" fill="#323232" fill-opacity="0.28"/>
+    <circle cx="77" cy="87" r="4.5" fill="#323232" fill-opacity="0.18"/>
+    <circle cx="92" cy="87" r="4.5" fill="#323232" fill-opacity="0.1"/>
+    <rect x="112" y="78" width="170" height="18" rx="9" fill="#F2F2F2"/>
+    <rect x="123" y="84" width="7" height="6" rx="1.5" fill="#323232" fill-opacity="0.45"/>
+    <text x="136" y="91" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.5" fill="#323232" fill-opacity="0.55">yourbusiness.com</text>
+  </g>
+
+  <!-- header -->
+  <g class="up10">
+    <text x="62" y="131" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#323232">Site health</text>
+    <rect x="352" y="116" width="66" height="20" rx="10" fill="#E6F0FC"/>
+    <circle class="pulse" cx="366" cy="126" r="3.5" fill="#0367E0"/>
+    <circle cx="366" cy="126" r="3.5" fill="#0367E0"/>
+    <text x="376" y="130" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#0367E0">Online</text>
+  </g>
+
+  <!-- uptime strip -->
+  <g class="up12">
+    <text x="62" y="160" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#323232" fill-opacity="0.6">Uptime</text>
+    <text x="418" y="160" text-anchor="end" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#323232" fill-opacity="0.4">Past 40 days</text>
+  </g>
+  <rect class="bar0" x="62.0" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar1" x="70.9" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar2" x="79.8" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar3" x="88.7" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar4" x="97.6" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar5" x="106.5" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar6" x="115.4" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar7" x="124.3" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar8" x="133.2" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar9" x="142.1" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar10" x="151.0" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar11" x="159.9" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar12" x="168.8" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar13" x="177.7" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar14" x="186.6" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar15" x="195.5" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar16" x="204.4" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar17" x="213.3" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar18" x="222.2" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar19" x="231.1" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar20" x="240.0" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar21" x="248.9" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar22" x="257.8" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar23" x="266.7" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar24" x="275.6" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar25" x="284.5" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar26" x="293.4" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar27" x="302.3" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar28" x="311.2" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar29" x="320.1" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar30" x="329.0" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar31" x="337.9" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar32" x="346.8" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar33" x="355.7" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar34" x="364.6" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar35" x="373.5" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar36" x="382.4" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar37" x="391.3" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar38" x="400.2" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/><rect class="bar39" x="409.1" y="170" width="6.2" height="26" rx="2" fill="#0367E0"/>
+
+  <!-- response time -->
+  <g class="up24">
+    <rect x="62" y="290" width="356" height="54" rx="9" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+    <text x="76" y="311" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#323232" fill-opacity="0.6">Response time</text>
+    <rect x="76" y="320" width="50" height="5" rx="2.5" fill="#323232" fill-opacity="0.2"/>
+  </g>
+  <g class="area"><path d="M150 324L178 316L206 320L234 308L262 314L290 304L318 312L346 302L374 308L404 298V336H150Z" fill="#0367E0" fill-opacity="0.12"/></g>
+  <path class="line" pathLength="1" d="M150 324L178 316L206 320L234 308L262 314L290 304L318 312L346 302L374 308L404 298" fill="none" stroke="#0367E0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- backup card -->
+  <g class="up40">
+    <rect x="62" y="208" width="172" height="70" rx="9" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+    <rect x="74" y="219" width="22" height="22" rx="6" fill="#0367E0" fill-opacity="0.18"/>
+    <path d="M85 236V226M80 230.5L85 225.5L90 230.5" fill="none" stroke="#0367E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="104" y="228" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#323232">Daily backup</text>
+    <rect x="74" y="258" width="148" height="6" rx="3" fill="#323232" fill-opacity="0.12"/>
+    <rect class="bkbar" x="74" y="258" width="148" height="6" rx="3" fill="#0367E0"/>
+    <text class="bk1" x="104" y="241" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9" fill="#323232" fill-opacity="0.55">Saving to cloud…</text>
+  </g>
+  <g class="up60">
+    <text x="104" y="241" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9" fill="#323232" fill-opacity="0.55">Saved</text>
+    <circle cx="210" cy="230" r="8" fill="#0367E0"/>
+    <path d="M206 230.3l3 3 5-5.6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- updates card -->
+  <g class="up63">
+    <rect x="246" y="208" width="172" height="70" rx="9" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+    <text x="258" y="226" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#323232">Updates</text>
+    <circle cx="264" cy="240" r="5.5" fill="#FFFFFF" stroke="#323232" stroke-opacity="0.3" stroke-width="1.4"/>
+    <rect x="277" y="237.5" width="90" height="5" rx="2.5" fill="#323232" fill-opacity="0.22"/>
+    <g class="pop68"><circle cx="264" cy="240" r="5.5" fill="#0367E0"/><path d="M261.2 240.2l2.1 2.1 3.6-4" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <circle cx="264" cy="254" r="5.5" fill="#FFFFFF" stroke="#323232" stroke-opacity="0.3" stroke-width="1.4"/>
+    <rect x="277" y="251.5" width="70" height="5" rx="2.5" fill="#323232" fill-opacity="0.22"/>
+    <g class="pop73"><circle cx="264" cy="254" r="5.5" fill="#0367E0"/><path d="M261.2 254.2l2.1 2.1 3.6-4" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <circle cx="264" cy="268" r="5.5" fill="#FFFFFF" stroke="#323232" stroke-opacity="0.3" stroke-width="1.4"/>
+    <rect x="277" y="265.5" width="80" height="5" rx="2.5" fill="#323232" fill-opacity="0.22"/>
+    <g class="pop78"><circle cx="264" cy="268" r="5.5" fill="#0367E0"/><path d="M261.2 268.2l2.1 2.1 3.6-4" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+  </g>
+
+  <!-- cloud + servers -->
+  <g class="pop22">
+    <g transform="translate(540 130)">
+      <path d="M-30 18C-46 18-48-6-30-8C-28-28 4-32 10-14C26-20 42-4 30 18Z" fill="#E6F0FC" stroke="#0367E0" stroke-width="2.5" stroke-linejoin="round"/>
+      <g class="uparr"><path d="M0 9V-7M-7 0L0-7L7 0" fill="none" stroke="#0367E0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+    </g>
+  </g>
+  <path class="march" d="M540 154V194" stroke="#0367E0" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 5" fill="none"/>
+  <g class="slide12">
+    <rect x="476" y="196" width="128" height="44" rx="10" fill="#323232" filter="url(#shadow)"/>
+    <rect x="490" y="208" width="62" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.16"/>
+    <rect x="490" y="222" width="44" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.16"/>
+    <circle class="blink" style="animation-delay:0s" cx="576" cy="211" r="3.5" fill="#4D96EB"/>
+    <circle class="blink" style="animation-delay:-0.7s" cx="590" cy="211" r="3.5" fill="#0367E0"/>
+    <rect x="566" y="223" width="26" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.16"/>
+  </g>
+  <g class="slide15">
+    <rect x="476" y="248" width="128" height="44" rx="10" fill="#323232" filter="url(#shadow)"/>
+    <rect x="490" y="260" width="62" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.16"/>
+    <rect x="490" y="274" width="44" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.16"/>
+    <circle class="blink" style="animation-delay:-0.5s" cx="576" cy="263" r="3.5" fill="#4D96EB"/>
+    <circle class="blink" style="animation-delay:-1.2s" cx="590" cy="263" r="3.5" fill="#0367E0"/>
+    <rect x="566" y="275" width="26" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.16"/>
+  </g>
+  <g class="slide18">
+    <rect x="476" y="300" width="128" height="44" rx="10" fill="#323232" filter="url(#shadow)"/>
+    <rect x="490" y="312" width="62" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.16"/>
+    <rect x="490" y="326" width="44" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.16"/>
+    <circle class="blink" style="animation-delay:-1.0s" cx="576" cy="315" r="3.5" fill="#4D96EB"/>
+    <circle class="blink" style="animation-delay:-1.7s" cx="590" cy="315" r="3.5" fill="#0367E0"/>
+    <rect x="566" y="327" width="26" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.16"/>
+  </g>
+
+  <!-- maintenance card -->
+  <g class="pop86">
+    <rect x="22" y="334" width="190" height="66" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+    <g class="rot">
+      <circle cx="50" cy="367" r="11.5" fill="none" stroke="#323232" stroke-width="5" stroke-dasharray="4.5 4.52"/>
+      <circle cx="50" cy="367" r="9" fill="#323232"/>
+      <circle cx="50" cy="367" r="3.4" fill="#FFFFFF"/>
+    </g>
+    <text x="78" y="364" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#323232">Maintenance</text>
+    <text x="78" y="379" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9" fill="#323232" fill-opacity="0.55">On schedule</text>
+    <circle cx="186" cy="367" r="10" fill="#0367E0"/>
+    <path d="M181.5 367.4l3.2 3.2 5.6-6.2" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</g>
+
+</svg>

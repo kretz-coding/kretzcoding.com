@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" role="img" aria-labelledby="t d">
+<title id="t">Website being built and secured</title>
+<desc id="d">An animated browser window fills in with page content, then a security update installs and a shield badge shows the site is secured.</desc>
+<defs>
+<filter id="shadow" x="-60%" y="-60%" width="220%" height="240%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#323232" flood-opacity="0.18"/></filter>
+</defs>
+<style>
+@keyframes grow16{0%,13.333%{opacity:0;transform:scaleX(0)}19.167%,100%{opacity:1;transform:none}}
+.grow16{animation:grow16 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:0% 50%;}
+@keyframes grow21{0%,17.5%{opacity:0;transform:scaleX(0)}23.333%,100%{opacity:1;transform:none}}
+.grow21{animation:grow21 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:0% 50%;}
+@keyframes grow27{0%,22.5%{opacity:0;transform:scaleX(0)}28.333%,100%{opacity:1;transform:none}}
+.grow27{animation:grow27 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:0% 50%;}
+@keyframes grow30{0%,25.0%{opacity:0;transform:scaleX(0)}30.833%,100%{opacity:1;transform:none}}
+.grow30{animation:grow30 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:0% 50%;}
+@keyframes grow33{0%,27.5%{opacity:0;transform:scaleX(0)}33.333%,100%{opacity:1;transform:none}}
+.grow33{animation:grow33 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:0% 50%;}
+@keyframes pop23{0%,19.167%{opacity:0;transform:scale(.88)}25.0%,100%{opacity:1;transform:none}}
+.pop23{animation:pop23 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop37{0%,30.833%{opacity:0;transform:scale(.88)}36.667%,100%{opacity:1;transform:none}}
+.pop37{animation:pop37 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop40{0%,33.333%{opacity:0;transform:scale(.88)}39.167%,100%{opacity:1;transform:none}}
+.pop40{animation:pop40 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes up10{0%,8.333%{opacity:0;transform:translateY(14px)}14.167%,100%{opacity:1;transform:none}}
+.up10{animation:up10 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up46{0%,38.333%{opacity:0;transform:translateY(14px)}44.167%,100%{opacity:1;transform:none}}
+.up46{animation:up46 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up50{0%,41.667%{opacity:0;transform:translateY(14px)}47.5%,100%{opacity:1;transform:none}}
+.up50{animation:up50 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up54{0%,45.0%{opacity:0;transform:translateY(14px)}50.833%,100%{opacity:1;transform:none}}
+.up54{animation:up54 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes master{0%{opacity:0}4.167%{opacity:1}94.167%{opacity:1}100%{opacity:0}}
+.master{animation:master 12s ease-in-out infinite both}
+@keyframes toast{0%,45.833%{opacity:0;transform:translateY(24px)}51.667%,100%{opacity:1;transform:none}}
+.toast{animation:toast 12s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box}
+@keyframes bar{0%,52.5%{transform:scaleX(0)}70.0%,100%{transform:scaleX(1)}}
+.bar{animation:bar 12s linear infinite both;transform-box:fill-box;transform-origin:0% 50%}
+@keyframes inst{0%,70.0%{opacity:1}72.5%,100%{opacity:0}}
+.inst{animation:inst 12s linear infinite both}
+@keyframes done{0%,71.667%{opacity:0}75.0%,100%{opacity:1}}
+.done{animation:done 12s linear infinite both}
+@keyframes spin{to{transform:rotate(360deg)}}
+.spin{animation:spin .9s linear infinite;transform-box:fill-box;transform-origin:50% 50%}
+@keyframes sfill{0%,71.667%{opacity:0}75.833%,100%{opacity:1}}
+.sfill{animation:sfill 12s ease-out infinite both}
+@keyframes chk{0%,74.167%{stroke-dashoffset:1}79.167%,100%{stroke-dashoffset:0}}
+.chk{stroke-dasharray:1;animation:chk 12s ease-out infinite both}
+@keyframes ring{0%,71.667%{opacity:0;transform:scale(.9)}73.333%{opacity:.55}83.333%,100%{opacity:0;transform:scale(1.7)}}
+.ring{animation:ring 12s ease-out infinite both;transform-box:fill-box;transform-origin:50% 50%}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.bob{animation:bob 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.float{animation:float 4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.inst,.ring{opacity:0}.bar{transform:none}}
+</style>
+
+<g class="master">
+  <!-- backdrop -->
+  <circle cx="320" cy="232" r="205" fill="#0367E0" opacity="0.07"/>
+  <circle cx="320" cy="232" r="150" fill="#0367E0" opacity="0.06"/>
+
+  <!-- floating plus marks: content being added -->
+  <g class="float" style="animation-delay:-1s"><path d="M38 150v18M29 159h18" stroke="#0367E0" stroke-width="3" stroke-linecap="round" opacity="0.55"/></g>
+  <g class="float" style="animation-delay:-2.2s"><path d="M606 250v14M599 257h14" stroke="#323232" stroke-width="3" stroke-linecap="round" opacity="0.3"/></g>
+  <g class="float" style="animation-delay:-0.4s"><path d="M30 330v12M24 336h12" stroke="#323232" stroke-width="3" stroke-linecap="round" opacity="0.25"/></g>
+
+  <!-- browser window -->
+  <rect x="60" y="60" width="520" height="330" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="60" y="60" width="520" height="330" rx="16" fill="none" stroke="#323232" stroke-opacity="0.14" stroke-width="1.5"/>
+  <path d="M60 96h520" stroke="#323232" stroke-opacity="0.1" stroke-width="1.5"/>
+  <circle cx="84" cy="78" r="4.5" fill="#323232" fill-opacity="0.28"/>
+  <circle cx="100" cy="78" r="4.5" fill="#323232" fill-opacity="0.18"/>
+  <circle cx="116" cy="78" r="4.5" fill="#323232" fill-opacity="0.1"/>
+  <rect x="144" y="68" width="230" height="20" rx="10" fill="#F2F2F2"/>
+  <rect x="156" y="75" width="7" height="6" rx="1.5" fill="#323232" fill-opacity="0.45"/>
+  <text x="170" y="82" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#323232" fill-opacity="0.55">yourbusiness.com</text>
+
+  <!-- nav -->
+  <g class="up10">
+    <rect x="84" y="110" width="62" height="14" rx="7" fill="#0367E0"/>
+    <rect x="388" y="113" width="32" height="8" rx="4" fill="#323232" fill-opacity="0.22"/>
+    <rect x="432" y="113" width="32" height="8" rx="4" fill="#323232" fill-opacity="0.22"/>
+    <rect x="476" y="113" width="32" height="8" rx="4" fill="#323232" fill-opacity="0.22"/>
+    <rect x="520" y="110" width="36" height="14" rx="7" fill="#323232"/>
+  </g>
+
+  <!-- headline -->
+  <rect class="grow16" x="84" y="150" width="210" height="18" rx="9" fill="#323232"/>
+  <rect class="grow21" x="84" y="176" width="150" height="18" rx="9" fill="#0367E0"/>
+
+  <!-- paragraph -->
+  <rect class="grow27" x="84" y="210" width="224" height="8" rx="4" fill="#323232" fill-opacity="0.2"/>
+  <rect class="grow30" x="84" y="226" width="200" height="8" rx="4" fill="#323232" fill-opacity="0.2"/>
+  <rect class="grow33" x="84" y="242" width="150" height="8" rx="4" fill="#323232" fill-opacity="0.2"/>
+
+  <!-- buttons -->
+  <g class="pop37">
+    <rect x="84" y="266" width="112" height="28" rx="14" fill="#0367E0"/>
+    <rect x="102" y="277" width="76" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.9"/>
+  </g>
+  <g class="pop40">
+    <rect x="206" y="266" width="88" height="28" rx="14" fill="none" stroke="#323232" stroke-opacity="0.3" stroke-width="1.5"/>
+    <rect x="224" y="277" width="52" height="6" rx="3" fill="#323232" fill-opacity="0.35"/>
+  </g>
+
+  <!-- hero image -->
+  <g class="pop23">
+    <clipPath id="imgClip"><rect x="336" y="140" width="220" height="154" rx="12"/></clipPath>
+    <rect x="336" y="140" width="220" height="154" rx="12" fill="#E6F0FC"/>
+    <g clip-path="url(#imgClip)">
+      <circle cx="510" cy="176" r="15" fill="#0367E0" fill-opacity="0.35"/>
+      <polygon points="320,300 392,214 440,262 486,200 570,300" fill="#0367E0" fill-opacity="0.35"/>
+      <polygon points="320,300 372,246 420,300" fill="#0367E0" fill-opacity="0.65"/>
+      <polygon points="430,300 492,240 570,300" fill="#0367E0" fill-opacity="0.85"/>
+    </g>
+  </g>
+
+  <!-- cards -->
+  <g class="up46">
+    <rect x="84" y="314" width="148" height="60" rx="10" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+    <rect x="98" y="326" width="22" height="22" rx="6" fill="#0367E0" fill-opacity="0.18"/>
+    <rect x="130" y="328" width="70" height="7" rx="3.5" fill="#323232" fill-opacity="0.6"/>
+    <rect x="130" y="342" width="90" height="6" rx="3" fill="#323232" fill-opacity="0.2"/>
+    <rect x="98" y="358" width="60" height="6" rx="3" fill="#323232" fill-opacity="0.2"/>
+  </g>
+  <g class="up50">
+    <rect x="244" y="314" width="148" height="60" rx="10" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+    <rect x="258" y="326" width="22" height="22" rx="6" fill="#0367E0" fill-opacity="0.35"/>
+    <rect x="290" y="328" width="70" height="7" rx="3.5" fill="#323232" fill-opacity="0.6"/>
+    <rect x="290" y="342" width="90" height="6" rx="3" fill="#323232" fill-opacity="0.2"/>
+    <rect x="258" y="358" width="60" height="6" rx="3" fill="#323232" fill-opacity="0.2"/>
+  </g>
+  <g class="up54">
+    <rect x="404" y="314" width="148" height="60" rx="10" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+    <rect x="418" y="326" width="22" height="22" rx="6" fill="#0367E0" fill-opacity="0.6"/>
+    <rect x="450" y="328" width="70" height="7" rx="3.5" fill="#323232" fill-opacity="0.6"/>
+    <rect x="450" y="342" width="90" height="6" rx="3" fill="#323232" fill-opacity="0.2"/>
+    <rect x="418" y="358" width="60" height="6" rx="3" fill="#323232" fill-opacity="0.2"/>
+  </g>
+
+  <!-- security toast -->
+  <g class="toast">
+    <rect x="352" y="338" width="250" height="70" rx="14" fill="#323232" filter="url(#shadow)"/>
+    <!-- installing state -->
+    <g class="inst">
+      <circle cx="384" cy="364" r="10" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="3"/>
+      <g class="spin"><path d="M384 354a10 10 0 0 1 10 10" fill="none" stroke="#4D96EB" stroke-width="3" stroke-linecap="round"/></g>
+      <text x="406" y="362" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Installing security update</text>
+      <text x="406" y="377" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#FFFFFF" fill-opacity="0.6">Patching 3 packages…</text>
+    </g>
+    <!-- done state -->
+    <g class="done">
+      <circle cx="384" cy="364" r="11" fill="#0367E0"/>
+      <path d="M378.5 364.5l4 4 7-8" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="406" y="362" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Site secured</text>
+      <text x="406" y="377" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#FFFFFF" fill-opacity="0.6">Everything is up to date</text>
+    </g>
+    <rect x="372" y="391" width="206" height="5" rx="2.5" fill="#FFFFFF" fill-opacity="0.15"/>
+    <rect class="bar" x="372" y="391" width="206" height="5" rx="2.5" fill="#0367E0"/>
+  </g>
+
+  <!-- shield badge -->
+  <g transform="translate(572 62)">
+    <circle class="ring" r="30" fill="none" stroke="#0367E0" stroke-width="3"/>
+    <g class="bob">
+      <circle r="30" fill="#FFFFFF" filter="url(#shadow)"/>
+      <g transform="scale(1.05)">
+        <path d="M0-17L14-11V2C14 11 7 17 0 20C-7 17-14 11-14 2V-11Z" fill="#E6F0FC" stroke="#0367E0" stroke-width="2.5" stroke-linejoin="round"/>
+        <path class="sfill" d="M0-17L14-11V2C14 11 7 17 0 20C-7 17-14 11-14 2V-11Z" fill="#0367E0" stroke="#0367E0" stroke-width="2.5" stroke-linejoin="round"/>
+        <path class="chk" pathLength="1" d="M-6 1.5l4.5 4.5L7-4" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+  </g>
+</g>
+
+</svg>

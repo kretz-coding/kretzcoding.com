@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" role="img" aria-labelledby="t d">
+<title id="t">A website design taking shape across devices</title>
+<desc id="d">An animated wireframe turns into a finished desktop design, a matching mobile version slides in beside it, and color palette and typography cards appear.</desc>
+<defs>
+<filter id="shadow" x="-60%" y="-60%" width="220%" height="240%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#323232" flood-opacity="0.18"/></filter>
+</defs>
+<style>
+@keyframes pop6{0%,5.0%{opacity:0;transform:scale(.88)}10.833%,100%{opacity:1;transform:none}}
+.pop6{animation:pop6 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop70{0%,58.333%{opacity:0;transform:scale(.88)}64.167%,100%{opacity:1;transform:none}}
+.pop70{animation:pop70 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop80{0%,66.667%{opacity:0;transform:scale(.88)}72.5%,100%{opacity:1;transform:none}}
+.pop80{animation:pop80 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes up55{0%,45.833%{opacity:0;transform:translateY(14px)}51.667%,100%{opacity:1;transform:none}}
+.up55{animation:up55 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up58{0%,48.333%{opacity:0;transform:translateY(14px)}54.167%,100%{opacity:1;transform:none}}
+.up58{animation:up58 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up61{0%,50.833%{opacity:0;transform:translateY(14px)}56.667%,100%{opacity:1;transform:none}}
+.up61{animation:up61 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up64{0%,53.333%{opacity:0;transform:translateY(14px)}59.167%,100%{opacity:1;transform:none}}
+.up64{animation:up64 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up67{0%,55.833%{opacity:0;transform:translateY(14px)}61.667%,100%{opacity:1;transform:none}}
+.up67{animation:up67 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes uw31{0%,7.5%{opacity:0}10.0%,25.833%{opacity:1}28.75%,100%{opacity:0}}
+.uw31{opacity:0;animation:uw31 12.0s linear infinite both}
+@keyframes uw32{0%,8.667%{opacity:0}11.167%,26.667%{opacity:1}29.583%,100%{opacity:0}}
+.uw32{opacity:0;animation:uw32 12.0s linear infinite both}
+@keyframes uw33{0%,9.833%{opacity:0}12.333%,27.5%{opacity:1}30.417%,100%{opacity:0}}
+.uw33{opacity:0;animation:uw33 12.0s linear infinite both}
+@keyframes uw34{0%,11.0%{opacity:0}13.5%,28.333%{opacity:1}31.25%,100%{opacity:0}}
+.uw34{opacity:0;animation:uw34 12.0s linear infinite both}
+@keyframes uw35{0%,12.167%{opacity:0}14.667%,29.167%{opacity:1}32.083%,100%{opacity:0}}
+.uw35{opacity:0;animation:uw35 12.0s linear infinite both}
+@keyframes uw36{0%,13.333%{opacity:0}15.833%,30.0%{opacity:1}32.917%,100%{opacity:0}}
+.uw36{opacity:0;animation:uw36 12.0s linear infinite both}
+@keyframes uw39{0%,14.5%{opacity:0}17.0%,32.5%{opacity:1}35.417%,100%{opacity:0}}
+.uw39{opacity:0;animation:uw39 12.0s linear infinite both}
+@keyframes uw41{0%,15.667%{opacity:0}18.167%,34.167%{opacity:1}37.083%,100%{opacity:0}}
+.uw41{opacity:0;animation:uw41 12.0s linear infinite both}
+@keyframes rv31{0%,25.833%{opacity:0}28.75%,100%{opacity:1}}
+.rv31{animation:rv31 12.0s linear infinite both}
+@keyframes rv32{0%,26.667%{opacity:0}29.583%,100%{opacity:1}}
+.rv32{animation:rv32 12.0s linear infinite both}
+@keyframes rv33{0%,27.5%{opacity:0}30.417%,100%{opacity:1}}
+.rv33{animation:rv33 12.0s linear infinite both}
+@keyframes rv34{0%,28.333%{opacity:0}31.25%,100%{opacity:1}}
+.rv34{animation:rv34 12.0s linear infinite both}
+@keyframes rv35{0%,29.167%{opacity:0}32.083%,100%{opacity:1}}
+.rv35{animation:rv35 12.0s linear infinite both}
+@keyframes rv36{0%,30.0%{opacity:0}32.917%,100%{opacity:1}}
+.rv36{animation:rv36 12.0s linear infinite both}
+@keyframes rv39{0%,32.5%{opacity:0}35.417%,100%{opacity:1}}
+.rv39{animation:rv39 12.0s linear infinite both}
+@keyframes rv41{0%,34.167%{opacity:0}37.083%,100%{opacity:1}}
+.rv41{animation:rv41 12.0s linear infinite both}
+@keyframes master{0%{opacity:0}4.167%{opacity:1}94.167%{opacity:1}100%{opacity:0}}
+.master{animation:master 12s ease-in-out infinite both}
+@keyframes scan{0%,25.0%{opacity:0;transform:translateX(0)}25.833%{opacity:1}39.167%{opacity:1;transform:translateX(400px)}41.667%,100%{opacity:0;transform:translateX(400px)}}
+.scan{opacity:0;animation:scan 12s cubic-bezier(.45,.05,.4,1) infinite both}
+@keyframes wlab{0%,24.167%{opacity:1}27.5%,100%{opacity:0}}
+.wlab{opacity:0;animation:wlab 12s linear infinite both}
+@keyframes flab{0%,38.333%{opacity:0}41.667%,100%{opacity:1}}
+.flab{animation:flab 12s linear infinite both}
+@keyframes slide{0%,41.667%{opacity:0;transform:translateX(60px)}49.167%,100%{opacity:1;transform:none}}
+.slide50{animation:slide 12s cubic-bezier(.2,.8,.2,1) infinite both;transform-box:fill-box}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.float{animation:float 4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.scan{opacity:0}.uw31,.uw32,.uw33,.uw34,.uw35,.uw36,.uw39,.uw41{opacity:0}.wlab{opacity:0}}
+</style>
+
+<g class="master">
+  <circle cx="320" cy="238" r="205" fill="#0367E0" opacity="0.07"/>
+  <circle cx="320" cy="238" r="150" fill="#0367E0" opacity="0.06"/>
+
+  <g class="float" style="animation-delay:-1s"><path d="M16 196v18M7 205h18" stroke="#0367E0" stroke-width="3" stroke-linecap="round" opacity="0.55"/></g>
+  <g class="float" style="animation-delay:-2.4s"><path d="M618 84v14M611 91h14" stroke="#323232" stroke-width="3" stroke-linecap="round" opacity="0.3"/></g>
+  <g class="float" style="animation-delay:-0.6s"><path d="M612 388v12M606 394h12" stroke="#0367E0" stroke-width="3" stroke-linecap="round" opacity="0.4"/></g>
+
+  <!-- stage labels -->
+  <g class="wlab">
+    <rect x="40" y="36" width="94" height="22" rx="11" fill="#F2F2F2"/>
+    <text x="56" y="51" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#323232" fill-opacity="0.7">Wireframe</text>
+  </g>
+  <g class="flab">
+    <rect x="40" y="36" width="104" height="22" rx="11" fill="#E6F0FC"/>
+    <text x="56" y="51" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0367E0">Final design</text>
+  </g>
+
+  <!-- desktop window -->
+  <g class="pop6">
+    <rect x="40" y="70" width="400" height="290" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+    <rect x="40" y="70" width="400" height="290" rx="16" fill="none" stroke="#323232" stroke-opacity="0.14" stroke-width="1.5"/>
+    <path d="M40 104h400" stroke="#323232" stroke-opacity="0.1" stroke-width="1.5"/>
+    <circle cx="62" cy="87" r="4.5" fill="#323232" fill-opacity="0.28"/>
+    <circle cx="77" cy="87" r="4.5" fill="#323232" fill-opacity="0.18"/>
+    <circle cx="92" cy="87" r="4.5" fill="#323232" fill-opacity="0.1"/>
+    <rect x="112" y="78" width="170" height="18" rx="9" fill="#F2F2F2"/>
+    <rect x="123" y="84" width="7" height="6" rx="1.5" fill="#323232" fill-opacity="0.45"/>
+    <text x="136" y="91" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.5" fill="#323232" fill-opacity="0.55">yourbusiness.com</text>
+  </g>
+
+  <!-- wireframe layer -->
+  <g class="uw31"><rect x="62" y="117" width="46" height="11" rx="5.5" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/><rect x="62" y="148" width="170" height="15" rx="7.5" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/><rect x="62" y="170" width="120" height="15" rx="7.5" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/></g>
+  <g class="uw32"><rect x="62" y="198" width="180" height="7" rx="3.5" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/><rect x="62" y="211" width="160" height="7" rx="3.5" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/><rect x="62" y="224" width="120" height="7" rx="3.5" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/></g>
+  <g class="uw33"><rect x="62" y="244" width="86" height="22" rx="11" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/></g>
+  <g class="uw34"><rect x="62" y="286" width="112" height="58" rx="9" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/></g>
+  <g class="uw35"><rect x="156" y="244" width="70" height="22" rx="11" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/></g>
+  <g class="uw36"><rect x="184" y="286" width="112" height="58" rx="9" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/></g>
+  <g class="uw39"><rect x="254" y="142" width="164" height="118" rx="10" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <path d="M254 142L418 260M418 142L254 260" stroke="#323232" stroke-opacity="0.25" stroke-width="1.2" stroke-dasharray="4 3"/></g>
+  <g class="uw41"><rect x="290" y="119" width="26" height="7" rx="3.5" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/><rect x="322" y="119" width="26" height="7" rx="3.5" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/><rect x="354" y="119" width="26" height="7" rx="3.5" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/><rect x="386" y="117" width="32" height="11" rx="5.5" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/><rect x="306" y="286" width="112" height="58" rx="9" fill="#F7F7F7" stroke="#323232" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="4 3"/></g>
+
+  <!-- styled layer -->
+  <g class="rv31">
+    <rect x="62" y="117" width="46" height="11" rx="5.5" fill="#0367E0"/>
+    <rect x="62" y="148" width="170" height="15" rx="7.5" fill="#323232"/>
+    <rect x="62" y="170" width="120" height="15" rx="7.5" fill="#0367E0"/>
+  </g>
+  <g class="rv32">
+    <rect x="62" y="198" width="180" height="7" rx="3.5" fill="#323232" fill-opacity="0.2"/>
+    <rect x="62" y="211" width="160" height="7" rx="3.5" fill="#323232" fill-opacity="0.2"/>
+    <rect x="62" y="224" width="120" height="7" rx="3.5" fill="#323232" fill-opacity="0.2"/>
+  </g>
+  <g class="rv33">
+    <rect x="62" y="244" width="86" height="22" rx="11" fill="#0367E0"/>
+    <rect x="80" y="252" width="50" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.9"/>
+  </g>
+  <g class="rv35">
+    <rect x="156" y="244" width="70" height="22" rx="11" fill="none" stroke="#323232" stroke-opacity="0.3" stroke-width="1.5"/>
+    <rect x="172" y="252" width="38" height="6" rx="3" fill="#323232" fill-opacity="0.35"/>
+  </g>
+  <g class="rv34">
+    <rect x="62" y="286" width="112" height="58" rx="9" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+    <rect x="74" y="297" width="20" height="20" rx="6" fill="#0367E0" fill-opacity="0.18"/>
+    <rect x="102" y="299" width="56" height="6" rx="3" fill="#323232" fill-opacity="0.6"/>
+    <rect x="102" y="311" width="62" height="5" rx="2.5" fill="#323232" fill-opacity="0.2"/>
+    <rect x="74" y="327" width="44" height="5" rx="2.5" fill="#323232" fill-opacity="0.2"/>
+  </g>
+  <g class="rv36">
+    <rect x="184" y="286" width="112" height="58" rx="9" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+    <rect x="196" y="297" width="20" height="20" rx="6" fill="#0367E0" fill-opacity="0.35"/>
+    <rect x="224" y="299" width="56" height="6" rx="3" fill="#323232" fill-opacity="0.6"/>
+    <rect x="224" y="311" width="62" height="5" rx="2.5" fill="#323232" fill-opacity="0.2"/>
+    <rect x="196" y="327" width="44" height="5" rx="2.5" fill="#323232" fill-opacity="0.2"/>
+  </g>
+  <g class="rv39">
+    <clipPath id="imgClip"><rect x="254" y="142" width="164" height="118" rx="10"/></clipPath>
+    <rect x="254" y="142" width="164" height="118" rx="10" fill="#E6F0FC"/>
+    <g clip-path="url(#imgClip)">
+      <circle cx="388" cy="168" r="11" fill="#0367E0" fill-opacity="0.35"/>
+      <polygon points="240,268 296,196 332,238 366,186 430,268" fill="#0367E0" fill-opacity="0.35"/>
+      <polygon points="240,268 282,228 322,268" fill="#0367E0" fill-opacity="0.65"/>
+      <polygon points="330,268 372,222 430,268" fill="#0367E0" fill-opacity="0.85"/>
+    </g>
+  </g>
+  <g class="rv41">
+    <rect x="290" y="119" width="26" height="7" rx="3.5" fill="#323232" fill-opacity="0.22"/>
+    <rect x="322" y="119" width="26" height="7" rx="3.5" fill="#323232" fill-opacity="0.22"/>
+    <rect x="354" y="119" width="26" height="7" rx="3.5" fill="#323232" fill-opacity="0.22"/>
+    <rect x="386" y="117" width="32" height="11" rx="5.5" fill="#323232"/>
+    <rect x="306" y="286" width="112" height="58" rx="9" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+    <rect x="318" y="297" width="20" height="20" rx="6" fill="#0367E0" fill-opacity="0.6"/>
+    <rect x="346" y="299" width="56" height="6" rx="3" fill="#323232" fill-opacity="0.6"/>
+    <rect x="346" y="311" width="62" height="5" rx="2.5" fill="#323232" fill-opacity="0.2"/>
+    <rect x="318" y="327" width="44" height="5" rx="2.5" fill="#323232" fill-opacity="0.2"/>
+  </g>
+
+  <!-- scan line with cursor -->
+  <g class="scan">
+    <g transform="translate(40 0)">
+      <rect x="-1" y="70" width="2" height="290" fill="#0367E0"/>
+      <rect x="-1" y="70" width="2" height="290" fill="#0367E0" opacity="0.25" transform="translate(-5 0) scale(1 1)" />
+      <path d="M0 96L0 112L4.5 108L8 115L10.5 114L7 107L13 107Z" fill="#323232" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/>
+      <rect x="12" y="116" width="72" height="20" rx="10" fill="#0367E0"/>
+      <text x="22" y="130" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#FFFFFF">Designing</text>
+    </g>
+  </g>
+
+  <!-- phone -->
+  <g class="slide50">
+    <rect x="476" y="102" width="128" height="248" rx="24" fill="#323232" filter="url(#shadow)"/>
+    <rect x="483" y="109" width="114" height="234" rx="18" fill="#FFFFFF"/>
+    <rect x="521" y="115" width="38" height="6" rx="3" fill="#323232"/>
+    <g class="up55">
+      <rect x="494" y="134" width="34" height="8" rx="4" fill="#0367E0"/>
+      <rect x="568" y="133" width="18" height="2.5" rx="1.25" fill="#323232" fill-opacity="0.5"/>
+      <rect x="568" y="138" width="18" height="2.5" rx="1.25" fill="#323232" fill-opacity="0.5"/>
+      <rect x="568" y="143" width="18" height="2.5" rx="1.25" fill="#323232" fill-opacity="0.5"/>
+    </g>
+    <g class="up58">
+      <rect x="494" y="158" width="84" height="11" rx="5.5" fill="#323232"/>
+      <rect x="494" y="175" width="58" height="11" rx="5.5" fill="#0367E0"/>
+    </g>
+    <g class="up61">
+      <rect x="494" y="196" width="90" height="5" rx="2.5" fill="#323232" fill-opacity="0.2"/>
+      <rect x="494" y="205" width="76" height="5" rx="2.5" fill="#323232" fill-opacity="0.2"/>
+      <rect x="494" y="220" width="52" height="16" rx="8" fill="#0367E0"/>
+      <rect x="504" y="226" width="32" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.9"/>
+    </g>
+    <g class="up64">
+      <clipPath id="imgClip2"><rect x="494" y="248" width="92" height="48" rx="8"/></clipPath>
+      <rect x="494" y="248" width="92" height="48" rx="8" fill="#E6F0FC"/>
+      <g clip-path="url(#imgClip2)">
+        <circle cx="570" cy="260" r="6" fill="#0367E0" fill-opacity="0.35"/>
+        <polygon points="484,302 512,264 532,284 552,258 596,302" fill="#0367E0" fill-opacity="0.35"/>
+        <polygon points="484,302 506,282 530,302" fill="#0367E0" fill-opacity="0.65"/>
+        <polygon points="540,302 562,276 596,302" fill="#0367E0" fill-opacity="0.85"/>
+      </g>
+    </g>
+    <g class="up67">
+      <rect x="494" y="304" width="92" height="30" rx="8" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+      <rect x="502" y="312" width="14" height="14" rx="4" fill="#0367E0" fill-opacity="0.35"/>
+      <rect x="522" y="313" width="48" height="5" rx="2.5" fill="#323232" fill-opacity="0.6"/>
+      <rect x="522" y="322" width="36" height="4" rx="2" fill="#323232" fill-opacity="0.2"/>
+    </g>
+  </g>
+
+  <!-- palette card -->
+  <g class="pop70">
+    <rect x="22" y="334" width="180" height="66" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+    <circle cx="48" cy="360" r="11" fill="#323232"/>
+    <circle cx="80" cy="360" r="11" fill="#0367E0"/>
+    <circle cx="112" cy="360" r="11" fill="#4D96EB"/>
+    <circle cx="144" cy="360" r="11" fill="#E6F0FC" stroke="#323232" stroke-opacity="0.15"/>
+    <circle cx="176" cy="360" r="11" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.15"/>
+    <rect x="38" y="383" width="70" height="6" rx="3" fill="#323232" fill-opacity="0.35"/>
+  </g>
+
+  <!-- type card -->
+  <g class="pop80">
+    <rect x="340" y="38" width="100" height="46" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+    <text x="354" y="72" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" font-weight="700" fill="#323232">A<tspan fill="#0367E0">a</tspan></text>
+    <rect x="398" y="52" width="30" height="5" rx="2.5" fill="#0367E0"/>
+    <rect x="398" y="62" width="24" height="5" rx="2.5" fill="#323232" fill-opacity="0.25"/>
+    <rect x="398" y="72" width="28" height="5" rx="2.5" fill="#323232" fill-opacity="0.25"/>
+  </g>
+</g>
+
+</svg>

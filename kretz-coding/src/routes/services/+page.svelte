@@ -5,16 +5,22 @@
 <main>
     <div class="hero-container">
         <section class="hero">
-            <h2>Services</h2>
-            <h1>A website that's built well, stays running, and keeps improving.</h1>
-            <p>Three services, one point of contact. Hire for the whole journey or just the part you need.</p>
-            <Button
-                href="/contact"
-                label="Start a project"
-                size="m"
-                style="fill"
-                variant="accent"
-            />
+            <div class="content">
+                <h2>Services</h2>
+                <h1>A website that's built well, stays running, and keeps improving.</h1>
+                <p>Three services, one point of contact. Hire for the whole journey or just the part you need.</p>
+                <Button
+                        href="/contact"
+                        label="Start a project"
+                        size="m"
+                        style="fill"
+                        variant="accent"
+                />
+            </div>
+            <div class="animation">
+                <img src="/services-hero.svg" alt="web services animation" />
+            </div>
+
         </section>
     </div>
     <div class="web-design-container">
@@ -47,7 +53,7 @@
                 />
             </div>
             <div class="img">
-                <img src="#" alt=""/>
+                <img src="/web-design-animation.svg" alt="web design animation"/>
             </div>
         </section>
     </div>
@@ -77,7 +83,7 @@
                 />
             </div>
             <div class="img">
-                <img src="#" alt=""/>
+                <img src="/hosting-maintenance-animation.svg" alt="hosting and maintenance animation"/>
             </div>
         </section>
     </div>
@@ -105,7 +111,7 @@
                 />
             </div>
             <div class="img">
-                <img src="#" alt=""/>
+                <img src="/analytics-marketing-animation.svg" alt="analytics and marketing animation"/>
             </div>
         </section>
     </div>
@@ -133,7 +139,7 @@
                     <p>We host, maintain, measure, and improve month after month.</p>
                 </div>
             </div>
-            <div class="cta">
+            <div class="cta card">
                     <h3>Not sure which service you need?</h3>
                     <p>Tell us about your business and we'll recommend a starting point. The first conversation is free.</p>
                     <Button
@@ -141,7 +147,7 @@
                     label="Book a free call"
                     size="m"
                     style="fill"
-                    variant="accent"
+                    variant="primary"
                 />
                 </div>
         </section>
@@ -195,6 +201,11 @@
 
     }
 
+    img {
+        padding-block: 1rem;
+        max-width: 100%;
+    }
+
     .hero {
         h2 {
             font-size: 1rem;
@@ -206,6 +217,8 @@
             max-width: 45ch;
             padding-block-end:2rem;
         }
+
+
     
     }
 
@@ -235,6 +248,8 @@
     div.cta {
         display: grid;
         gap: 1rem;
+        background-color: var(--accent);
+        color: var(--on-accent);
 
         p {
             margin-block-end: 1rem;

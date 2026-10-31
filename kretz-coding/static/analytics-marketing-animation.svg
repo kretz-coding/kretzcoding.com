@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" role="img" aria-labelledby="t d">
+<title id="t">Website analytics and marketing dashboard</title>
+<desc id="d">An animated analytics dashboard draws a rising visitor chart, traffic sources, top pages and a conversion funnel, then email, search and audience targeting cards appear and a growth card confirms results are trending up.</desc>
+<defs>
+<filter id="shadow" x="-60%" y="-60%" width="220%" height="240%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#323232" flood-opacity="0.18"/></filter>
+</defs>
+<style>
+@keyframes grow46{0%,38.333%{opacity:0;transform:scaleX(0)}44.167%,100%{opacity:1;transform:none}}
+.grow46{animation:grow46 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:0% 50%;}
+@keyframes grow49{0%,40.833%{opacity:0;transform:scaleX(0)}46.667%,100%{opacity:1;transform:none}}
+.grow49{animation:grow49 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:0% 50%;}
+@keyframes grow52{0%,43.333%{opacity:0;transform:scaleX(0)}49.167%,100%{opacity:1;transform:none}}
+.grow52{animation:grow52 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:0% 50%;}
+@keyframes grow55{0%,45.833%{opacity:0;transform:scaleX(0)}51.667%,100%{opacity:1;transform:none}}
+.grow55{animation:grow55 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:0% 50%;}
+@keyframes gx52{0%,43.333%{opacity:0;transform:scaleX(0)}49.167%,100%{opacity:1;transform:none}}
+.gx52{animation:gx52 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes gx55{0%,45.833%{opacity:0;transform:scaleX(0)}51.667%,100%{opacity:1;transform:none}}
+.gx55{animation:gx55 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes gx58{0%,48.333%{opacity:0;transform:scaleX(0)}54.167%,100%{opacity:1;transform:none}}
+.gx58{animation:gx58 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes gy102{0%,85.0%{opacity:0;transform:scaleY(0.1)}90.833%,100%{opacity:1;transform:none}}
+.gy102{animation:gy102 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 100%;}
+@keyframes gy93{0%,77.5%{opacity:0;transform:scaleY(0.1)}83.333%,100%{opacity:1;transform:none}}
+.gy93{animation:gy93 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 100%;}
+@keyframes gy96{0%,80.0%{opacity:0;transform:scaleY(0.1)}85.833%,100%{opacity:1;transform:none}}
+.gy96{animation:gy96 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 100%;}
+@keyframes gy99{0%,82.5%{opacity:0;transform:scaleY(0.1)}88.333%,100%{opacity:1;transform:none}}
+.gy99{animation:gy99 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 100%;}
+@keyframes pop34{0%,28.333%{opacity:0;transform:scale(.85)}34.167%,100%{opacity:1;transform:none}}
+.pop34{animation:pop34 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop6{0%,5.0%{opacity:0;transform:scale(.85)}10.833%,100%{opacity:1;transform:none}}
+.pop6{animation:pop6 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop73{0%,60.833%{opacity:0;transform:scale(.85)}66.667%,100%{opacity:1;transform:none}}
+.pop73{animation:pop73 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop75{0%,62.5%{opacity:0;transform:scale(.85)}68.333%,100%{opacity:1;transform:none}}
+.pop75{animation:pop75 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop77{0%,64.167%{opacity:0;transform:scale(.85)}70.0%,100%{opacity:1;transform:none}}
+.pop77{animation:pop77 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop79{0%,65.833%{opacity:0;transform:scale(.85)}71.667%,100%{opacity:1;transform:none}}
+.pop79{animation:pop79 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop81{0%,67.5%{opacity:0;transform:scale(.85)}73.333%,100%{opacity:1;transform:none}}
+.pop81{animation:pop81 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop90{0%,75.0%{opacity:0;transform:scale(.85)}80.833%,100%{opacity:1;transform:none}}
+.pop90{animation:pop90 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes slide66{0%,55.0%{opacity:0;transform:translateX(40px)}60.833%,100%{opacity:1;transform:none}}
+.slide66{animation:slide66 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes slide72{0%,60.0%{opacity:0;transform:translateX(40px)}65.833%,100%{opacity:1;transform:none}}
+.slide72{animation:slide72 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes slide78{0%,65.0%{opacity:0;transform:translateX(40px)}70.833%,100%{opacity:1;transform:none}}
+.slide78{animation:slide78 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up10{0%,8.333%{opacity:0;transform:translateY(14px)}14.167%,100%{opacity:1;transform:none}}
+.up10{animation:up10 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up12{0%,10.0%{opacity:0;transform:translateY(14px)}15.833%,100%{opacity:1;transform:none}}
+.up12{animation:up12 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up36{0%,30.0%{opacity:0;transform:translateY(14px)}35.833%,100%{opacity:1;transform:none}}
+.up36{animation:up36 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up40{0%,33.333%{opacity:0;transform:translateY(14px)}39.167%,100%{opacity:1;transform:none}}
+.up40{animation:up40 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up44{0%,36.667%{opacity:0;transform:translateY(14px)}42.5%,100%{opacity:1;transform:none}}
+.up44{animation:up44 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes seg1{0%,33.333%{stroke-dasharray:0 100}38.333%,100%{stroke-dasharray:46 100}}
+.seg1{animation:seg1 12s ease-out infinite both}
+@keyframes seg2{0%,36.667%{stroke-dasharray:0 100}41.667%,100%{stroke-dasharray:28 100}}
+.seg2{animation:seg2 12s ease-out infinite both}
+@keyframes seg3{0%,40.0%{stroke-dasharray:0 100}45.0%,100%{stroke-dasharray:20 100}}
+.seg3{animation:seg3 12s ease-out infinite both}
+@keyframes master{0%{opacity:0}4.167%{opacity:1}94.167%{opacity:1}100%{opacity:0}}
+.master{animation:master 12s ease-in-out infinite both}
+@keyframes line{0%,13.333%{stroke-dashoffset:1}28.333%,100%{stroke-dashoffset:0}}
+.line{stroke-dasharray:1;animation:line 12s ease-in-out infinite both}
+@keyframes area{0%,25.0%{opacity:0}30.0%,100%{opacity:1}}
+.area{animation:area 12s linear infinite both}
+@keyframes rk1{0%,66.667%{transform:translateY(-12px)}74.167%,100%{transform:none}}
+@keyframes rk3{0%,66.667%{transform:translateY(24px)}74.167%,100%{transform:none}}
+.rk1,.rk2{animation:rk1 12s cubic-bezier(.4,0,.2,1) infinite both}.rk3{animation:rk3 12s cubic-bezier(.4,0,.2,1) infinite both}
+@keyframes reach{0%,70.0%{transform:scaleX(0)}80.0%,100%{transform:scaleX(1)}}
+.reach{animation:reach 12s ease-out infinite both;transform-box:fill-box;transform-origin:0% 50%}
+@keyframes lab1{0%,31.667%{opacity:1}33.333%,100%{opacity:0}}
+@keyframes lab2{0%,32.5%{opacity:0}34.167%,53.333%{opacity:1}55.0%,100%{opacity:0}}
+@keyframes lab3{0%,54.167%{opacity:0}55.833%,74.167%{opacity:1}75.833%,100%{opacity:0}}
+@keyframes lab4{0%,75.0%{opacity:0}76.667%,100%{opacity:1}}
+.lab1,.lab2,.lab3{opacity:0}
+.lab1{animation:lab1 12s linear infinite both}.lab2{animation:lab2 12s linear infinite both}.lab3{animation:lab3 12s linear infinite both}.lab4{animation:lab4 12s linear infinite both}
+@keyframes pulse{0%{opacity:.6;transform:scale(1)}100%{opacity:0;transform:scale(3.2)}}
+.pulse{animation:pulse 2s ease-out infinite;transform-box:fill-box;transform-origin:50% 50%}
+@keyframes tring{0%{opacity:.7;transform:scale(1)}100%{opacity:0;transform:scale(1.6)}}
+.tring{animation:tring 2s ease-out infinite;transform-box:fill-box;transform-origin:50% 50%}
+@keyframes march{to{stroke-dashoffset:-14}}
+.march{animation:march 1s linear infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.float{animation:float 4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.lab4{opacity:1}.pulse,.tring{opacity:0}}
+</style>
+
+<g class="master">
+  <circle cx="320" cy="238" r="205" fill="#0367E0" opacity="0.07"/>
+  <circle cx="320" cy="238" r="150" fill="#0367E0" opacity="0.06"/>
+
+  <g class="float" style="animation-delay:-1s"><path d="M16 196v18M7 205h18" stroke="#0367E0" stroke-width="3" stroke-linecap="round" opacity="0.55"/></g>
+  <g class="float" style="animation-delay:-2.4s"><path d="M626 74v14M619 81h14" stroke="#323232" stroke-width="3" stroke-linecap="round" opacity="0.3"/></g>
+  <g class="float" style="animation-delay:-0.6s"><path d="M620 396v12M614 402h12" stroke="#0367E0" stroke-width="3" stroke-linecap="round" opacity="0.4"/></g>
+
+  <!-- stage label -->
+  <rect x="40" y="36" width="140" height="22" rx="11" fill="#E6F0FC"/>
+  <text class="lab1" x="56" y="51" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0367E0">Tracking</text>
+  <text class="lab2" x="56" y="51" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0367E0">Reporting</text>
+  <text class="lab3" x="56" y="51" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0367E0">Reaching out</text>
+  <text class="lab4" x="56" y="51" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0367E0">Growing</text>
+
+  <!-- dashboard window -->
+  <g class="pop6">
+    <rect x="40" y="70" width="400" height="290" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+    <rect x="40" y="70" width="400" height="290" rx="16" fill="none" stroke="#323232" stroke-opacity="0.14" stroke-width="1.5"/>
+    <path d="M40 104h400" stroke="#323232" stroke-opacity="0.1" stroke-width="1.5"/>
+    <circle cx="62" cy="87" r="4.5" fill="#323232" fill-opacity="0.28"/>
+    <circle cx="77" cy="87" r="4.5" fill="#323232" fill-opacity="0.18"/>
+    <circle cx="92" cy="87" r="4.5" fill="#323232" fill-opacity="0.1"/>
+    <rect x="112" y="78" width="170" height="18" rx="9" fill="#F2F2F2"/>
+    <rect x="123" y="84" width="7" height="6" rx="1.5" fill="#323232" fill-opacity="0.45"/>
+    <text x="136" y="91" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.5" fill="#323232" fill-opacity="0.55">yourbusiness.com</text>
+  </g>
+
+  <!-- header -->
+  <g class="up10">
+    <text x="62" y="131" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#323232">Analytics</text>
+    <rect x="352" y="116" width="66" height="20" rx="10" fill="#E6F0FC"/>
+    <circle class="pulse" cx="366" cy="126" r="3.5" fill="#0367E0"/>
+    <circle cx="366" cy="126" r="3.5" fill="#0367E0"/>
+    <text x="376" y="130" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#0367E0">Live</text>
+  </g>
+
+  <!-- main chart -->
+  <g class="up12">
+    <rect x="62" y="142" width="356" height="100" rx="9" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+    <text x="76" y="158" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#323232" fill-opacity="0.6">Visitors</text>
+    <path d="M76 162H404M76 182H404M76 202H404M76 222H404" stroke="#323232" stroke-opacity="0.08" stroke-width="1.2"/>
+  </g>
+  <g class="area"><path d="M76,212L108,204L140,208L172,192L204,196L236,180L268,186L300,170L332,174L364,160L404,154V222H76Z" fill="#0367E0" fill-opacity="0.13"/></g>
+  <path class="line" pathLength="1" d="M76,212L108,204L140,208L172,192L204,196L236,180L268,186L300,170L332,174L364,160L404,154" fill="none" stroke="#0367E0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="pop34">
+    <circle class="pulse" cx="404" cy="154" r="5" fill="#0367E0"/>
+    <circle cx="404" cy="154" r="5.5" fill="#0367E0" stroke="#FFFFFF" stroke-width="2.2"/>
+  </g>
+
+  <!-- tile 1: sources donut -->
+  <g class="up36">
+    <rect x="62" y="250" width="112" height="94" rx="9" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+    <rect x="74" y="259" width="44" height="6" rx="3" fill="#323232" fill-opacity="0.45"/>
+    <circle cx="118" cy="305" r="20" fill="none" stroke="#323232" stroke-opacity="0.08" stroke-width="9"/>
+    <g transform="rotate(-90 118 305)" fill="none" stroke-width="9">
+      <circle class="seg1" cx="118" cy="305" r="20" pathLength="100" stroke="#0367E0" stroke-dasharray="46 100" stroke-dashoffset="0"/>
+      <circle class="seg2" cx="118" cy="305" r="20" pathLength="100" stroke="#4D96EB" stroke-dasharray="28 100" stroke-dashoffset="-48"/>
+      <circle class="seg3" cx="118" cy="305" r="20" pathLength="100" stroke="#323232" stroke-dasharray="20 100" stroke-dashoffset="-78"/>
+    </g>
+  </g>
+
+  <!-- tile 2: top pages -->
+  <g class="up40">
+    <rect x="184" y="250" width="112" height="94" rx="9" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+    <rect x="196" y="259" width="44" height="6" rx="3" fill="#323232" fill-opacity="0.45"/>
+    <rect class="grow46" x="196" y="274" width="88" height="8" rx="4" fill="#0367E0"/>
+    <rect class="grow49" x="196" y="290" width="68" height="8" rx="4" fill="#0367E0" fill-opacity="0.75"/>
+    <rect class="grow52" x="196" y="306" width="50" height="8" rx="4" fill="#0367E0" fill-opacity="0.5"/>
+    <rect class="grow55" x="196" y="322" width="34" height="8" rx="4" fill="#0367E0" fill-opacity="0.3"/>
+  </g>
+
+  <!-- tile 3: conversions funnel -->
+  <g class="up44">
+    <rect x="306" y="250" width="112" height="94" rx="9" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+    <rect x="318" y="259" width="44" height="6" rx="3" fill="#323232" fill-opacity="0.45"/>
+    <rect class="gx52" x="320" y="274" width="84" height="14" rx="5" fill="#0367E0" fill-opacity="0.22"/>
+    <rect class="gx55" x="332" y="294" width="60" height="14" rx="5" fill="#0367E0" fill-opacity="0.5"/>
+    <rect class="gx58" x="343" y="314" width="38" height="14" rx="5" fill="#0367E0"/>
+  </g>
+
+  <!-- marketing cards -->
+  <g class="slide66">
+    <rect x="466" y="96" width="144" height="72" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+    <rect x="478" y="108" width="28" height="28" rx="8" fill="#0367E0" fill-opacity="0.18"/>
+    <rect x="483" y="115" width="18" height="13" rx="2.5" fill="none" stroke="#0367E0" stroke-width="2"/>
+    <path d="M483.5 116.5L492 123L500.5 116.5" fill="none" stroke="#0367E0" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="516" y="112" width="64" height="7" rx="3.5" fill="#323232" fill-opacity="0.6"/>
+    <rect x="516" y="125" width="80" height="5" rx="2.5" fill="#323232" fill-opacity="0.2"/>
+    <circle cx="486" cy="151" r="5" fill="#323232" fill-opacity="0.15"/><circle cx="504" cy="151" r="5" fill="#323232" fill-opacity="0.15"/><circle cx="522" cy="151" r="5" fill="#323232" fill-opacity="0.15"/><circle cx="540" cy="151" r="5" fill="#323232" fill-opacity="0.15"/><circle cx="558" cy="151" r="5" fill="#323232" fill-opacity="0.15"/>
+    <circle class="pop73" cx="486" cy="151" r="5" fill="#0367E0"/>
+    <circle class="pop75" cx="504" cy="151" r="5" fill="#0367E0"/>
+    <circle class="pop77" cx="522" cy="151" r="5" fill="#0367E0"/>
+    <circle class="pop79" cx="540" cy="151" r="5" fill="#0367E0"/>
+    <circle class="pop81" cx="558" cy="151" r="5" fill="#0367E0"/>
+  </g>
+
+  <g class="slide72">
+    <path class="march" d="M538 168V184" stroke="#0367E0" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 4" fill="none"/>
+    <rect x="466" y="184" width="144" height="72" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+    <rect x="478" y="196" width="28" height="28" rx="8" fill="#0367E0" fill-opacity="0.18"/>
+    <circle cx="490" cy="208" r="5.5" fill="none" stroke="#0367E0" stroke-width="2.2"/>
+    <path d="M494.5 212.5L499 217" stroke="#0367E0" stroke-width="2.4" stroke-linecap="round"/>
+    <rect class="rk1" x="516" y="210" width="80" height="7" rx="3.5" fill="#323232" fill-opacity="0.22"/>
+    <rect class="rk2" x="516" y="222" width="64" height="7" rx="3.5" fill="#323232" fill-opacity="0.22"/>
+    <rect class="rk3" x="516" y="198" width="72" height="7" rx="3.5" fill="#0367E0"/>
+    <rect x="478" y="238" width="100" height="5" rx="2.5" fill="#323232" fill-opacity="0.12"/>
+  </g>
+
+  <g class="slide78">
+    <path class="march" d="M538 256V272" stroke="#0367E0" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 4" fill="none"/>
+    <rect x="466" y="272" width="144" height="72" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+    <rect x="478" y="284" width="28" height="28" rx="8" fill="#0367E0" fill-opacity="0.18"/>
+    <circle class="tring" cx="492" cy="298" r="9" fill="none" stroke="#0367E0" stroke-width="1.6"/>
+    <circle cx="492" cy="298" r="9" fill="none" stroke="#0367E0" stroke-width="2"/>
+    <circle cx="492" cy="298" r="4.6" fill="none" stroke="#0367E0" stroke-width="2"/>
+    <circle cx="492" cy="298" r="1.8" fill="#0367E0"/>
+    <rect x="516" y="288" width="60" height="7" rx="3.5" fill="#323232" fill-opacity="0.6"/>
+    <rect x="516" y="301" width="82" height="5" rx="2.5" fill="#323232" fill-opacity="0.2"/>
+    <rect x="478" y="324" width="120" height="6" rx="3" fill="#323232" fill-opacity="0.12"/>
+    <rect class="reach" x="478" y="324" width="120" height="6" rx="3" fill="#0367E0"/>
+  </g>
+
+  <!-- growth card -->
+  <g class="pop90">
+    <rect x="22" y="334" width="196" height="66" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+    <circle cx="50" cy="367" r="16" fill="#0367E0"/>
+    <path d="M42 373L48.5 366.5L52.5 370.5L59 363.5M54 363.5H59V368.5" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="76" y="364" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#323232">Growth</text>
+    <text x="76" y="379" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9" fill="#323232" fill-opacity="0.55">Trending up</text>
+    <rect class="gy93" x="148" y="374" width="8" height="10" rx="2.5" fill="#0367E0" fill-opacity="0.3"/>
+    <rect class="gy96" x="160" y="368" width="8" height="16" rx="2.5" fill="#0367E0" fill-opacity="0.5"/>
+    <rect class="gy99" x="172" y="362" width="8" height="22" rx="2.5" fill="#0367E0" fill-opacity="0.75"/>
+    <rect class="gy102" x="184" y="356" width="8" height="28" rx="2.5" fill="#0367E0"/>
+  </g>
+</g>
+
+</svg>
