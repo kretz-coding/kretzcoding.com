@@ -178,12 +178,13 @@
     div.content {
         display: grid;
         gap: 1rem;
+        align-items: center;
     }
 
     h1 {
             max-width: 19ch;
             padding-block-end: 2rem;
-        }
+    }
 
     h2 {
         font-size: 2rem;
@@ -198,7 +199,6 @@
 
     ul {
         padding: 0 0 0.5rem 2rem;
-
     }
 
     img {
@@ -217,15 +217,11 @@
             max-width: 45ch;
             padding-block-end:2rem;
         }
-
-
-    
     }
 
     .hero, .maintenance-hosting, .cta {
         background-color: var(--primary-container);
     }
-
 
     .cards {
         display: grid;
@@ -238,7 +234,6 @@
         padding: 1.5rem;
         border-radius: 1rem;
         background-color: var(--secondary-container);
-
     }
 
     section.cta {
@@ -250,10 +245,76 @@
         gap: 1rem;
         background-color: var(--accent);
         color: var(--on-accent);
+        align-content: center;
+
+        h3 {
+            font-size: 2rem;
+        }
 
         p {
             margin-block-end: 1rem;
         }
     }
 
+    @container hero (min-width: 768px) {
+        .hero {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 4rem;
+        }
+    }
+
+    @container web-design (min-width: 768px) {
+        .web-design {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 4rem;
+        }
+    }
+
+    @container maintenance-hosting (min-width: 768px) {
+        .maintenance-hosting {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .img {
+            order: -1;
+        }
+    }
+
+    @container analytics-marketing (min-width: 768px) {
+        .analytics-marketing {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 4rem;
+        }
+    }
+
+    @container cta (min-width: 768px) {
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @container cta (min-width: 1200px) {
+        section.cta {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .content {
+            grid-column: span 4;
+        }
+
+        .cards {
+            grid-column: span 2;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        div.cta {
+            grid-column: span 2;
+            align-items: center;
+        }
+    }
 </style>
