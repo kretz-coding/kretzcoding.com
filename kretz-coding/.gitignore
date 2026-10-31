@@ -1,6 +1,5 @@
 .npmrc
 *.jsonc
-worker-configuration.d.ts
 .assetsignore
 robots.txt
 app.d.ts
