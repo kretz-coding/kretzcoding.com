@@ -1,6 +1,5 @@
 <script>
     import Button from "#lib/components/Button.svelte";
-    import ServiceCard from "#lib/components/Service-Card.svelte";
 </script>
 <main>
     <div class="hero-container">
@@ -40,14 +39,19 @@
     </div>
     <div class="story-container">
         <section class="story">
-            <div class="headers">
-                <h3>My story</h3>
-                <h2>A designer who also understands what's going on behind the scenes.</h2>
+            <div class="content">
+                <div class="headers">
+                    <h3>My story</h3>
+                    <h2>A designer who also understands what's going on behind the scenes.</h2>
+                </div>
+                <div class="info">
+                    <p>I've been building websites professionally since 2014. I also come from a system administrator background, which means I'm just as comfortable in a DNS panel as I am in a design file.</p>
+                    <p>That mix matters for small businesses. Most website headaches aren't about the design. They're about everything behind it: a domain that quietly expired, business email landing in spam, a DNS record nobody remembers touching. I take care of all of it, so you never have to learn it.</p>
+                    <p>I'm a one-person company on purpose. When you call or write, you get me. No account managers, no handoffs, no ticket queue. Just someone who knows your site and picks up the phone.</p>
+                </div>
             </div>
-            <div class="info">
-                <p>I've been building websites professionally since 2014. I also come from a system administrator background, which means I'm just as comfortable in a DNS panel as I am in a design file.</p>
-                <p>That mix matters for small businesses. Most website headaches aren't about the design. They're about everything behind it: a domain that quietly expired, business email landing in spam, a DNS record nobody remembers touching. I take care of all of it, so you never have to learn it.</p>
-                <p>I'm a one-person company on purpose. When you call or write, you get me. No account managers, no handoffs, no ticket queue. Just someone who knows your site and picks up the phone.</p>
+            <div class="img">
+                <img src="/my-story-animation.svg" alt="web services animation" />
             </div>
         </section>
     </div>
@@ -92,6 +96,9 @@
                     <li>Moving your site from another host</li>
                 </ul>
             </div>
+            <div class="img">
+                <img src="/nerdy-stuff-animation.svg" alt="dns animation" />
+            </div>
         </section>
     </div>
     <div class="location-container">
@@ -100,7 +107,7 @@
                 <h3>Helping local businesses</h3>
                 <h2>Proudly serving Warner Robins and the surrounding area.</h2>
                 <p>I focus on local small businesses because that's where I can be the most useful. Being close means I can sit down with you, learn how your business actually runs, and build a site that fits it.</p>
-                <p>Outside the area? I work with clients remotely too, so just ask.</p>
+                <p>Outside the area? I work with clients remotely too!</p>
                 <ul class="tags">
                     <li class="tag accent">Warner Robins</li>
                     <li class="tag">Centerville</li>
@@ -116,9 +123,38 @@
     </div>
     <div class="services-container">
         <section class="services">
-            <div class="text-container">
-                <h3>How I can help you</h3>
-                <h2>Built for your business. Designed for growth.</h2>
+            <div class="content">
+                <h3>How I can help</h3>
+                <h2>Three services, one complete solution.</h2>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h4>Web Design</h4>
+                    <p>Custom sites designed around your customers and built to convert.</p>
+                </div>
+                <div class="card">
+                    <h4>Hosting & Maintenance</h4>
+                    <p>Fast, secure hosting and hands-on care after launch.</p>
+                </div>
+                <div class="card">
+                    <h4>Analytics & Marketing</h4>
+                    <p>Find what works, then put your effort where it pays off.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="cta-container">
+        <section class="cta">
+            <div class="card">
+                <h2>Let's talk about your website.</h2>
+                <p>Tell me about your business and what's not working. I'll tell you honestly how I can help. The first conversation is free, and there's no pressure.</p>
+                <Button
+                        href="/contact"
+                        label="Book a free call"
+                        size="m"
+                        style="fill"
+                        variant="accent"
+                />
             </div>
         </section>
     </div>
@@ -126,6 +162,27 @@
 <style>
     .hero-container {
         container: hero / inline-size;
+    }
+    .quick-facts-container {
+        container: quick-facts / inline-size;
+    }
+    .story-container {
+        container: story / inline-size;
+    }
+    .work-container {
+        container: work / inline-size;
+    }
+    .tech-container {
+        container: tech / inline-size;
+    }
+    .location-container {
+        container: location / inline-size;
+    }
+    .services-container {
+        container: services / inline-size;
+    }
+    .cta-container {
+        container: cta / inline-size;
     }
 
     section {
@@ -162,6 +219,7 @@
     }
 
     .hero {
+        background-color: var(--primary-container);
         gap: 4rem;
 
         h2 {
@@ -176,9 +234,25 @@
             padding-block-end:2rem;
         }
     }
+    
+    @container hero (min-width: 768px) {
+        .hero {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .content {
+            align-content: center;
+            justify-content: center;
+        }
+
+        .img {
+            align-content: center;
+            justify-content: center;
+        }
+
+    }
 
     .quick-facts {
-        background-color: var(--primary-container);
         display: grid;
         gap: 2rem;
 
@@ -200,7 +274,15 @@
         }
     }
 
+    @container quick-facts (min-width: 768px) {
+        .quick-facts {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
     .story {
+        background-color: var(--primary-container);
+
         .headers {
             display: grid;
             gap: 1rem;
@@ -219,10 +301,20 @@
         }
     }
 
+    @container story (min-width: 768px) {
+        .story {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .img {
+                align-content: center;
+                justify-content: center;
+        }
+
+    }
+
     .work {
         gap: 2rem;
-        background-color: var(--primary-container);
-
         .headers {
             display: grid;
             gap: 1rem;
@@ -235,6 +327,10 @@
             color: var(--blue-80);
         }
 
+        h4 {
+            font-weight: 700;
+        }
+
         .cards {
             display: grid;
             gap: 1rem;
@@ -245,7 +341,18 @@
             gap: 1rem;
             padding: 1.5rem;
             border-radius: 1rem;
-            background-color: var(--secondary-container);
+            background-color: var(--primary-container);
+        }
+    }
+
+    @container work (min-width: 768px) {
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @container work (min-width: 1200px) {
+        .cards {
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 
@@ -269,7 +376,26 @@
         }
     }
 
+    @container tech (min-width: 768px) {
+        .tech {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .img {
+            align-content: center;
+            justify-content: center;
+        }
+    }
+
     .location {
+        background-color: var(--primary-container);
+
+        h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: var(--blue-80);
+        }
         .tags {
             display: flex;
             flex-wrap: wrap;
@@ -297,4 +423,59 @@
         }
     }
 
+    @container location (min-width: 768px) {
+        .location {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .img {
+            order: -1;
+            align-content: center;
+            justify-content: center;
+        }
+    }
+
+
+    .services {
+        h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: var(--blue-80);
+        }
+        .cards {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .card {
+            display: grid;
+            gap: 1rem;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            background-color: var(--tertiary-container);
+        }
+    }
+    @container services (min-width: 786px){
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @container services (min-width: 1200px){
+        .cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .cta {
+        background-color: var(--primary-container);
+
+        .card {
+            display: grid;
+            gap: 1rem;
+            background-color: var(--blue-90);
+            color: var(--gray-10);
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+    }
 </style>

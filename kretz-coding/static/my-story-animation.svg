@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" role="img" aria-labelledby="t d">
+<title id="t">Design and systems skills combined in one person</title>
+<desc id="d">A design panel builds a page layout and color palette, a terminal panel checks DNS, email and SSL records, then the two combine into a live website.</desc>
+<defs>
+<filter id="shadow" x="-60%" y="-60%" width="220%" height="240%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#323232" flood-opacity="0.18"/></filter>
+</defs>
+<style>
+@keyframes grow16{0%,13.333%{opacity:0;transform:scaleX(0)}19.167%,100%{opacity:1;transform:none}}
+.grow16{animation:grow16 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:0% 50%;}
+@keyframes grow19{0%,15.833%{opacity:0;transform:scaleX(0)}21.667%,100%{opacity:1;transform:none}}
+.grow19{animation:grow19 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:0% 50%;}
+@keyframes grow22{0%,18.333%{opacity:0;transform:scaleX(0)}24.167%,100%{opacity:1;transform:none}}
+.grow22{animation:grow22 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:0% 50%;}
+@keyframes grow23{0%,19.167%{opacity:0;transform:scaleX(0)}25.0%,100%{opacity:1;transform:none}}
+.grow23{animation:grow23 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:0% 50%;}
+@keyframes pop26{0%,21.667%{opacity:0;transform:scale(.85)}27.5%,100%{opacity:1;transform:none}}
+.pop26{animation:pop26 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop28{0%,23.333%{opacity:0;transform:scale(.85)}29.167%,100%{opacity:1;transform:none}}
+.pop28{animation:pop28 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop32{0%,26.667%{opacity:0;transform:scale(.85)}32.5%,100%{opacity:1;transform:none}}
+.pop32{animation:pop32 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop34{0%,28.333%{opacity:0;transform:scale(.85)}34.167%,100%{opacity:1;transform:none}}
+.pop34{animation:pop34 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop36{0%,30.0%{opacity:0;transform:scale(.85)}35.833%,100%{opacity:1;transform:none}}
+.pop36{animation:pop36 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop38{0%,31.667%{opacity:0;transform:scale(.85)}37.5%,100%{opacity:1;transform:none}}
+.pop38{animation:pop38 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop40{0%,33.333%{opacity:0;transform:scale(.85)}39.167%,100%{opacity:1;transform:none}}
+.pop40{animation:pop40 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop48{0%,40.0%{opacity:0;transform:scale(.85)}45.833%,100%{opacity:1;transform:none}}
+.pop48{animation:pop48 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop55{0%,45.833%{opacity:0;transform:scale(.85)}51.667%,100%{opacity:1;transform:none}}
+.pop55{animation:pop55 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop62{0%,51.667%{opacity:0;transform:scale(.85)}57.5%,100%{opacity:1;transform:none}}
+.pop62{animation:pop62 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes pop68{0%,56.667%{opacity:0;transform:scale(.85)}62.5%,100%{opacity:1;transform:none}}
+.pop68{animation:pop68 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;transform-origin:50% 50%;}
+@keyframes sl8{0%,6.667%{opacity:0;transform:translateX(-36px)}12.5%,100%{opacity:1;transform:none}}
+.sl8{animation:sl8 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes sr10{0%,8.333%{opacity:0;transform:translateX(36px)}14.167%,100%{opacity:1;transform:none}}
+.sr10{animation:sr10 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up12{0%,10.0%{opacity:0;transform:translateY(14px)}15.833%,100%{opacity:1;transform:none}}
+.up12{animation:up12 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up14{0%,11.667%{opacity:0;transform:translateY(14px)}17.5%,100%{opacity:1;transform:none}}
+.up14{animation:up14 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up41{0%,34.167%{opacity:0;transform:translateY(14px)}40.0%,100%{opacity:1;transform:none}}
+.up41{animation:up41 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up45{0%,37.5%{opacity:0;transform:translateY(14px)}43.333%,100%{opacity:1;transform:none}}
+.up45{animation:up45 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up52{0%,43.333%{opacity:0;transform:translateY(14px)}49.167%,100%{opacity:1;transform:none}}
+.up52{animation:up52 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up59{0%,49.167%{opacity:0;transform:translateY(14px)}55.0%,100%{opacity:1;transform:none}}
+.up59{animation:up59 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up66{0%,55.0%{opacity:0;transform:translateY(14px)}60.833%,100%{opacity:1;transform:none}}
+.up66{animation:up66 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up68{0%,56.667%{opacity:0;transform:translateY(14px)}62.5%,100%{opacity:1;transform:none}}
+.up68{animation:up68 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes up72{0%,60.0%{opacity:0;transform:translateY(14px)}65.833%,100%{opacity:1;transform:none}}
+.up72{animation:up72 12.0s cubic-bezier(.2,.7,.2,1) infinite both;transform-box:fill-box;}
+@keyframes master{0%{opacity:0}4.167%{opacity:1}94.167%{opacity:1}100%{opacity:0}}
+.master{animation:master 12s ease-in-out infinite both}
+@keyframes hl1{0%,7.5%{opacity:0}10.0%,31.667%{opacity:1}34.167%,100%{opacity:0}}
+@keyframes hl2{0%,32.5%{opacity:0}35.0%,55.0%{opacity:1}57.5%,100%{opacity:0}}
+.hl1{opacity:0;animation:hl1 12s linear infinite both}.hl2{opacity:0;animation:hl2 12s linear infinite both}
+@keyframes idle{0%,10.833%{opacity:0}14.167%,33.333%{opacity:1}35.0%,100%{opacity:0}}
+.idle{opacity:0;animation:idle 12s linear infinite both}
+@keyframes blink2{0%,49%{opacity:1}50%,100%{opacity:0}}
+.blink2{animation:blink2 1s steps(1) infinite}
+@keyframes pulse{0%{opacity:.6;transform:scale(1)}100%{opacity:0;transform:scale(3.2)}}
+.pulse{animation:pulse 2s ease-out infinite;transform-box:fill-box;transform-origin:50% 50%}
+@keyframes ring{0%{opacity:.6;transform:scale(1)}100%{opacity:0;transform:scale(1.9)}}
+.ring{animation:ring 2s ease-out infinite;transform-box:fill-box;transform-origin:50% 50%}
+@keyframes march{to{stroke-dashoffset:-14}}
+.march{animation:march 1s linear infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.float{animation:float 4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.pulse,.ring{opacity:0}}
+</style>
+
+<g class="master">
+  <circle cx="320" cy="238" r="205" fill="#0367E0" opacity="0.07"/>
+  <circle cx="320" cy="238" r="150" fill="#0367E0" opacity="0.06"/>
+
+  <g class="float" style="animation-delay:-1s"><path d="M10 120v18M1 129h18" stroke="#0367E0" stroke-width="3" stroke-linecap="round" opacity="0.55"/></g>
+  <g class="float" style="animation-delay:-2.4s"><path d="M628 70v14M621 77h14" stroke="#323232" stroke-width="3" stroke-linecap="round" opacity="0.3"/></g>
+  <g class="float" style="animation-delay:-0.6s"><path d="M12 392v12M6 398h12" stroke="#323232" stroke-width="3" stroke-linecap="round" opacity="0.25"/></g>
+
+  <!-- left: design card -->
+  <g class="sl8">
+    <rect x="24" y="90" width="260" height="240" rx="20" fill="#FFFFFF" filter="url(#shadow)"/>
+  </g>
+  <rect class="hl1" x="24" y="90" width="260" height="240" rx="20" fill="none" stroke="#0367E0" stroke-width="3"/>
+  <g class="up12">
+    <rect x="44" y="106" width="22" height="22" rx="7" fill="#0367E0"/>
+    <path d="M52 112l8 4.5-3.4 1.2-1.2 3.4z" fill="#FFFFFF"/>
+    <rect x="72" y="106" width="22" height="22" rx="7" fill="#0367E0" fill-opacity="0.15"/>
+    <rect x="78" y="112" width="10" height="10" rx="2" fill="none" stroke="#0367E0" stroke-width="1.8"/>
+    <rect x="100" y="106" width="22" height="22" rx="7" fill="#0367E0" fill-opacity="0.15"/>
+    <path d="M106 121l4-9 4 9M107.5 118h5" fill="none" stroke="#0367E0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="220" y="112" width="44" height="10" rx="5" fill="#323232" fill-opacity="0.12"/>
+  </g>
+  <g class="up14">
+    <rect x="44" y="140" width="220" height="130" rx="10" fill="#F5F5F5" stroke="#323232" stroke-opacity="0.08"/>
+  </g>
+  <rect class="grow16" x="56" y="152" width="92" height="11" rx="5.5" fill="#323232"/>
+  <rect class="grow19" x="56" y="169" width="62" height="11" rx="5.5" fill="#0367E0"/>
+  <rect class="grow22" x="56" y="190" width="100" height="5" rx="2.5" fill="#323232" fill-opacity="0.2"/>
+  <rect class="grow23" x="56" y="200" width="84" height="5" rx="2.5" fill="#323232" fill-opacity="0.2"/>
+  <g class="pop26"><rect x="56" y="218" width="50" height="16" rx="8" fill="#0367E0"/><rect x="66" y="224" width="30" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.9"/></g>
+  <g class="pop28">
+    <clipPath id="imgClipS"><rect x="172" y="152" width="80" height="76" rx="8"/></clipPath>
+    <rect x="172" y="152" width="80" height="76" rx="8" fill="#E6F0FC"/>
+    <g clip-path="url(#imgClipS)">
+      <circle cx="236" cy="168" r="6" fill="#0367E0" fill-opacity="0.35"/>
+      <polygon points="164,236 188,200 202,216 218,194 262,236" fill="#0367E0" fill-opacity="0.35"/>
+      <polygon points="164,236 182,214 200,236" fill="#0367E0" fill-opacity="0.65"/>
+      <polygon points="208,236 226,210 262,236" fill="#0367E0" fill-opacity="0.85"/>
+    </g>
+  </g>
+  <circle class="pop32" cx="56" cy="298" r="10" fill="#323232"/>
+  <circle class="pop34" cx="84" cy="298" r="10" fill="#0367E0"/>
+  <circle class="pop36" cx="112" cy="298" r="10" fill="#4D96EB"/>
+  <circle class="pop38" cx="140" cy="298" r="10" fill="#E6F0FC" stroke="#323232" stroke-opacity="0.15"/>
+  <text class="pop40" x="196" y="307" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" font-weight="700" fill="#323232">A<tspan fill="#0367E0">a</tspan></text>
+
+  <!-- right: terminal card -->
+  <g class="sr10">
+    <rect x="356" y="90" width="260" height="240" rx="20" fill="#323232" filter="url(#shadow)"/>
+    <circle cx="378" cy="110" r="4.5" fill="#FFFFFF" fill-opacity="0.3"/>
+    <circle cx="393" cy="110" r="4.5" fill="#FFFFFF" fill-opacity="0.2"/>
+    <circle cx="408" cy="110" r="4.5" fill="#FFFFFF" fill-opacity="0.12"/>
+    <text x="594" y="114" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="#FFFFFF" fill-opacity="0.45">dns check</text>
+  </g>
+  <rect class="hl2" x="356" y="90" width="260" height="240" rx="20" fill="none" stroke="#4D96EB" stroke-width="3"/>
+  <g class="idle">
+    <text x="376" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#8DB8EE">$</text>
+    <rect class="blink2" x="390" y="141" width="8" height="14" fill="#8DB8EE"/>
+  </g>
+  <g class="up41">
+    <text x="376" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#8DB8EE">$</text>
+    <text x="392" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#FFFFFF">check yourbusiness.com</text>
+  </g>
+  <g class="up45">
+    <text x="376" y="192" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#E6E6E6">A record</text>
+    <path d="M458 188H562" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1.4" stroke-dasharray="2 4" stroke-linecap="round"/>
+  </g>
+  <g class="pop48"><circle cx="590" cy="188" r="8" fill="#0367E0"/><path d="M586 188.3l3 3 5-5.6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g class="up52">
+    <text x="376" y="222" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#E6E6E6">MX record</text>
+    <path d="M458 218H562" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1.4" stroke-dasharray="2 4" stroke-linecap="round"/>
+  </g>
+  <g class="pop55"><circle cx="590" cy="218" r="8" fill="#0367E0"/><path d="M586 218.3l3 3 5-5.6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g class="up59">
+    <text x="376" y="252" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#E6E6E6">SSL cert</text>
+    <path d="M458 248H562" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1.4" stroke-dasharray="2 4" stroke-linecap="round"/>
+  </g>
+  <g class="pop62"><circle cx="590" cy="248" r="8" fill="#0367E0"/><path d="M586 248.3l3 3 5-5.6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g class="up66">
+    <text x="376" y="288" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#8DB8EE">all checks passed</text>
+    <text x="376" y="312" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#8DB8EE">$</text>
+    <rect class="blink2" x="390" y="301" width="8" height="14" fill="#8DB8EE"/>
+  </g>
+
+  <!-- connector -->
+  <g class="up68">
+    <path class="march" d="M154 332V358" stroke="#0367E0" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 4" fill="none"/>
+    <path class="march" d="M486 332V358" stroke="#0367E0" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 4" fill="none"/>
+  </g>
+  <g class="pop68">
+    <circle class="ring" cx="320" cy="210" r="20" fill="none" stroke="#0367E0" stroke-width="3"/>
+    <circle cx="320" cy="210" r="20" fill="#0367E0" stroke="#FFFFFF" stroke-width="4"/>
+    <path d="M320 202v16M312 210h16" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- result card -->
+  <g class="up72">
+    <rect x="110" y="358" width="420" height="62" rx="14" fill="#FFFFFF" filter="url(#shadow)"/>
+    <rect x="126" y="376" width="324" height="26" rx="13" fill="#F2F2F2"/>
+    <rect x="138" y="385" width="8" height="7" rx="1.8" fill="#323232" fill-opacity="0.5"/>
+    <path d="M139.8 385v-2.4a2.2 2.2 0 0 1 4.4 0V385" fill="none" stroke="#323232" stroke-opacity="0.5" stroke-width="1.4"/>
+    <text x="152" y="393" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#323232" fill-opacity="0.7">yourbusiness.com</text>
+    <rect x="460" y="376" width="54" height="26" rx="13" fill="#E6F0FC"/>
+    <circle class="pulse" cx="474" cy="389" r="3.5" fill="#0367E0"/>
+    <circle cx="474" cy="389" r="3.5" fill="#0367E0"/>
+    <text x="483" y="393" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#0367E0">Live</text>
+  </g>
+</g>
+
+</svg>
