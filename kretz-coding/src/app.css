@@ -1,14 +1,14 @@
 :root {
-    --blue-10: oklch(34.97% 0.2011 258.33);
-    --blue-20: oklch(43.47% 0.2011 258.33);
-    --blue-30: oklch(48.61% 0.2011 258.33);
-    --blue-40: oklch(53.99% 0.2011 258.33);
-    --blue-50: oklch(64.73% 0.2011 258.33);
-    --blue-60: oklch(70.24% 0.2011 258.33);
-    --blue-70: oklch(76.02% 0.2011 258.33);
-    --blue-80: oklch(81.70% 0.2011 258.33);
-    --blue-90: oklch(91.98% 0.2011 258.33);
-    --blue-100: oklch(96.54% 0.2011 258.33);
+    --blue-10: hsl(213 97% 26%);
+    --blue-20: hsl(213 97% 32%);
+    --blue-30: hsl(213 97% 36%);
+    --blue-40: hsl(213 97% 45%);
+    --blue-50: hsl(213 97% 62%);
+    --blue-60: hsl(213 97% 69%);
+    --blue-70: hsl(213 97% 77%);
+    --blue-80: hsl(213 97% 84%);
+    --blue-90: hsl(213 97% 92%);
+    --blue-100: hsl(213 97% 99%);
 
     --gray-0: oklch(0% 0 0);
     --gray-10: oklch(23.08% 0 0);
@@ -90,8 +90,6 @@ body {
     color: var(--on-surface);
 }
 
-
-
 h1 {
     font-size: 3rem;
     font-weight: 400;
@@ -104,6 +102,7 @@ h2 {
 }
 
 section {
-    padding: 4rem 2rem;
+    padding: 4rem;
     display: grid;
+    gap: 1rem;
 }
