@@ -64,7 +64,6 @@
                 />
             </div>
         </section>
-
     </div>
     <div class="clients-container">
         <section class="clients">
