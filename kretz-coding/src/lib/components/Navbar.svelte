@@ -28,7 +28,7 @@
 
         <div class="nav-menu" class:active={isMenuOpen}>
             <a href="/services" onclick={toggleMenu}>Services</a>
-            <a href="/projects" onclick={toggleMenu}>Projects</a>
+            <a href="/work" onclick={toggleMenu}>Work</a>
             <a href="/about" onclick={toggleMenu}>About</a>
         </div>
         <div class="nav-menu" class:active={isMenuOpen}>

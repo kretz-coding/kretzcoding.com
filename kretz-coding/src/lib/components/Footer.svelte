@@ -17,14 +17,14 @@
                 <h3>Browse</h3>
                 <a href="/">Home</a>
                 <a href="/services">Services</a>
-                <a href="/projects">Projects</a>
+                <a href="/work">Projects</a>
                 <a href="/about">About</a>
             </div>
             <div class="services">
                 <h3>Services</h3>
                 <a href="/">Web development</a>
                 <a href="/about">Web hosting & maintenance</a>
-                <a href="/projects">Social media marketing</a>
+                <a href="/work">Social media marketing</a>
                 <a href="/services">Software development</a>
             </div>
             <div class="contact">
