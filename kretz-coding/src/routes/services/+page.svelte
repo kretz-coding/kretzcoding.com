@@ -1,5 +1,6 @@
 <script>
     import Button from "#lib/components/Button.svelte";
+    import Card from "#lib/components/Card.svelte";
 </script>
 
 <main>
@@ -12,9 +13,7 @@
                 <Button
                         href="/contact"
                         label="Start a project"
-                        size="m"
-                        style="fill"
-                        variant="accent"
+                        variant="filled"
                 />
             </div>
             <div class="animation">
@@ -47,9 +46,7 @@
                 <Button
                     href="/contact"
                     label="Plan your new site"
-                    size="m"
-                    style="fill"
-                    variant="accent"
+                    variant="filled"
                 />
             </div>
             <div class="img">
@@ -64,9 +61,7 @@
                 <h2>
                     Launch is the start. We keep it fast, safe, and current.
                 </h2>
-                <p>
-                    Sites that aren't looked after slow down, break, and get hacked. We host your site on reliable infrastructure and handle the upkeep, so you can run your business and not your website.
-                </p>
+                <p>Sites that aren't looked after slow down, break, and get hacked. We host your site on reliable infrastructure and handle the upkeep, so you can run your business and not your website.</p>
                 <ul>
                     <li>Managed, secure hosting</li>
                     <li>Software and security updates</li>
@@ -77,9 +72,7 @@
                 <Button
                     href="/contact"
                     label="Ask about care plans"
-                    size="m"
-                    style="fill"
-                    variant="accent"
+                    variant="filled"
                 />
             </div>
             <div class="img">
@@ -105,9 +98,7 @@
                 <Button
                     href="/contact"
                     label="Talk about growth"
-                    size="m"
-                    style="fill"
-                    variant="accent"
+                    variant="filled"
                 />
             </div>
             <div class="img">
@@ -117,39 +108,39 @@
     </div>
     <div class="cta-container">
         <section class="cta">
-            <div class="content">
+            <header>
                 <h4>How it works</h4>
                 <h2>From first conversation to a site that keeps working.</h2>
-            </div>
+            </header>
             <div class="cards">
-                <div class="card">
-                    <h4>Discover</h4>
-                    <p>We learn your goals, customers, and what's not working today.</p>
-                </div>
-                <div class="card">
-                    <h4>Design</h4>
-                    <p>You review layouts and give feedback before anything gets built.</p>
-                </div>
-                <div class="card">
-                    <h4>Build & launch</h4>
-                    <p>We develop, test on real devices, and take the site live.</p>
-                </div>
-                <div class="card">
-                    <h4>Grow</h4>
-                    <p>We host, maintain, measure, and improve month after month.</p>
-                </div>
+                <Card variant="filled">
+                        <p class="title">Discover</p>
+                    <p class="body">We learn your goals, customers, and what's not working today.</p>
+                </Card>
+                <Card variant="filled">
+                    <p class="title">Design</p>
+                    <p class="body">You review layouts and give feedback before anything gets built.</p>
+                </Card>
+                <Card variant="filled">
+                    <p class="title">Build & launch</p>
+                    <p class="body">We develop, test on real devices, and take the site live.</p>
+                </Card>
+                <Card variant="filled">
+                    <p class="title">Grow</p>
+                    <p class="body">We host, maintain, measure, and improve month after month.</p>
+                </Card>
             </div>
-            <div class="cta card">
+            <footer>
+                <Card class="cta" variant="filled">
                     <h3>Not sure which service you need?</h3>
                     <p>Tell us about your business and we'll recommend a starting point. The first conversation is free.</p>
                     <Button
-                    href="/contact"
-                    label="Book a free call"
-                    size="m"
-                    style="fill"
-                    variant="primary"
-                />
-                </div>
+                            href="/contact"
+                            label="Book a free call"
+                            variant="filled"
+                    />
+                </Card>
+            </footer>
         </section>
     </div>
 </main>
@@ -182,8 +173,8 @@
     }
 
     h1 {
-            max-width: 19ch;
-            padding-block-end: 2rem;
+        max-width: 19ch;
+        padding-block-end: 2rem;
     }
 
     h2 {
@@ -219,21 +210,9 @@
         }
     }
 
-    .hero, .maintenance-hosting, .cta {
-        background-color: var(--primary-container);
-    }
-
     .cards {
         display: grid;
         gap: 2rem;
-    }
-
-    .card {
-        display: grid;
-        gap: 1rem;
-        padding: 1.5rem;
-        border-radius: 1rem;
-        background-color: var(--secondary-container);
     }
 
     section.cta {
@@ -243,8 +222,6 @@
     div.cta {
         display: grid;
         gap: 1rem;
-        background-color: var(--accent);
-        color: var(--on-accent);
         align-content: center;
 
         h3 {
@@ -293,12 +270,24 @@
     }
 
     @container cta (min-width: 768px) {
+        header {
+            grid-column: span 2;
+        }
+
         .cards {
             grid-template-columns: repeat(2, 1fr);
+        }
+
+        footer {
+            grid-column: span 2;
         }
     }
 
     @container cta (min-width: 1200px) {
+        header {
+            grid-column: span 4;
+        }
+
         section.cta {
             grid-template-columns: repeat(4, 1fr);
         }
@@ -310,11 +299,6 @@
         .cards {
             grid-column: span 2;
             grid-template-columns: repeat(2, 1fr);
-        }
-
-        div.cta {
-            grid-column: span 2;
-            align-items: center;
         }
     }
 </style>

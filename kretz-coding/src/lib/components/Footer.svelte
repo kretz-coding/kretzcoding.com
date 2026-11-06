@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <div class="footer-container">
     <footer>
         <div class="cta">
@@ -103,11 +106,13 @@
         container-type: inline-size;
         padding: 0;
         margin: 0;
+        box-shadow: var(--elevated);
+        z-index: 1000;
     }
 
     footer {
-        background-color: var(--kc-gray);
-        color: var(--kc-white);
+        background-color: var(--surface-container);
+        color: var(--on-surface);
         display: grid;
         padding: 2rem 1rem;
         justify-items: center;

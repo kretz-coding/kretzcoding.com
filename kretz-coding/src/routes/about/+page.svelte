@@ -1,21 +1,22 @@
 <script>
     import Button from "#lib/components/Button.svelte";
+    import Card from "#lib/components/Card.svelte";
+    import Tag from "#lib/components/Tag.svelte";
 </script>
+
 <main>
     <div class="hero-container">
         <section class="hero">
-            <div class="content">
+            <header>
                 <h2>About</h2>
                 <h1>Helping small businesses reach big audiences.</h1>
                 <p>I'm a one-person web design company in Warner Robins, Georgia. When you work with Kretz Coding, I'll support you from the first conversation to long after launch.</p>
                 <Button
                         href="/contact"
                         label="Let's get started"
-                        size="m"
-                        style="fill"
-                        variant="accent"
+                        variant="filled"
                 />
-            </div>
+            </header>
             <div class="img">
                 <img src="/about-hero-img.svg" alt="web services animation" />
             </div>
@@ -40,10 +41,10 @@
     <div class="story-container">
         <section class="story">
             <div class="content">
-                <div class="headers">
+                <header>
                     <h3>My story</h3>
                     <h2>A designer who also understands what's going on behind the scenes.</h2>
-                </div>
+                </header>
                 <div class="info">
                     <p>I've been building websites professionally since 2014. I also come from a system administrator background, which means I'm just as comfortable in a DNS panel as I am in a design file.</p>
                     <p>That mix matters for small businesses. Most website headaches aren't about the design. They're about everything behind it: a domain that quietly expired, business email landing in spam, a DNS record nobody remembers touching. I take care of all of it, so you never have to learn it.</p>
@@ -57,35 +58,37 @@
     </div>
     <div class="work-container">
         <section class="work">
-            <div class="headers">
+            <header>
                 <h3>How I work</h3>
                 <h2>Friendly, straightforward, and easy to reach.</h2>
-            </div>
+            </header>
             <div class="cards">
-                <div class="card">
+                <Card>
                     <h4>One person, start to finish</h4>
                     <p>The person who designs your site is the same one who answers your email.</p>
-                </div>
-                <div class="card">
+                </Card>
+                <Card>
                     <h4>Plain English</h4>
                     <p>No jargon and no runaround. I explain what's happening and what it means for your business.</p>
-                </div>
-                <div class="card">
+                </Card>
+                <Card>
                     <h4>The nerdy stuff, handled</h4>
                     <p>Domains, DNS, email, security. If it's confusing, it's my job, not yours.</p>
-                </div>
-                <div class="card">
+                </Card>
+                <Card>
                     <h4>Local and reachable</h4>
                     <p>I live and work here. I'm happy to meet in person around Warner Robins, or talk by phone or video.</p>
-                </div>
+                </Card>
             </div>
         </section>
     </div>
     <div class="tech-container">
         <section class="tech">
-            <div class="content">
+            <header>
                 <h3>The tech stuff</h3>
                 <h2>The behind-the-scenes work that makes a website actually work.</h2>
+            </header>
+            <div>
                 <p>Years as a system administrator taught me where small business websites really break. Here's what I take off your plate:</p>
                 <ul>
                     <li>Domain registration and transfers</li>
@@ -104,16 +107,18 @@
     <div class="location-container">
         <section class="location">
             <div class="content">
-                <h3>Helping local businesses</h3>
-                <h2>Proudly serving Warner Robins and the surrounding area.</h2>
+                <header>
+                    <h3>Helping local businesses</h3>
+                    <h2>Proudly serving Warner Robins and the surrounding area.</h2>
+                </header>
                 <p>I focus on local small businesses because that's where I can be the most useful. Being close means I can sit down with you, learn how your business actually runs, and build a site that fits it.</p>
                 <p>Outside the area? I work with clients remotely too!</p>
                 <ul class="tags">
-                    <li class="tag accent">Warner Robins</li>
-                    <li class="tag">Centerville</li>
-                    <li class="tag">Perry</li>
-                    <li class="tag">Bonaire</li>
-                    <li class="tag">Macon</li>
+                    <Tag>Warner Robins</Tag>
+                    <Tag variant="accent">Centerville</Tag>
+                    <Tag variant="accent">Perry</Tag>
+                    <Tag variant="accent">Bonaire</Tag>
+                    <Tag variant="accent">Macon</Tag>
                 </ul>
             </div>
             <div class="img">
@@ -123,23 +128,23 @@
     </div>
     <div class="services-container">
         <section class="services">
-            <div class="content">
+            <header class="content">
                 <h3>How I can help</h3>
                 <h2>Three services, one complete solution.</h2>
-            </div>
+            </header>
             <div class="cards">
-                <div class="card">
+                <Card>
                     <h4>Web Design</h4>
                     <p>Custom sites designed around your customers and built to convert.</p>
-                </div>
-                <div class="card">
+                </Card>
+                <Card>
                     <h4>Hosting & Maintenance</h4>
                     <p>Fast, secure hosting and hands-on care after launch.</p>
-                </div>
-                <div class="card">
+                </Card>
+                <Card>
                     <h4>Analytics & Marketing</h4>
                     <p>Find what works, then put your effort where it pays off.</p>
-                </div>
+                </Card>
             </div>
         </section>
     </div>
@@ -151,9 +156,7 @@
                 <Button
                         href="/contact"
                         label="Book a free call"
-                        size="m"
-                        style="fill"
-                        variant="accent"
+                        variant="filled"
                 />
             </div>
         </section>
@@ -219,7 +222,6 @@
     }
 
     .hero {
-        background-color: var(--primary-container);
         gap: 4rem;
 
         h2 {
@@ -264,13 +266,10 @@
                 font-size: 1.5rem;
             }
 
-            p {
-                color: var(--on-primary-container);
-            }
         }
 
         .solo > h3 {
-            color: var(--blue-80);
+            color: var(--primary);
         }
     }
 
@@ -281,13 +280,6 @@
     }
 
     .story {
-        background-color: var(--primary-container);
-
-        .headers {
-            display: grid;
-            gap: 1rem;
-        }
-
         .info {
             display: grid;
             gap: 1rem;
@@ -315,16 +307,12 @@
 
     .work {
         gap: 2rem;
-        .headers {
-            display: grid;
-            gap: 1rem;
-        }
 
         h3 {
             font-size: 1rem;
             text-transform: uppercase;
             font-weight: 400;
-            color: var(--blue-80);
+            color: var(--primary);
         }
 
         h4 {
@@ -334,14 +322,6 @@
         .cards {
             display: grid;
             gap: 1rem;
-        }
-
-        .card {
-            display: grid;
-            gap: 1rem;
-            padding: 1.5rem;
-            border-radius: 1rem;
-            background-color: var(--primary-container);
         }
     }
 
@@ -357,7 +337,7 @@
     }
 
     .tech {
-        background-color: var(--blue-90);
+        background-color: var(--blue-100);
         color: var(--gray-10);
 
         h3 {
@@ -388,7 +368,6 @@
     }
 
     .location {
-        background-color: var(--primary-container);
 
         h3 {
             font-size: 1rem;
@@ -447,14 +426,6 @@
             display: grid;
             gap: 2rem;
         }
-
-        .card {
-            display: grid;
-            gap: 1rem;
-            padding: 1.5rem;
-            border-radius: 1rem;
-            background-color: var(--tertiary-container);
-        }
     }
     @container services (min-width: 786px){
         .cards {
@@ -467,12 +438,11 @@
         }
     }
     .cta {
-        background-color: var(--primary-container);
 
         .card {
             display: grid;
             gap: 1rem;
-            background-color: var(--blue-90);
+            background-color: var(--blue-100);
             color: var(--gray-10);
             border-radius: 1rem;
             padding: 2rem;

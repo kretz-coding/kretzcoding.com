@@ -1,5 +1,5 @@
 <script>
-    import Button from "./Button.svelte";
+    import Card from "#lib/components/Card.svelte";
 
     let {
         phase = "",
@@ -10,7 +10,7 @@
         button_href="",
     } = $props();
 </script>
-<div class="card">
+<Card variant="filled">
     <div class="header">
         <div class="phase">Phase {phase}</div>
         <img src="{icon}" alt="" class="icon">
@@ -20,19 +20,10 @@
         <h4 class="subtitle">{subtitle}</h4>
         <p class="body">{body}</p>
     </div>
-    <a href="{button_href}">Learn more <img src="/chevron-right.svg"></a>
-</div>
+    <a href="{button_href}">Learn more <img src="/chevron-right.svg" alt=""></a>
+</Card>
 
 <style>
-    .card {
-        display: grid;
-        background-color: var(--secondary-container);
-        width: fit-content;
-        border-radius: 1rem;
-        padding: 2rem;
-        box-shadow: var(--emphasized);
-    }
-
     .header {
         display: grid;
         grid-auto-flow: column;

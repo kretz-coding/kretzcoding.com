@@ -1,35 +1,28 @@
 <script lang="ts">
     interface Props {
         href: string;
-        icon?: {position: "left" | "right" ; src: string} | null
+        icon?:  string | null;
         isDisabled?: boolean;
         label: string;
-        size: "s" | "m" | "l" | "xl";
-        style: "fill" | "outline";
-        variant: "primary" | "secondary" | "accent" | "negative";
+        variant?: "elevated" | "filled" | "tonal" | "outlined" | "text";
     }
 
     let {
         href ="#",
         isDisabled = false,
         label="Button",
-        size = "m",
-        style="fill",
-        variant = "primary",
+        variant = "filled",
         icon = null
 
     }: Props = $props();
 
 </script>
 
-<a {href} class="button {style} {variant} {size}" class:disabled={isDisabled}>
-    {#if icon != null && icon.position == "left"}
-        <img src={icon.src} alt=""/>
+<a {href} class="button {variant}" class:disabled={isDisabled}>
+    {#if icon != null}
+        <img src={icon} alt=""/>
     {/if}
     {label}
-    {#if icon != null && icon.position == "right"}
-        <img src={icon.src} alt=""/>
-    {/if}
 </a>
 
 <style>
@@ -44,6 +37,9 @@
         justify-items: center;
         align-items: center;
         height: fit-content;
+        background-color: var(--surface);
+        color: var(--on-surface);
+        border: 1px solid var(--outline);
     }
 
     img {
@@ -51,38 +47,28 @@
         margin-inline-end: -.5rem;
     }
 
-    a.fill {
-        background-color: var(--background-color);
-        color: var(--text-color);
-        box-shadow: var(--emphasized);
+    .elevated {
+        --surface: var(--suface-container-low);
+        --on-surface: var(--primary);
     }
 
-    a.fill:hover {
-        box-shadow: var(--emphasized-hover);
+    .filled {
+        --surface: var(--primary);
+        --on-surface: var(--on-primary);
     }
 
-    a.outline {
-        border: 2px solid var(--background-color);
-        color: var(--background-color);
+    .tonal {
+        --surface: var(--secondary-container);
+        --on-surface: var(--on-secondary_container);
     }
 
-    a.primary {
-        --background-color: var(--primary);
-        --text-color: var(--on-primary);
+    .outlined {
+        --on-surface: var(--primary);
+        --outline: var(--primary);
     }
 
-    a.secondary {
-        --background-color: var(--secondary);
-        --text-color: var(--on-secondary);
+    .text {
+        --on-surface: var(--primary);
     }
 
-    a.accent {
-        --background-color: var(--accent);
-        --text-color: var(--on-accent);
-    }
-
-    a.negative {
-        --background-color: var(--negative);
-        --text-color: var(--on-negative);
-    }
 </style>

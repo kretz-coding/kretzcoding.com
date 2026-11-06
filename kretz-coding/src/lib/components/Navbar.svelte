@@ -35,9 +35,7 @@
             <Button
                 href="/contact"
                 label="Get in touch"
-                style="fill"
-                variant="primary"
-                size="m"
+                variant="filled"
             />
         </div>
     </nav>
@@ -53,7 +51,8 @@
     }
 
     nav {
-        background-color: var(--surface);
+        background-color: var(--surface-container);
+        color: var(--on-surface);
         display: grid;
         grid-template-columns: 1fr auto;
         align-items: center;
@@ -107,7 +106,7 @@
             display: grid;
             justify-self: center;
             grid-auto-flow: column;
-            gap: 1rem;
+            gap: 2rem;
             grid-column: span 1;
             width: fit-content;
             margin: 0;

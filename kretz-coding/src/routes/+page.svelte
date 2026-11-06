@@ -1,6 +1,7 @@
 <script>
     import Button from "#lib/components/Button.svelte";
     import ServiceCard from "#lib/components/Service-Card.svelte";
+    import Tag from "#lib/components/Tag.svelte";
 </script>
 
 <main>
@@ -16,9 +17,7 @@
                     <Button
                             label="Upgrade now"
                             href="/contact"
-                            style="fill"
-                            variant="accent"
-                            size="m"
+                            variant="filled"
                     />
                 </div>
             </div>
@@ -113,21 +112,21 @@
                 <div class="tools">
                     <h4>I build with</h4>
                     <ul class="tools">
-                        <li class="tag">WordPress</li>
-                        <li class="tag">Shopify</li>
-                        <li class="tag">Svelte</li>
-                        <li class="tag">HTML / CSS</li>
-                        <li class="tag">React</li>
-                        <li class="tag">JavaScript</li>
+                        <Tag>WordPress</Tag>
+                        <Tag>Shopify</Tag>
+                        <Tag>Svelte</Tag>
+                        <Tag>HTML / CSS</Tag>
+                        <Tag>React</Tag>
+                        <Tag>JavaScript</Tag>
                     </ul>
                 </div>
                 <div class="skills">
                     <h4>I also handle</h4>
                     <ul class="skills">
-                        <li class="tag">Domains</li>
-                        <li class="tag">Hosting</li>
-                        <li class="tag">DNS</li>
-                        <li class="tag">Email</li>
+                        <Tag>Domains</Tag>
+                        <Tag>Hosting</Tag>
+                        <Tag>DNS</Tag>
+                        <Tag>Email</Tag>
                     </ul>
                 </div>
             </div>
@@ -135,11 +134,9 @@
                 <Button
                         label="Start a project"
                         href="/contact"
-                        style="fill"
-                        variant="accent"
-                        size="m"
+                        variant="filled"
                 />
-                <a class="learn-more" href="/about">More about me <img src="/chevron-right.svg"></a>
+                <a class="learn-more" href="/about">More about me <img src="/chevron-right.svg" alt=""></a>
             </div>
         </section>
     </div>
@@ -158,7 +155,6 @@
             display: grid;
             justify-content: center;
             gap: 2rem;
-            background-color: var(--surface-container-low);
             color: var(--kc-light-blue);
             padding: 4rem 2rem;
 
@@ -209,8 +205,6 @@
         container: services / inline-size;
 
         .services {
-            background-color: var(--primary-container);
-            color: var(--kc-light-blue);
             display: grid;
             padding: 4rem 2rem;
         }
@@ -263,7 +257,6 @@
             .testimonial {
                 display: grid;
                 padding: 2rem;
-                border-radius: 3rem;
                 gap: 1rem;
                 border-radius: 1.5rem;
                 background-color: var(--surface-bright);
@@ -308,7 +301,6 @@
         container: about / inline-size;
 
         .about {
-            background-color: var(--primary-container);
             display: grid;
         }
 
@@ -352,19 +344,6 @@
             width: fit-content;
             justify-self: center;
             gap: 1rem;
-        }
-
-        .tag {
-            background-color: var(--primary);
-            color: var(--on-primary);
-            width: fit-content;
-            border-radius: 0.5rem;
-            padding: 0.25rem 0.75rem;
-            font-weight: 500;
-            align-content: center;
-            justify-content: center;
-            justify-self: center;
-            align-self: center;
         }
 
         .buttons {
