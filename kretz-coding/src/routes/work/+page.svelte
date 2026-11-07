@@ -39,7 +39,7 @@ import Button from "#lib/components/Button.svelte";
                     <p class="label">security vulnerabilities remediated</p>
                 </Card>
                 <Card>
-                    <p class="cta"></p>
+                    <p class="cta">See the finished site in action.</p>
                     <Button
                         variant="filled"
                         label="Visit live site"
@@ -54,6 +54,51 @@ import Button from "#lib/components/Button.svelte";
                             <p class="position">Owner, K9 Korral</p>
                         </div>
                         <img class="logo" src="/k9-korral.svg" alt="K9 Korral logo" />
+                    </div>
+                </Card>
+            </footer>
+        </section>
+    </div>
+    <div class="cannon-marketing-container">
+        <section class="cannon-marketing">
+            <header>
+                <p class="client">Cannon Marketing</p>
+                <p class="summary">3rd party marketing and customer service out of Toledo, OH.</p>
+                <div class="tags">
+                    <Tag>Marketing</Tag>
+                    <Tag>Customer Service</Tag>
+                    <Tag>Outside Sales</Tag>
+                    <Tag>2024</Tag>
+                </div>
+            </header>
+            <div class="website">
+                <img src="/cannon-marketing-preview.png" alt="Cannon Marketing website">
+            </div>
+            <footer>
+                <Card>
+                    <p class="number">+86%</p>
+                    <p class="label">lead increase</p>
+                </Card>
+                <Card>
+                    <p class="number">+40</p>
+                    <p class="label">phone calls per month</p>
+                </Card>
+                <Card>
+                    <p class="cta">Increase your lead conversions like Cannon Marketing.</p>
+                    <Button
+                            variant="filled"
+                            label="Start a project like this"
+                            href="/contact"
+                    />
+                </Card>
+                <Card>
+                    <p class="quote">"Short, specific quote about the result or the experience of working with you.”</p>
+                    <div class="company-info">
+                        <div class="person-info">
+                            <p class="name">Ben Cannon</p>
+                            <p class="position">Owner, Cannon Marketing</p>
+                        </div>
+                        <img class="logo" src="/cannon-marketing.svg" alt="Cannon Marketing logo" />
                     </div>
                 </Card>
             </footer>
