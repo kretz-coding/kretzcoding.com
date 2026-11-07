@@ -39,6 +39,4 @@
     .negative {
         border-color: var(--negative);
     }
-
-
 </style>
