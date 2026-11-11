@@ -1,8 +1,7 @@
 <script>
-
-import Tag from "#lib/components/Tag.svelte";
-import Card from "#lib/components/Card.svelte";
-import Button from "#lib/components/Button.svelte";
+    import Tag from "#lib/components/Tag.svelte";
+    import Card from "#lib/components/Card.svelte";
+    import Button from "#lib/components/Button.svelte";
 </script>
 <main>
     <div class="hero-container">
@@ -15,7 +14,7 @@ import Button from "#lib/components/Button.svelte";
         </section>
     </div>
     <div class="k9-korral-container">
-        <section class="k9-korral">
+        <section class="k9-korral work">
             <header>
                 <a href="https://k9korralsrq.com" class="client">K9 Korral</a>
                 <p class="summary">A dog boarding and daycare in Sarasota, FL.</p>
@@ -39,14 +38,6 @@ import Button from "#lib/components/Button.svelte";
                     <p class="label">security vulnerabilities remediated</p>
                 </Card>
                 <Card>
-                    <p class="cta">See the finished site in action.</p>
-                    <Button
-                        variant="filled"
-                        label="Visit live site"
-                        href="https://k9korralsrq.com"
-                    />
-                </Card>
-                <Card>
                     <p class="quote">"Short, specific quote about the result or the experience of working with you.”</p>
                     <div class="company-info">
                         <div class="person-info">
@@ -56,11 +47,19 @@ import Button from "#lib/components/Button.svelte";
                         <img class="logo" src="/k9-korral.svg" alt="K9 Korral logo" />
                     </div>
                 </Card>
+                <Card class="cta-card">
+                    <p class="cta">See the finished site in action.</p>
+                    <Button
+                            variant="filled"
+                            label="Visit live site"
+                            href="https://k9korralsrq.com"
+                    />
+                </Card>
             </footer>
         </section>
     </div>
     <div class="cannon-marketing-container">
-        <section class="cannon-marketing">
+        <section class="cannon-marketing work">
             <header>
                 <p class="client">Cannon Marketing</p>
                 <p class="summary">3rd party marketing and customer service out of Toledo, OH.</p>
@@ -81,15 +80,7 @@ import Button from "#lib/components/Button.svelte";
                 </Card>
                 <Card>
                     <p class="number">+40</p>
-                    <p class="label">phone calls per month</p>
-                </Card>
-                <Card>
-                    <p class="cta">Increase your lead conversions like Cannon Marketing.</p>
-                    <Button
-                            variant="filled"
-                            label="Start a project like this"
-                            href="/contact"
-                    />
+                    <p class="label">more phone calls per month</p>
                 </Card>
                 <Card>
                     <p class="quote">"Short, specific quote about the result or the experience of working with you.”</p>
@@ -101,10 +92,121 @@ import Button from "#lib/components/Button.svelte";
                         <img class="logo" src="/cannon-marketing.svg" alt="Cannon Marketing logo" />
                     </div>
                 </Card>
+                <Card class="cta-card">
+                    <p class="cta">Increase your lead conversions like Cannon Marketing.</p>
+                    <Button
+                            variant="filled"
+                            label="Start a project like this"
+                            href="/contact"
+                    />
+                </Card>
+            </footer>
+        </section>
+    </div>
+    <div class="wilmo-pick-em-container">
+        <section class="wilmo-pick-em work">
+            <header>
+                <p class="client">Wilmo's Pick 'Ems</p>
+                <p class="summary">Custom NFL Pick Em web application with users across the U.S.</p>
+                <div class="tags">
+                    <Tag>Pick 'Em League</Tag>
+                    <Tag>Sports</Tag>
+                    <Tag>Database</Tag>
+                    <Tag>2026</Tag>
+                </div>
+            </header>
+            <div class="website">
+                <img src="/wilmo-pick-em-preview.png" alt="Cannon Marketing website">
+            </div>
+            <footer>
+                <Card>
+                    <p class="number">50+</p>
+                    <p class="label">weekly users</p>
+                </Card>
+                <Card>
+                    <p class="number">~48</p>
+                    <p class="label">hours saved per NFL season</p>
+                </Card>
+                <Card>
+                    <p class="quote">"Short, specific quote about the result or the experience of working with you.”</p>
+                    <div class="company-info">
+                        <div class="person-info">
+                            <p class="name">Joeseph Wilmoth</p>
+                            <p class="position">Owner, Wilmo's Pick 'Ems</p>
+                        </div>
+                        <img class="logo" src="/wilmo-pickems.svg" alt="Wilmo's Pick 'Ems logo" />
+                    </div>
+                </Card>
+                <Card class="cta-card">
+                    <p class="cta">Automate your problems, like Wilmo's Pick 'Ems</p>
+                    <Button
+                            variant="filled"
+                            label="Save time"
+                            href="/contact"
+                    />
+                </Card>
             </footer>
         </section>
     </div>
 </main>
 <style>
+    .hero {
+        h1 {
+            line-height: 3rem;
+            padding-block: 1.25rem;
+        }
+        h2 {
+            color: var(--primary);
+            font-size: 1rem;
+        }
+    }
+    .client {
+        font-size: 3rem;
+        text-decoration: none;
+        color: var(--on-primary);
+    }
+    .work * {
+        display: grid;
+        gap: 1rem;
+    }
 
+    img {
+        max-width: 100%;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-block: 1rem;
+    }
+
+    .number {
+        font-size: 3rem;
+        justify-self: center;
+    }
+
+    .label {
+        justify-self: center;
+    }
+
+    .company-info {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+    .person-info {
+        gap: 0.25rem;
+        height: fit-content;
+        align-self: end;
+    }
+
+    .name {
+        font-weight: bold;
+    }
+
+    .logo {
+        max-height: 5rem;
+        justify-self: end;
+    }
 </style>
