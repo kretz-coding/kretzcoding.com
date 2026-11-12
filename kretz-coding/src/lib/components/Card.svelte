@@ -9,11 +9,12 @@
 
     let {
         variant = "filled",
+        class: className = "",
         children
     }: Props = $props();
 </script>
 
-<div class="card {variant}">
+<div class="card {variant} {className}">
     {@render children()}
 </div>
 

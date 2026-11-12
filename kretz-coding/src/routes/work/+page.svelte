@@ -3,6 +3,7 @@
     import Card from "#lib/components/Card.svelte";
     import Button from "#lib/components/Button.svelte";
 </script>
+
 <main>
     <div class="hero-container">
         <section class="hero">
@@ -37,7 +38,7 @@
                     <p class="number">48</p>
                     <p class="label">security vulnerabilities remediated</p>
                 </Card>
-                <Card>
+                <Card class="quote-card">
                     <p class="quote">"Short, specific quote about the result or the experience of working with you.”</p>
                     <div class="company-info">
                         <div class="person-info">
@@ -82,7 +83,7 @@
                     <p class="number">+40</p>
                     <p class="label">more phone calls per month</p>
                 </Card>
-                <Card>
+                <Card class="quote-card">
                     <p class="quote">"Short, specific quote about the result or the experience of working with you.”</p>
                     <div class="company-info">
                         <div class="person-info">
@@ -127,7 +128,7 @@
                     <p class="number">~48</p>
                     <p class="label">hours saved per NFL season</p>
                 </Card>
-                <Card>
+                <Card class="quote-card">
                     <p class="quote">"Short, specific quote about the result or the experience of working with you.”</p>
                     <div class="company-info">
                         <div class="person-info">
@@ -149,7 +150,51 @@
         </section>
     </div>
 </main>
+
 <style>
+
+    .k9-korral-container {
+        container: k9-korral / inline-size;
+    }
+
+    .cannon-marketing-container {
+        container: cannon-marketing / inline-size;
+    }
+
+    .wilmo-pick-em-container {
+        container: wilmo-pick-em / inline-size;
+    }
+
+    @container k9-korral (min-width: 768px) {
+        footer {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        footer :global(.quote-card), footer :global(.cta-card) {
+            grid-column: span 2;
+        }
+    }
+
+    @container cannon-marketing (min-width: 768px) {
+        footer {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        footer :global(.quote-card), footer :global(.cta-card) {
+            grid-column: span 2;
+        }
+    }
+
+    @container wilmo-pick-em (min-width: 768px) {
+        footer {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        footer :global(.quote-card), footer :global(.cta-card) {
+            grid-column: span 2;
+        }
+    }
+
     .hero {
         h1 {
             line-height: 3rem;
@@ -208,5 +253,9 @@
     .logo {
         max-height: 5rem;
         justify-self: end;
+    }
+
+    * > footer {
+        display: grid;
     }
 </style>
