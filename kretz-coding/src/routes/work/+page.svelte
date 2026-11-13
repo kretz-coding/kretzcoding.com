@@ -9,7 +9,7 @@
         <section class="hero">
             <div class="content">
                 <h2>Work</h2>
-                <h1>Websites built for small businesses like yours.</h1>
+                <h1>Websites built for small businesses<br>like yours.</h1>
                 <p>A closer look at the results of having a better website.</p>
             </div>
         </section>
@@ -30,11 +30,11 @@
                 <img src="/k9-korral-after.png" alt="K9 Korral website">
             </div>
             <footer>
-                <Card>
+                <Card class="number-card">
                     <p class="number">+210%</p>
                     <p class="label">conversion rate</p>
                 </Card>
-                <Card>
+                <Card class="number-card">
                     <p class="number">48</p>
                     <p class="label">security vulnerabilities remediated</p>
                 </Card>
@@ -75,11 +75,11 @@
                 <img src="/cannon-marketing-preview.png" alt="Cannon Marketing website">
             </div>
             <footer>
-                <Card>
+                <Card class="number-card">
                     <p class="number">+86%</p>
                     <p class="label">lead increase</p>
                 </Card>
-                <Card>
+                <Card class="number-card">
                     <p class="number">+40</p>
                     <p class="label">more phone calls per month</p>
                 </Card>
@@ -120,11 +120,11 @@
                 <img src="/wilmo-pick-em-preview.png" alt="Cannon Marketing website">
             </div>
             <footer>
-                <Card>
+                <Card class="number-card">
                     <p class="number">50+</p>
                     <p class="label">weekly users</p>
                 </Card>
-                <Card>
+                <Card class="number-card">
                     <p class="number">~48</p>
                     <p class="label">hours saved per NFL season</p>
                 </Card>
@@ -153,45 +153,32 @@
 
 <style>
 
-    .k9-korral-container {
-        container: k9-korral / inline-size;
+    .k9-korral-container, .cannon-marketing-container, .wilmo-pick-em-container {
+        container-type: inline-size;
     }
 
-    .cannon-marketing-container {
-        container: cannon-marketing / inline-size;
-    }
-
-    .wilmo-pick-em-container {
-        container: wilmo-pick-em / inline-size;
-    }
-
-    @container k9-korral (min-width: 768px) {
+    @container (min-width: 768px) {
         footer {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(4, 1fr);
         }
 
         footer :global(.quote-card), footer :global(.cta-card) {
             grid-column: span 2;
         }
-    }
 
-    @container cannon-marketing (min-width: 768px) {
-        footer {
-            grid-template-columns: 1fr 1fr;
+        footer :global(.cta-card) {
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: end;
+            align-items: center;
+
+            p {
+                justify-self: start;
+            }
         }
 
-        footer :global(.quote-card), footer :global(.cta-card) {
-            grid-column: span 2;
-        }
-    }
-
-    @container wilmo-pick-em (min-width: 768px) {
-        footer {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        footer :global(.quote-card), footer :global(.cta-card) {
-            grid-column: span 2;
+        footer :global(.number-card) {
+            grid-row: span 2;
+            align-content: center;
         }
     }
 
